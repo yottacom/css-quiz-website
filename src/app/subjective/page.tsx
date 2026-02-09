@@ -61,7 +61,7 @@ export default function SubjectivePage() {
                         Paper {question.paper}
                       </span>
                       <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
-                        Q.{question.questionNumber} - Section {question.section}
+                        Q.{question.questionNumber} - Topic: {question.topic}
                       </span>
                       <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
                         {question.marks} marks

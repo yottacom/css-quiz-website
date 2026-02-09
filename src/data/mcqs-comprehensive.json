@@ -1,0 +1,428 @@
+{
+  "metadata": {
+    "totalMcqs": 480,
+    "fromPastPapers": 80,
+    "generated": 400,
+    "years": [2024, 2025],
+    "topics": [
+      "Data Structures",
+      "Algorithms",
+      "Operating Systems",
+      "Computer Networks",
+      "Database Systems",
+      "Software Engineering",
+      "Programming (C/C++/Java)",
+      "Compiler Design",
+      "Computer Architecture",
+      "Cyber Security",
+      "Web Development",
+      "Image Processing",
+      "Artificial Intelligence",
+      "Computer Hardware",
+      "System Software"
+    ]
+  },
+  "pastPaperMcqs": [
+    {
+      "id": "2024-P1-01",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which of the following ports is used to connect external devices such as printers, scanners, and cameras to a computer?",
+      "options": ["USB (Universal Serial Bus)", "HDMI (High-Definition Multimedia Interface)", "VGA (Video Graphics Array)", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "USB (Universal Serial Bus) is the standard port for connecting peripherals like printers, scanners, cameras, keyboards, and mice to computers.",
+      "topic": "Computer Hardware"
+    },
+    {
+      "id": "2024-P1-02",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which type of monitor technology offers the widest viewing angles and accurate color reproduction?",
+      "options": ["CRT (Cathode Ray Tube)", "OLED (Organic Light-Emitting Diode)", "LCD (Liquid Crystal Display)", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "OLED displays offer superior viewing angles and color accuracy because each pixel produces its own light, resulting in true blacks and vivid colors.",
+      "topic": "Computer Hardware"
+    },
+    {
+      "id": "2024-P1-03",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which component is responsible for providing power supply to all other components in a computer system?",
+      "options": ["Power Supply Unit (PSU)", "Central Processing Unit (CPU)", "Motherboard", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "The Power Supply Unit (PSU) converts AC power from the wall outlet to DC power and distributes it to all components in the computer.",
+      "topic": "Computer Hardware"
+    },
+    {
+      "id": "2024-P1-04",
+      "year": 2024,
+      "paper": 1,
+      "question": "What is an example of system software from the list below?",
+      "options": ["Windows", "Google Chrome", "Adobe Photoshop", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "Windows is an operating system, which is system software. Chrome and Photoshop are application software.",
+      "topic": "System Software"
+    },
+    {
+      "id": "2024-P1-05",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which of the following is NOT an agile software development methodology?",
+      "options": ["Scrum", "Waterfall", "Kanban", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "Waterfall is a traditional sequential software development model, not an agile methodology. Scrum and Kanban are agile frameworks.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "2024-P1-06",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which was the first purely object-oriented programming language developed?",
+      "options": ["Java", "C++", "SmallTalk", "None of these"],
+      "correctAnswer": 2,
+      "explanation": "Smalltalk, developed in the 1970s at Xerox PARC, was the first purely object-oriented programming language where everything is an object.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2024-P1-07",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which language does not allow for inheritance in all four forms?",
+      "options": ["Kotlin", "Java", "C++", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "Java does not support multiple inheritance of classes (only interface inheritance), while C++ supports all forms including multiple inheritance.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2024-P1-08",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which programming language allows for polymorphism but not classes?",
+      "options": ["C++", "Java", "Ada", "None of these"],
+      "correctAnswer": 2,
+      "explanation": "Ada supports polymorphism through generic programming and tagged types but doesn't use the traditional class-based OOP model.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2024-P1-09",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which of the following is considered as the world's first antivirus program?",
+      "options": ["Tinkered", "Reaper", "Creeper", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "Reaper was created in 1971 to delete the Creeper virus, making it the first antivirus program. Creeper was the virus itself.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "2024-P1-10",
+      "year": 2024,
+      "paper": 1,
+      "question": "If an employee requests root access to a UNIX system unless their job necessitates certain rights and privileges, which cyber security concept is this an example of?",
+      "options": ["Least privileges", "Separation of Privileges", "Open Design", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "The Principle of Least Privilege states that users should only have the minimum access rights necessary to perform their job functions.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "2024-P1-11",
+      "year": 2024,
+      "paper": 1,
+      "question": "When an online banking application prompts users to log in again after thirty minutes, which cyber security concept is this an example of?",
+      "options": ["Compromise recording", "Psychological acceptability", "Complete mediation", "None of these"],
+      "correctAnswer": 2,
+      "explanation": "Complete mediation requires that every access to a resource must be checked for authorization, including session timeouts for re-authentication.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "2024-P1-12",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which of the following malware types does not infect others and duplicate or clone itself?",
+      "options": ["Rootkits", "Trojans", "Worms", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "Trojans disguise themselves as legitimate software but don't self-replicate. Worms self-replicate and spread automatically.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "2024-P1-13",
+      "year": 2024,
+      "paper": 1,
+      "question": "When compiled, which of the following class of statement often yields no executable code?",
+      "options": ["Assignment statement", "Structural statements", "Input and output statements", "None of these"],
+      "correctAnswer": 3,
+      "explanation": "Declaration statements (like variable declarations without initialization) often produce no executable code - they just allocate memory.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "2024-P1-14",
+      "year": 2024,
+      "paper": 1,
+      "question": "A high-level language compiler that runs on one computer and generates code for another is known as:",
+      "options": ["One pass compiler", "Multipass compiler", "Cross compiler", "None of these"],
+      "correctAnswer": 2,
+      "explanation": "A cross compiler generates executable code for a platform different from the one it runs on, commonly used in embedded systems development.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "2024-P1-15",
+      "year": 2024,
+      "paper": 1,
+      "question": "Compiler can check ____ error.",
+      "options": ["Syntax", "Content", "Logical", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "Compilers can detect syntax errors during compilation. Logical errors are detected at runtime, and content errors are semantic.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "2024-P1-16",
+      "year": 2024,
+      "paper": 1,
+      "question": "What is the output of: int arr[5]={10,20,30,40,50}; printf(\"%d\", arr[5]);",
+      "options": ["Garbage value", "20", "30", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "arr[5] is out of bounds (valid indices are 0-4), so it accesses undefined memory and produces a garbage value.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2024-P1-17",
+      "year": 2024,
+      "paper": 1,
+      "question": "When we attempt to add the eleventh element to a stack with a size of 10, we encounter:",
+      "options": ["Garbage collection", "Underflow", "Overflow", "None of these"],
+      "correctAnswer": 2,
+      "explanation": "Stack overflow occurs when trying to push an element onto a full stack. Underflow occurs when popping from an empty stack.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2024-P1-18",
+      "year": 2024,
+      "paper": 1,
+      "question": "Regarding Binary Trees, which of the following is true?",
+      "options": ["Every binary tree has two states: full and complete", "Every binary tree that is full is also a complete binary tree", "All complete binary trees are likewise full binary trees", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "A full binary tree (every node has 0 or 2 children) is always complete (all levels filled except possibly the last). But not vice versa.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2024-P1-19",
+      "year": 2024,
+      "paper": 1,
+      "question": "What is the name of a linear collection of data components where the linear node is provided by a pointer?",
+      "options": ["Linked list", "Primitive List", "Node list", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "A linked list is a linear data structure where elements are connected using pointers, with each node containing data and a reference to the next node.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2024-P1-20",
+      "year": 2024,
+      "paper": 1,
+      "question": "How much time would it take to add an element to the linked list asymptotically?",
+      "options": ["O(1)", "O(n)", "O(n²)", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "Adding to the head of a linked list is O(1). Adding to the tail is O(n) unless you maintain a tail pointer, then it's O(1).",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-01",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the degree of leaf node in a tree?",
+      "options": ["0", "1", "2", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "A leaf node has no children, so its degree (number of children) is 0.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-02",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the main goal of Capability Maturity Model Integration (CMMI)?",
+      "options": ["To enhance maturity of software process", "To increase the quality of software", "To provide user friendly experience", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "CMMI is a process improvement approach that provides organizations with essential elements for effective process improvement.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "2025-P1-03",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which type of software testing is used to confirm whether the software is according to customer's requirements?",
+      "options": ["Performance testing", "Acceptance testing", "Regression testing", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "Acceptance testing (UAT) is conducted to determine if the system satisfies the acceptance criteria and enables the customer to determine whether to accept the system.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "2025-P1-04",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which of the following is commonly used for measuring the performance of supercomputers?",
+      "options": ["Gigahertz (GHz)", "Teraflops (Tflops)", "Petabyte (PB)", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "FLOPS (Floating Point Operations Per Second) measures computing power. Teraflops (10^12 FLOPS) is used for supercomputers.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "2025-P1-05",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which software development model uses iterative cycles and continuous development?",
+      "options": ["Agile model", "Spiral model", "V-model", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "Agile uses iterative cycles (sprints) with continuous development, delivery, and improvement based on feedback.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "2025-P1-06",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which of the following is the false statement in C language?",
+      "options": ["static a = 10;", "static int func(int);", "static static int a;", "None of these"],
+      "correctAnswer": 2,
+      "explanation": "'static static int a;' is invalid - you cannot use the static keyword twice for the same variable declaration.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2025-P1-07",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which programming language uses the concept of friend function?",
+      "options": ["Python", "Java", "C#", "None of these"],
+      "correctAnswer": 3,
+      "explanation": "C++ uses friend functions. Python, Java, and C# do not have this concept. The answer is 'None of these' as C++ is not listed.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2025-P1-08",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is meant by refactoring code in SDLC?",
+      "options": ["To modify the functionality of software", "To improve the code quality", "To find out bugs in a software", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "Refactoring is restructuring existing code without changing its external behavior, to improve readability, reduce complexity, and improve maintainability.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "2025-P1-09",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the main purpose of using Trojans?",
+      "options": ["To get passwords", "To delete data", "To corrupt files", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "Trojans are primarily used to steal sensitive information like passwords, banking credentials, and personal data by disguising as legitimate software.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "2025-P1-10",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the correct data structure for implementing Huffman algorithm?",
+      "options": ["Priority queue", "Linked list", "Binary Tree", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "Huffman coding uses a priority queue (min-heap) to build the Huffman tree by always combining the two lowest frequency nodes.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "2025-P1-11",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which asymptotic notation gives the strict upper bound for a function?",
+      "options": ["Omega notation", "Big O notation", "Theta notation", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "Big O notation gives the upper bound (worst case). Omega gives lower bound (best case). Theta gives tight bound (average case).",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "2025-P1-12",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which one of the following is the fastest way of searching for a given key?",
+      "options": ["Sorted array", "Linked list", "Binary search tree", "None of these"],
+      "correctAnswer": 3,
+      "explanation": "Hash table provides O(1) average case search, faster than BST (O(log n)) or sorted array binary search (O(log n)).",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-13",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the role of parser?",
+      "options": ["To check logical errors", "To find syntax errors", "To identify run-time errors", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "The parser (syntax analyzer) checks if the token stream from the lexer follows the grammar rules of the language.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "2025-P1-14",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which optimization method involves minimizing the memory access count in a program?",
+      "options": ["Constant folding", "Register allocation", "Instruction scheduling", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "Register allocation assigns frequently used variables to CPU registers instead of memory, reducing memory access overhead.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "2025-P1-15",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the output of: int a=40; int* ptr=&a; int& ref=*ptr; ref=60; cout<<a;",
+      "options": ["40", "60", "Error", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "ref is a reference to the value pointed by ptr (which is a). Changing ref to 60 changes a to 60.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2025-P1-16",
+      "year": 2025,
+      "paper": 1,
+      "question": "The process of deleting an element from an empty stack is called:",
+      "options": ["Overflow", "Deletion", "Underflow", "None of these"],
+      "correctAnswer": 2,
+      "explanation": "Stack underflow occurs when attempting to pop from an empty stack. Overflow occurs when pushing to a full stack.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-17",
+      "year": 2025,
+      "paper": 1,
+      "question": "How is the head node deleted in a doubly circular linked list?",
+      "options": ["By adjusting the prev pointer of the new head node to null", "By setting the next pointer of prev node to point to new head", "By pointing the next pointer of last node to null", "None of these"],
+      "correctAnswer": 1,
+      "explanation": "In a doubly circular linked list, deleting head requires updating the last node's next to the new head and new head's prev to the last node.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-18",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which technique works by selecting the local optimal choice at each step?",
+      "options": ["Dynamic Programming", "Divide and Conquer", "Greedy Algorithm", "None of these"],
+      "correctAnswer": 2,
+      "explanation": "Greedy algorithms make locally optimal choices at each step, hoping to find a global optimum. Examples include Dijkstra's algorithm and Huffman coding.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "2025-P1-19",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the time complexity of searching for an element in a hash table?",
+      "options": ["O(1)", "O(n)", "O(nlogn)", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "Hash tables provide O(1) average case for search, insert, and delete operations using hash functions for direct access.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-20",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which phase of compiler is responsible for abstract syntax tree (AST) generation?",
+      "options": ["Syntax analysis", "Semantic analysis", "Lexical analysis", "None of these"],
+      "correctAnswer": 0,
+      "explanation": "The syntax analyzer (parser) builds the Abstract Syntax Tree (AST) from tokens, representing the hierarchical structure of the program.",
+      "topic": "Compiler Design"
+    }
+  ],
+  "generatedMcqs": []
+}

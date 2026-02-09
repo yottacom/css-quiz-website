@@ -1,0 +1,5831 @@
+{
+  "metadata": {
+    "totalMcqs": 440,
+    "fromPastPapers": 40,
+    "generated": 400,
+    "years": [
+      2024,
+      2025
+    ],
+    "topics": [
+      "Data Structures",
+      "Algorithms",
+      "Operating Systems",
+      "Computer Networks",
+      "Database Systems",
+      "Software Engineering",
+      "Programming (C/C++/Java)",
+      "Compiler Design",
+      "Computer Architecture",
+      "Cyber Security",
+      "Web Development",
+      "Image Processing",
+      "Artificial Intelligence",
+      "Computer Hardware",
+      "System Software"
+    ],
+    "lastUpdated": "2026-02-09T16:42:30.299Z"
+  },
+  "mcqs": [
+    {
+      "id": "2024-P1-01",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which of the following ports is used to connect external devices such as printers, scanners, and cameras to a computer?",
+      "options": [
+        "USB (Universal Serial Bus)",
+        "HDMI (High-Definition Multimedia Interface)",
+        "VGA (Video Graphics Array)",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "USB (Universal Serial Bus) is the standard port for connecting peripherals like printers, scanners, cameras, keyboards, and mice to computers.",
+      "topic": "Computer Hardware"
+    },
+    {
+      "id": "2024-P1-02",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which type of monitor technology offers the widest viewing angles and accurate color reproduction?",
+      "options": [
+        "CRT (Cathode Ray Tube)",
+        "OLED (Organic Light-Emitting Diode)",
+        "LCD (Liquid Crystal Display)",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "OLED displays offer superior viewing angles and color accuracy because each pixel produces its own light, resulting in true blacks and vivid colors.",
+      "topic": "Computer Hardware"
+    },
+    {
+      "id": "2024-P1-03",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which component is responsible for providing power supply to all other components in a computer system?",
+      "options": [
+        "Power Supply Unit (PSU)",
+        "Central Processing Unit (CPU)",
+        "Motherboard",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Power Supply Unit (PSU) converts AC power from the wall outlet to DC power and distributes it to all components in the computer.",
+      "topic": "Computer Hardware"
+    },
+    {
+      "id": "2024-P1-04",
+      "year": 2024,
+      "paper": 1,
+      "question": "What is an example of system software from the list below?",
+      "options": [
+        "Windows",
+        "Google Chrome",
+        "Adobe Photoshop",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Windows is an operating system, which is system software. Chrome and Photoshop are application software.",
+      "topic": "System Software"
+    },
+    {
+      "id": "2024-P1-05",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which of the following is NOT an agile software development methodology?",
+      "options": [
+        "Scrum",
+        "Waterfall",
+        "Kanban",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Waterfall is a traditional sequential software development model, not an agile methodology. Scrum and Kanban are agile frameworks.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "2024-P1-06",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which was the first purely object-oriented programming language developed?",
+      "options": [
+        "Java",
+        "C++",
+        "SmallTalk",
+        "None of these"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Smalltalk, developed in the 1970s at Xerox PARC, was the first purely object-oriented programming language where everything is an object.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2024-P1-07",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which language does not allow for inheritance in all four forms?",
+      "options": [
+        "Kotlin",
+        "Java",
+        "C++",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Java does not support multiple inheritance of classes (only interface inheritance), while C++ supports all forms including multiple inheritance.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2024-P1-08",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which programming language allows for polymorphism but not classes?",
+      "options": [
+        "C++",
+        "Java",
+        "Ada",
+        "None of these"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Ada supports polymorphism through generic programming and tagged types but doesn't use the traditional class-based OOP model.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2024-P1-09",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which of the following is considered as the world's first antivirus program?",
+      "options": [
+        "Tinkered",
+        "Reaper",
+        "Creeper",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Reaper was created in 1971 to delete the Creeper virus, making it the first antivirus program. Creeper was the virus itself.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "2024-P1-10",
+      "year": 2024,
+      "paper": 1,
+      "question": "If an employee requests root access to a UNIX system unless their job necessitates certain rights and privileges, which cyber security concept is this an example of?",
+      "options": [
+        "Least privileges",
+        "Separation of Privileges",
+        "Open Design",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The Principle of Least Privilege states that users should only have the minimum access rights necessary to perform their job functions.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "2024-P1-11",
+      "year": 2024,
+      "paper": 1,
+      "question": "When an online banking application prompts users to log in again after thirty minutes, which cyber security concept is this an example of?",
+      "options": [
+        "Compromise recording",
+        "Psychological acceptability",
+        "Complete mediation",
+        "None of these"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Complete mediation requires that every access to a resource must be checked for authorization, including session timeouts for re-authentication.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "2024-P1-12",
+      "year": 2024,
+      "paper": 1,
+      "question": "Which of the following malware types does not infect others and duplicate or clone itself?",
+      "options": [
+        "Rootkits",
+        "Trojans",
+        "Worms",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Trojans disguise themselves as legitimate software but don't self-replicate. Worms self-replicate and spread automatically.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "2024-P1-13",
+      "year": 2024,
+      "paper": 1,
+      "question": "When compiled, which of the following class of statement often yields no executable code?",
+      "options": [
+        "Assignment statement",
+        "Structural statements",
+        "Input and output statements",
+        "None of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Declaration statements (like variable declarations without initialization) often produce no executable code - they just allocate memory.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "2024-P1-14",
+      "year": 2024,
+      "paper": 1,
+      "question": "A high-level language compiler that runs on one computer and generates code for another is known as:",
+      "options": [
+        "One pass compiler",
+        "Multipass compiler",
+        "Cross compiler",
+        "None of these"
+      ],
+      "correctAnswer": 2,
+      "explanation": "A cross compiler generates executable code for a platform different from the one it runs on, commonly used in embedded systems development.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "2024-P1-15",
+      "year": 2024,
+      "paper": 1,
+      "question": "Compiler can check ____ error.",
+      "options": [
+        "Syntax",
+        "Content",
+        "Logical",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Compilers can detect syntax errors during compilation. Logical errors are detected at runtime, and content errors are semantic.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "2024-P1-16",
+      "year": 2024,
+      "paper": 1,
+      "question": "What is the output of: int arr[5]={10,20,30,40,50}; printf(\"%d\", arr[5]);",
+      "options": [
+        "Garbage value",
+        "20",
+        "30",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "arr[5] is out of bounds (valid indices are 0-4), so it accesses undefined memory and produces a garbage value.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2024-P1-17",
+      "year": 2024,
+      "paper": 1,
+      "question": "When we attempt to add the eleventh element to a stack with a size of 10, we encounter:",
+      "options": [
+        "Garbage collection",
+        "Underflow",
+        "Overflow",
+        "None of these"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Stack overflow occurs when trying to push an element onto a full stack. Underflow occurs when popping from an empty stack.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2024-P1-18",
+      "year": 2024,
+      "paper": 1,
+      "question": "Regarding Binary Trees, which of the following is true?",
+      "options": [
+        "Every binary tree has two states: full and complete",
+        "Every binary tree that is full is also a complete binary tree",
+        "All complete binary trees are likewise full binary trees",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A full binary tree (every node has 0 or 2 children) is always complete (all levels filled except possibly the last). But not vice versa.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2024-P1-19",
+      "year": 2024,
+      "paper": 1,
+      "question": "What is the name of a linear collection of data components where the linear node is provided by a pointer?",
+      "options": [
+        "Linked list",
+        "Primitive List",
+        "Node list",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A linked list is a linear data structure where elements are connected using pointers, with each node containing data and a reference to the next node.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2024-P1-20",
+      "year": 2024,
+      "paper": 1,
+      "question": "How much time would it take to add an element to the linked list asymptotically?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(n²)",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Adding to the head of a linked list is O(1). Adding to the tail is O(n) unless you maintain a tail pointer, then it's O(1).",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-01",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the degree of leaf node in a tree?",
+      "options": [
+        "0",
+        "1",
+        "2",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "A leaf node has no children, so its degree (number of children) is 0.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-02",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the main goal of Capability Maturity Model Integration (CMMI)?",
+      "options": [
+        "To enhance maturity of software process",
+        "To increase the quality of software",
+        "To provide user friendly experience",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "CMMI is a process improvement approach that provides organizations with essential elements for effective process improvement.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "2025-P1-03",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which type of software testing is used to confirm whether the software is according to customer's requirements?",
+      "options": [
+        "Performance testing",
+        "Acceptance testing",
+        "Regression testing",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Acceptance testing (UAT) is conducted to determine if the system satisfies the acceptance criteria and enables the customer to determine whether to accept the system.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "2025-P1-04",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which of the following is commonly used for measuring the performance of supercomputers?",
+      "options": [
+        "Gigahertz (GHz)",
+        "Teraflops (Tflops)",
+        "Petabyte (PB)",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "FLOPS (Floating Point Operations Per Second) measures computing power. Teraflops (10^12 FLOPS) is used for supercomputers.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "2025-P1-05",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which software development model uses iterative cycles and continuous development?",
+      "options": [
+        "Agile model",
+        "Spiral model",
+        "V-model",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Agile uses iterative cycles (sprints) with continuous development, delivery, and improvement based on feedback.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "2025-P1-06",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which of the following is the false statement in C language?",
+      "options": [
+        "static a = 10;",
+        "static int func(int);",
+        "static static int a;",
+        "None of these"
+      ],
+      "correctAnswer": 2,
+      "explanation": "'static static int a;' is invalid - you cannot use the static keyword twice for the same variable declaration.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2025-P1-07",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which programming language uses the concept of friend function?",
+      "options": [
+        "Python",
+        "Java",
+        "C#",
+        "None of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "C++ uses friend functions. Python, Java, and C# do not have this concept. The answer is 'None of these' as C++ is not listed.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2025-P1-08",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is meant by refactoring code in SDLC?",
+      "options": [
+        "To modify the functionality of software",
+        "To improve the code quality",
+        "To find out bugs in a software",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Refactoring is restructuring existing code without changing its external behavior, to improve readability, reduce complexity, and improve maintainability.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "2025-P1-09",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the main purpose of using Trojans?",
+      "options": [
+        "To get passwords",
+        "To delete data",
+        "To corrupt files",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Trojans are primarily used to steal sensitive information like passwords, banking credentials, and personal data by disguising as legitimate software.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "2025-P1-10",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the correct data structure for implementing Huffman algorithm?",
+      "options": [
+        "Priority queue",
+        "Linked list",
+        "Binary Tree",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Huffman coding uses a priority queue (min-heap) to build the Huffman tree by always combining the two lowest frequency nodes.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "2025-P1-11",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which asymptotic notation gives the strict upper bound for a function?",
+      "options": [
+        "Omega notation",
+        "Big O notation",
+        "Theta notation",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Big O notation gives the upper bound (worst case). Omega gives lower bound (best case). Theta gives tight bound (average case).",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "2025-P1-12",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which one of the following is the fastest way of searching for a given key?",
+      "options": [
+        "Sorted array",
+        "Linked list",
+        "Binary search tree",
+        "None of these"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Hash table provides O(1) average case search, faster than BST (O(log n)) or sorted array binary search (O(log n)).",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-13",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the role of parser?",
+      "options": [
+        "To check logical errors",
+        "To find syntax errors",
+        "To identify run-time errors",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The parser (syntax analyzer) checks if the token stream from the lexer follows the grammar rules of the language.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "2025-P1-14",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which optimization method involves minimizing the memory access count in a program?",
+      "options": [
+        "Constant folding",
+        "Register allocation",
+        "Instruction scheduling",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Register allocation assigns frequently used variables to CPU registers instead of memory, reducing memory access overhead.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "2025-P1-15",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the output of: int a=40; int* ptr=&a; int& ref=*ptr; ref=60; cout<<a;",
+      "options": [
+        "40",
+        "60",
+        "Error",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ref is a reference to the value pointed by ptr (which is a). Changing ref to 60 changes a to 60.",
+      "topic": "Programming"
+    },
+    {
+      "id": "2025-P1-16",
+      "year": 2025,
+      "paper": 1,
+      "question": "The process of deleting an element from an empty stack is called:",
+      "options": [
+        "Overflow",
+        "Deletion",
+        "Underflow",
+        "None of these"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Stack underflow occurs when attempting to pop from an empty stack. Overflow occurs when pushing to a full stack.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-17",
+      "year": 2025,
+      "paper": 1,
+      "question": "How is the head node deleted in a doubly circular linked list?",
+      "options": [
+        "By adjusting the prev pointer of the new head node to null",
+        "By setting the next pointer of prev node to point to new head",
+        "By pointing the next pointer of last node to null",
+        "None of these"
+      ],
+      "correctAnswer": 1,
+      "explanation": "In a doubly circular linked list, deleting head requires updating the last node's next to the new head and new head's prev to the last node.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-18",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which technique works by selecting the local optimal choice at each step?",
+      "options": [
+        "Dynamic Programming",
+        "Divide and Conquer",
+        "Greedy Algorithm",
+        "None of these"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Greedy algorithms make locally optimal choices at each step, hoping to find a global optimum. Examples include Dijkstra's algorithm and Huffman coding.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "2025-P1-19",
+      "year": 2025,
+      "paper": 1,
+      "question": "What is the time complexity of searching for an element in a hash table?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(nlogn)",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Hash tables provide O(1) average case for search, insert, and delete operations using hash functions for direct access.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "2025-P1-20",
+      "year": 2025,
+      "paper": 1,
+      "question": "Which phase of compiler is responsible for abstract syntax tree (AST) generation?",
+      "options": [
+        "Syntax analysis",
+        "Semantic analysis",
+        "Lexical analysis",
+        "None of these"
+      ],
+      "correctAnswer": 0,
+      "explanation": "The syntax analyzer (parser) builds the Abstract Syntax Tree (AST) from tokens, representing the hierarchical structure of the program.",
+      "topic": "Compiler Design"
+    },
+    {
+      "id": "G001",
+      "question": "What is the time complexity of binary search?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Binary search divides the search space in half each iteration, giving O(log n) complexity.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G002",
+      "question": "Which data structure uses LIFO principle?",
+      "options": [
+        "Queue",
+        "Stack",
+        "Array",
+        "Linked List"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stack follows Last-In-First-Out (LIFO) - the last element added is the first one removed.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G003",
+      "question": "What is the worst case time complexity of Quick Sort?",
+      "options": [
+        "O(n log n)",
+        "O(n²)",
+        "O(n)",
+        "O(log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Quick Sort's worst case is O(n²) when the pivot selection is poor (already sorted array with first element as pivot).",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G004",
+      "question": "Which layer of OSI model handles routing?",
+      "options": [
+        "Data Link",
+        "Network",
+        "Transport",
+        "Session"
+      ],
+      "correctAnswer": 1,
+      "explanation": "The Network layer (Layer 3) handles logical addressing and routing of packets between networks.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G005",
+      "question": "What does SQL stand for?",
+      "options": [
+        "Structured Query Language",
+        "Simple Query Language",
+        "Standard Query Language",
+        "Sequential Query Language"
+      ],
+      "correctAnswer": 0,
+      "explanation": "SQL stands for Structured Query Language, used for managing relational databases.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G006",
+      "question": "Which scheduling algorithm may cause starvation?",
+      "options": [
+        "Round Robin",
+        "FCFS",
+        "Priority Scheduling",
+        "All of these"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Priority Scheduling can cause starvation where low-priority processes may never execute if high-priority processes keep arriving.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G007",
+      "question": "What is a primary key in database?",
+      "options": [
+        "A key that can have null values",
+        "A unique identifier for each record",
+        "A foreign key reference",
+        "An index on the table"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A primary key uniquely identifies each record in a table and cannot contain null values.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G008",
+      "question": "Which sorting algorithm is most efficient for nearly sorted data?",
+      "options": [
+        "Quick Sort",
+        "Merge Sort",
+        "Insertion Sort",
+        "Selection Sort"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Insertion Sort is O(n) for nearly sorted data as elements need minimal shifting.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G009",
+      "question": "What is the purpose of virtual memory?",
+      "options": [
+        "To increase RAM speed",
+        "To extend physical memory using disk",
+        "To cache frequently used data",
+        "To protect memory"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Virtual memory uses disk space to extend available memory, allowing programs larger than physical RAM to run.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G010",
+      "question": "Which protocol is used for secure web browsing?",
+      "options": [
+        "HTTP",
+        "FTP",
+        "HTTPS",
+        "SMTP"
+      ],
+      "correctAnswer": 2,
+      "explanation": "HTTPS (HTTP Secure) uses TLS/SSL encryption to secure web communications.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G011",
+      "question": "What is encapsulation in OOP?",
+      "options": [
+        "Hiding implementation details",
+        "Inheriting properties",
+        "Multiple forms of a method",
+        "Overloading operators"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Encapsulation bundles data and methods together and hides internal implementation details from outside access.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G012",
+      "question": "Which traversal gives sorted output for BST?",
+      "options": [
+        "Preorder",
+        "Postorder",
+        "Inorder",
+        "Level order"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Inorder traversal (Left-Root-Right) of a Binary Search Tree gives nodes in sorted ascending order.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G013",
+      "question": "What is deadlock in operating systems?",
+      "options": [
+        "Process termination",
+        "Circular wait for resources",
+        "Memory overflow",
+        "CPU overheating"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Deadlock occurs when processes are waiting for resources held by each other, creating a circular wait.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G014",
+      "question": "Which normal form removes transitive dependencies?",
+      "options": [
+        "1NF",
+        "2NF",
+        "3NF",
+        "BCNF"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Third Normal Form (3NF) removes transitive dependencies - non-key attributes depending on other non-key attributes.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G015",
+      "question": "What is the purpose of ARP protocol?",
+      "options": [
+        "Route packets",
+        "Resolve IP to MAC address",
+        "Assign IP addresses",
+        "Encrypt data"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Address Resolution Protocol (ARP) maps IP addresses to physical MAC addresses on a local network.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G016",
+      "question": "Which memory allocation strategy causes external fragmentation?",
+      "options": [
+        "Paging",
+        "Segmentation",
+        "Virtual memory",
+        "Caching"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Segmentation can cause external fragmentation as variable-sized segments leave unusable gaps in memory.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G017",
+      "question": "What is polymorphism in OOP?",
+      "options": [
+        "Single class structure",
+        "Same interface, different implementations",
+        "Data hiding",
+        "Code reuse"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Polymorphism allows objects of different classes to be treated through the same interface, with each implementing methods differently.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G018",
+      "question": "Which data structure is used for BFS traversal?",
+      "options": [
+        "Stack",
+        "Queue",
+        "Priority Queue",
+        "Array"
+      ],
+      "correctAnswer": 1,
+      "explanation": "BFS uses a Queue (FIFO) to explore nodes level by level, visiting all neighbors before moving deeper.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G019",
+      "question": "What is the purpose of DNS?",
+      "options": [
+        "Route packets",
+        "Translate domain names to IP addresses",
+        "Secure communications",
+        "Assign MAC addresses"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Domain Name System (DNS) translates human-readable domain names (e.g., google.com) to IP addresses.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G020",
+      "question": "Which join returns all records from both tables?",
+      "options": [
+        "Inner Join",
+        "Left Join",
+        "Right Join",
+        "Full Outer Join"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Full Outer Join returns all records from both tables, with NULL values where there's no match.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G021",
+      "question": "What is the height of a balanced BST with n nodes?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n²)",
+        "O(1)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A balanced BST maintains O(log n) height, ensuring efficient search, insert, and delete operations.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G022",
+      "question": "Which CPU scheduling aims for minimum waiting time?",
+      "options": [
+        "FCFS",
+        "SJF",
+        "Round Robin",
+        "Priority"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Shortest Job First (SJF) minimizes average waiting time by executing shortest processes first.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G023",
+      "question": "What is inheritance in OOP?",
+      "options": [
+        "Hiding data",
+        "Acquiring properties from parent class",
+        "Method overloading",
+        "Interface implementation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Inheritance allows a class to acquire properties and methods from a parent class, promoting code reuse.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G024",
+      "question": "Which layer provides end-to-end communication?",
+      "options": [
+        "Network",
+        "Transport",
+        "Session",
+        "Application"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Transport layer (Layer 4) provides end-to-end communication, reliability, and flow control (TCP/UDP).",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G025",
+      "question": "What is a foreign key?",
+      "options": [
+        "Primary key of same table",
+        "Reference to primary key of another table",
+        "Unique identifier",
+        "Index key"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A foreign key is a field that references the primary key of another table, establishing relationships between tables.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G026",
+      "question": "Which algorithm finds shortest path in weighted graph?",
+      "options": [
+        "BFS",
+        "DFS",
+        "Dijkstra's",
+        "Kruskal's"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Dijkstra's algorithm finds the shortest path from a source to all other vertices in a weighted graph with non-negative edges.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G027",
+      "question": "What is thrashing in OS?",
+      "options": [
+        "CPU overload",
+        "Excessive paging activity",
+        "Memory leak",
+        "Deadlock"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Thrashing occurs when the system spends more time swapping pages than executing processes due to insufficient memory.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G028",
+      "question": "Which traversal is used for expression tree evaluation?",
+      "options": [
+        "Preorder",
+        "Postorder",
+        "Inorder",
+        "Level order"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Postorder traversal evaluates expression trees correctly - operands are processed before their operator.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G029",
+      "question": "What is the default port for HTTP?",
+      "options": [
+        "21",
+        "22",
+        "80",
+        "443"
+      ],
+      "correctAnswer": 2,
+      "explanation": "HTTP uses port 80 by default. HTTPS uses 443, FTP uses 21, and SSH uses 22.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G030",
+      "question": "Which type of index is best for range queries?",
+      "options": [
+        "Hash index",
+        "B-tree index",
+        "Bitmap index",
+        "Clustered index"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B-tree indexes maintain sorted order and are efficient for range queries and ordered traversal.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G031",
+      "question": "What is abstraction in OOP?",
+      "options": [
+        "Data hiding",
+        "Showing only essential features",
+        "Code reuse",
+        "Method overriding"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Abstraction focuses on showing only essential features while hiding implementation complexity.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G032",
+      "question": "Which algorithm uses divide and conquer?",
+      "options": [
+        "Bubble Sort",
+        "Merge Sort",
+        "Insertion Sort",
+        "Selection Sort"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Merge Sort divides the array into halves, recursively sorts them, and merges the sorted halves.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G033",
+      "question": "What is the purpose of mutex?",
+      "options": [
+        "Memory management",
+        "Mutual exclusion for shared resources",
+        "Process scheduling",
+        "File management"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Mutex (Mutual Exclusion) ensures only one thread can access a shared resource at a time, preventing race conditions.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G034",
+      "question": "Which subnet mask gives 254 usable hosts?",
+      "options": [
+        "/24",
+        "/25",
+        "/23",
+        "/26"
+      ],
+      "correctAnswer": 0,
+      "explanation": "/24 (255.255.255.0) provides 256 addresses - 2 reserved = 254 usable host addresses.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G035",
+      "question": "What is ACID in database?",
+      "options": [
+        "A type of query",
+        "Properties of transactions",
+        "Database architecture",
+        "Storage format"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ACID stands for Atomicity, Consistency, Isolation, Durability - essential properties of reliable database transactions.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G036",
+      "question": "Which data structure implements priority queue efficiently?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Heap",
+        "Stack"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Heap (typically min-heap or max-heap) provides O(log n) insert and extract-min/max operations for priority queues.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G037",
+      "question": "What is context switching?",
+      "options": [
+        "Changing user interface",
+        "Saving and loading process state",
+        "Memory allocation",
+        "File transfer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Context switching saves the state of current process and loads the state of another process for CPU execution.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G038",
+      "question": "Which protocol is connectionless?",
+      "options": [
+        "TCP",
+        "UDP",
+        "HTTP",
+        "FTP"
+      ],
+      "correctAnswer": 1,
+      "explanation": "UDP is connectionless - it sends data without establishing a connection, providing faster but unreliable delivery.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G039",
+      "question": "What is normalization in database?",
+      "options": [
+        "Increasing redundancy",
+        "Reducing redundancy and anomalies",
+        "Encrypting data",
+        "Indexing tables"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Normalization organizes data to reduce redundancy and eliminate insertion, update, and deletion anomalies.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G040",
+      "question": "Which OOP principle allows method overriding?",
+      "options": [
+        "Encapsulation",
+        "Inheritance",
+        "Abstraction",
+        "Composition"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Inheritance allows a derived class to override methods of the base class to provide specific implementation.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G041",
+      "question": "What is the complexity of heap sort?",
+      "options": [
+        "O(n)",
+        "O(n log n)",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Heap Sort has O(n log n) complexity in all cases - building heap is O(n), extracting n elements is O(n log n).",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G042",
+      "question": "Which memory management technique uses page tables?",
+      "options": [
+        "Segmentation",
+        "Paging",
+        "Swapping",
+        "Partitioning"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Paging divides memory into fixed-size pages and uses page tables to map virtual addresses to physical addresses.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G043",
+      "question": "What does TCP guarantee?",
+      "options": [
+        "Fastest delivery",
+        "Reliable, ordered delivery",
+        "Broadcast capability",
+        "Connectionless transfer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TCP provides reliable, ordered delivery through acknowledgments, retransmissions, and sequence numbers.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G044",
+      "question": "Which SQL command removes all rows without logging?",
+      "options": [
+        "DELETE",
+        "DROP",
+        "TRUNCATE",
+        "REMOVE"
+      ],
+      "correctAnswer": 2,
+      "explanation": "TRUNCATE removes all rows quickly without logging individual row deletions, but cannot be rolled back.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G045",
+      "question": "What is a graph with no cycles called?",
+      "options": [
+        "Tree",
+        "DAG",
+        "Complete graph",
+        "Bipartite graph"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A Directed Acyclic Graph (DAG) has directed edges with no cycles. A tree is a special case of DAG.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G046",
+      "question": "Which scheduling is preemptive version of SJF?",
+      "options": [
+        "FCFS",
+        "Round Robin",
+        "SRTF",
+        "Priority"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Shortest Remaining Time First (SRTF) is preemptive SJF - if a new process has shorter burst time, it preempts current process.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G047",
+      "question": "What is compile time polymorphism?",
+      "options": [
+        "Method overriding",
+        "Method overloading",
+        "Dynamic binding",
+        "Virtual functions"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Method overloading (same name, different parameters) is resolved at compile time, also called static polymorphism.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G048",
+      "question": "Which protocol operates at application layer?",
+      "options": [
+        "TCP",
+        "IP",
+        "HTTP",
+        "Ethernet"
+      ],
+      "correctAnswer": 2,
+      "explanation": "HTTP operates at the Application layer (Layer 7), while TCP is Transport, IP is Network, Ethernet is Data Link.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G049",
+      "question": "What is a view in database?",
+      "options": [
+        "Physical table",
+        "Virtual table based on query",
+        "Index structure",
+        "Storage format"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A view is a virtual table created by a stored query, showing data from one or more tables.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G050",
+      "question": "Which search has O(1) average case?",
+      "options": [
+        "Linear search",
+        "Binary search",
+        "Hash table lookup",
+        "Tree search"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Hash table lookup uses hash function for direct access, providing O(1) average case complexity.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G051",
+      "question": "What is page fault?",
+      "options": [
+        "Memory error",
+        "Required page not in RAM",
+        "Disk failure",
+        "CPU error"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Page fault occurs when a process accesses a page not currently in physical memory, requiring it to be loaded from disk.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G052",
+      "question": "Which device connects different networks?",
+      "options": [
+        "Hub",
+        "Switch",
+        "Router",
+        "Repeater"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Router connects different networks and routes packets between them using IP addresses.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G053",
+      "question": "What is denormalization?",
+      "options": [
+        "Removing tables",
+        "Adding redundancy for performance",
+        "Encryption process",
+        "Index creation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Denormalization intentionally adds redundancy to improve read performance at the cost of update complexity.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G054",
+      "question": "Which is a stable sorting algorithm?",
+      "options": [
+        "Quick Sort",
+        "Heap Sort",
+        "Merge Sort",
+        "Selection Sort"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Merge Sort is stable - elements with equal keys maintain their relative order after sorting.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G055",
+      "question": "What is a semaphore?",
+      "options": [
+        "A signal flag",
+        "Synchronization primitive",
+        "Memory unit",
+        "Process type"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Semaphore is a synchronization primitive using a counter to control access to shared resources.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G056",
+      "question": "What is runtime polymorphism?",
+      "options": [
+        "Method overloading",
+        "Operator overloading",
+        "Method overriding",
+        "Constructor overloading"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Method overriding with virtual functions is resolved at runtime through dynamic binding (late binding).",
+      "topic": "Programming"
+    },
+    {
+      "id": "G057",
+      "question": "Which topology has single point of failure?",
+      "options": [
+        "Mesh",
+        "Ring",
+        "Star",
+        "Bus"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Star topology has single point of failure - if central hub/switch fails, entire network goes down.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G058",
+      "question": "What is a transaction in database?",
+      "options": [
+        "A single query",
+        "Unit of work that must complete entirely",
+        "Data transfer",
+        "Table creation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Transaction is a unit of work that must either complete entirely (commit) or not at all (rollback) - all or nothing.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G059",
+      "question": "Which tree has equal height subtrees?",
+      "options": [
+        "Binary tree",
+        "BST",
+        "AVL tree",
+        "Red-Black tree"
+      ],
+      "correctAnswer": 2,
+      "explanation": "AVL tree maintains balance factor ≤1 for all nodes, ensuring subtree heights differ by at most 1.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G060",
+      "question": "What is process synchronization?",
+      "options": [
+        "Running processes in parallel",
+        "Coordinating process execution",
+        "Terminating processes",
+        "Creating processes"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Process synchronization coordinates execution of processes to ensure correct ordering and shared resource access.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G061",
+      "question": "What is subnetting used for?",
+      "options": [
+        "Increasing bandwidth",
+        "Dividing network into smaller parts",
+        "Encrypting data",
+        "Compressing data"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Subnetting divides a large network into smaller, more manageable sub-networks for better organization and security.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G062",
+      "question": "Which SQL constraint ensures unique values?",
+      "options": [
+        "NOT NULL",
+        "PRIMARY KEY",
+        "FOREIGN KEY",
+        "CHECK"
+      ],
+      "correctAnswer": 1,
+      "explanation": "PRIMARY KEY constraint ensures each value in the column is unique and not null.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G063",
+      "question": "What is amortized time complexity?",
+      "options": [
+        "Worst case time",
+        "Average time over sequence of operations",
+        "Best case time",
+        "Space complexity"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Amortized analysis gives average performance over a sequence of operations, accounting for occasional expensive operations.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G064",
+      "question": "Which algorithm finds minimum spanning tree?",
+      "options": [
+        "Dijkstra's",
+        "Floyd-Warshall",
+        "Kruskal's",
+        "Bellman-Ford"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Kruskal's algorithm finds minimum spanning tree by greedily selecting edges in order of increasing weight.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G065",
+      "question": "What is a race condition?",
+      "options": [
+        "Fast execution",
+        "Multiple processes accessing shared data simultaneously",
+        "Memory overflow",
+        "Deadlock"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Race condition occurs when multiple processes access shared data concurrently and the outcome depends on timing.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G066",
+      "question": "What is constructor in OOP?",
+      "options": [
+        "Method to destroy object",
+        "Method to initialize object",
+        "Method to copy object",
+        "Static method"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Constructor is a special method called automatically when an object is created to initialize its state.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G067",
+      "question": "Which protocol provides email transfer?",
+      "options": [
+        "HTTP",
+        "FTP",
+        "SMTP",
+        "DNS"
+      ],
+      "correctAnswer": 2,
+      "explanation": "SMTP (Simple Mail Transfer Protocol) is used for sending emails between servers.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G068",
+      "question": "What is indexing in database?",
+      "options": [
+        "Creating backup",
+        "Data structure for fast retrieval",
+        "Encryption method",
+        "Compression technique"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Index is a data structure that improves the speed of data retrieval operations at the cost of additional storage.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G069",
+      "question": "Which is not a linear data structure?",
+      "options": [
+        "Array",
+        "Linked List",
+        "Stack",
+        "Tree"
+      ],
+      "correctAnswer": 3,
+      "explanation": "Tree is a hierarchical (non-linear) data structure. Arrays, linked lists, stacks, and queues are linear.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G070",
+      "question": "What is spooling in OS?",
+      "options": [
+        "Memory allocation",
+        "Buffering data for I/O devices",
+        "Process scheduling",
+        "File compression"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Spooling (Simultaneous Peripheral Operations Online) buffers data for slow I/O devices like printers.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G071",
+      "question": "What is MAC address?",
+      "options": [
+        "IP address",
+        "Physical hardware address",
+        "Domain name",
+        "Port number"
+      ],
+      "correctAnswer": 1,
+      "explanation": "MAC (Media Access Control) address is a unique 48-bit hardware identifier assigned to network interfaces.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G072",
+      "question": "What is a trigger in database?",
+      "options": [
+        "User interface element",
+        "Automatic action on data modification",
+        "Query type",
+        "Index type"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Trigger is a stored procedure that automatically executes when specific events occur (INSERT, UPDATE, DELETE).",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G073",
+      "question": "Which search is best for sorted linked list?",
+      "options": [
+        "Binary search",
+        "Linear search",
+        "Hash search",
+        "Jump search"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Linear search O(n) is best for linked lists as random access is not possible, making binary search inefficient.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G074",
+      "question": "What is virtual function in C++?",
+      "options": [
+        "Function with no body",
+        "Function enabling runtime polymorphism",
+        "Static function",
+        "Inline function"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Virtual function enables runtime polymorphism - the actual function called is determined at runtime based on object type.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G075",
+      "question": "What is the Banker's Algorithm used for?",
+      "options": [
+        "Financial calculations",
+        "Deadlock avoidance",
+        "Memory allocation",
+        "CPU scheduling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Banker's Algorithm is a deadlock avoidance algorithm that checks if resource allocation leads to a safe state.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G076",
+      "question": "Which layer handles framing?",
+      "options": [
+        "Physical",
+        "Data Link",
+        "Network",
+        "Transport"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Data Link layer (Layer 2) handles framing - encapsulating data into frames with headers and trailers.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G077",
+      "question": "What is a stored procedure?",
+      "options": [
+        "Cached query",
+        "Precompiled SQL code stored in database",
+        "Temporary table",
+        "View"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stored procedure is precompiled SQL code stored in the database that can be executed repeatedly.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G078",
+      "question": "Which tree guarantees O(log n) operations?",
+      "options": [
+        "Binary tree",
+        "BST",
+        "Balanced BST (AVL/Red-Black)",
+        "Complete binary tree"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Balanced BSTs like AVL and Red-Black trees maintain O(log n) height, guaranteeing O(log n) search, insert, delete.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G079",
+      "question": "What is dynamic programming based on?",
+      "options": [
+        "Greedy choices",
+        "Overlapping subproblems",
+        "Divide and conquer only",
+        "Random selection"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dynamic programming solves problems with overlapping subproblems by storing solutions to avoid redundant computation.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G080",
+      "question": "What is a critical section?",
+      "options": [
+        "Important code",
+        "Code accessing shared resources",
+        "Main function",
+        "Exception handler"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Critical section is code that accesses shared resources and must be executed atomically to prevent race conditions.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G081",
+      "question": "What is NAT used for?",
+      "options": [
+        "Domain resolution",
+        "Translating private IPs to public IPs",
+        "Encryption",
+        "Routing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "NAT (Network Address Translation) maps private IP addresses to public IPs, allowing multiple devices to share one public IP.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G082",
+      "question": "What is a cursor in database?",
+      "options": [
+        "Mouse pointer",
+        "Mechanism to traverse query results row by row",
+        "Table type",
+        "Index type"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cursor allows row-by-row processing of query results, useful when set-based operations aren't suitable.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G083",
+      "question": "What is the space complexity of merge sort?",
+      "options": [
+        "O(1)",
+        "O(log n)",
+        "O(n)",
+        "O(n²)"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Merge sort requires O(n) extra space for the temporary arrays used during merging.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G084",
+      "question": "What is destructor in OOP?",
+      "options": [
+        "Object creator",
+        "Object destroyer/cleanup method",
+        "Copy method",
+        "Comparison method"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Destructor is called automatically when an object is destroyed to clean up resources (memory, file handles, etc.).",
+      "topic": "Programming"
+    },
+    {
+      "id": "G085",
+      "question": "Which condition is NOT needed for deadlock?",
+      "options": [
+        "Mutual exclusion",
+        "Preemption",
+        "Hold and wait",
+        "Circular wait"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Deadlock requires: Mutual exclusion, Hold and wait, No preemption, Circular wait. Preemption prevents deadlock.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G086",
+      "question": "What is DHCP used for?",
+      "options": [
+        "Web hosting",
+        "Automatic IP address assignment",
+        "Email transfer",
+        "File transfer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DHCP (Dynamic Host Configuration Protocol) automatically assigns IP addresses and network configuration to devices.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G087",
+      "question": "What is referential integrity?",
+      "options": [
+        "Data encryption",
+        "Foreign key constraint enforcement",
+        "Data backup",
+        "Index maintenance"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Referential integrity ensures foreign keys reference valid primary keys, maintaining consistency between related tables.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G088",
+      "question": "Which is NOT a graph traversal algorithm?",
+      "options": [
+        "BFS",
+        "DFS",
+        "Binary search",
+        "Level order"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Binary search is a search algorithm for sorted arrays, not a graph traversal algorithm.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G089",
+      "question": "What is the best case for quick sort?",
+      "options": [
+        "O(n)",
+        "O(n log n)",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Quick sort's best and average case is O(n log n) when the pivot divides the array roughly in half.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G090",
+      "question": "What is memory fragmentation?",
+      "options": [
+        "Memory corruption",
+        "Wasted memory space",
+        "Memory overflow",
+        "Memory underflow"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Fragmentation is wasted memory space - internal (within allocated blocks) or external (between allocated blocks).",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G091",
+      "question": "What is interface in OOP?",
+      "options": [
+        "User interface",
+        "Contract defining method signatures",
+        "Class implementation",
+        "Object instance"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Interface defines a contract of method signatures that implementing classes must provide.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G092",
+      "question": "Which protocol uses port 443?",
+      "options": [
+        "HTTP",
+        "FTP",
+        "HTTPS",
+        "SSH"
+      ],
+      "correctAnswer": 2,
+      "explanation": "HTTPS (HTTP Secure) uses port 443 for encrypted web communication.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G093",
+      "question": "What is a composite key?",
+      "options": [
+        "Single column key",
+        "Multiple columns forming primary key",
+        "Foreign key",
+        "Index key"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Composite key uses multiple columns together to uniquely identify a record when no single column is sufficient.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G094",
+      "question": "What is hashing?",
+      "options": [
+        "Encryption",
+        "Mapping data to fixed-size values",
+        "Compression",
+        "Sorting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Hashing uses a hash function to map data of arbitrary size to fixed-size values for efficient lookup.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G095",
+      "question": "Which is an in-place sorting algorithm?",
+      "options": [
+        "Merge sort",
+        "Counting sort",
+        "Quick sort",
+        "Radix sort"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Quick sort sorts in-place using O(log n) extra space for recursion stack. Merge sort needs O(n) extra space.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G096",
+      "question": "What is paging?",
+      "options": [
+        "Printing pages",
+        "Memory management dividing into fixed-size blocks",
+        "File organization",
+        "Data compression"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Paging divides physical memory and processes into fixed-size pages/frames, simplifying memory management.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G097",
+      "question": "What is an abstract class?",
+      "options": [
+        "Class with no methods",
+        "Class that cannot be instantiated directly",
+        "Interface",
+        "Static class"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Abstract class cannot be instantiated directly - it must be subclassed, and may contain abstract methods.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G098",
+      "question": "What is ICMP used for?",
+      "options": [
+        "Data transfer",
+        "Error reporting and diagnostics",
+        "Email",
+        "Web browsing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ICMP (Internet Control Message Protocol) is used for network diagnostics like ping and error reporting.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G099",
+      "question": "What is a surrogate key?",
+      "options": [
+        "Natural key",
+        "System-generated artificial key",
+        "Foreign key",
+        "Composite key"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Surrogate key is an artificial key (like auto-increment ID) used when natural key is unsuitable or unavailable.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G100",
+      "question": "What is a red-black tree property?",
+      "options": [
+        "All nodes are red",
+        "Root is always black",
+        "All leaves are red",
+        "No two reds in path"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Red-Black tree rules: root is black, red nodes have black children, all paths have equal black nodes.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G101",
+      "question": "What is the purpose of cache memory?",
+      "options": [
+        "Permanent storage",
+        "Fast access to frequently used data",
+        "Network communication",
+        "Process scheduling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cache memory provides fast access to frequently used data, bridging the speed gap between CPU and main memory.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G102",
+      "question": "What is a device driver?",
+      "options": [
+        "Physical hardware",
+        "Software interface for hardware",
+        "Memory unit",
+        "Network protocol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Device driver is software that provides an interface between the operating system and hardware devices.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G103",
+      "question": "Which is a lossless compression algorithm?",
+      "options": [
+        "JPEG",
+        "MP3",
+        "Huffman coding",
+        "H.264"
+      ],
+      "correctAnswer": 2,
+      "explanation": "Huffman coding is lossless - original data can be perfectly reconstructed. JPEG, MP3, H.264 are lossy.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G104",
+      "question": "What is operator overloading?",
+      "options": [
+        "Multiple operators",
+        "Defining custom behavior for operators",
+        "Error handling",
+        "Loop control"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Operator overloading allows defining custom behavior for operators when used with user-defined types.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G105",
+      "question": "What is TTL in networking?",
+      "options": [
+        "Transfer Time Limit",
+        "Time To Live (hop count)",
+        "Total Transmission Length",
+        "Timeout Threshold"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TTL (Time To Live) limits packet lifetime by decrementing at each router hop, preventing infinite loops.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G106",
+      "question": "What is a candidate key?",
+      "options": [
+        "Primary key only",
+        "Any column that could be primary key",
+        "Foreign key",
+        "Index column"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Candidate key is any minimal set of attributes that can uniquely identify a record - primary key is chosen from these.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G107",
+      "question": "What is a trie data structure used for?",
+      "options": [
+        "Sorting numbers",
+        "String storage and prefix searching",
+        "Graph algorithms",
+        "Numerical computation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Trie (prefix tree) is efficient for storing strings and performing prefix-based searches like autocomplete.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G108",
+      "question": "What is interrupt handling?",
+      "options": [
+        "Stopping the computer",
+        "Responding to signals from hardware/software",
+        "Memory management",
+        "File operations"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Interrupt handling is the OS response to hardware or software signals that require immediate attention.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G109",
+      "question": "What is this pointer in C++?",
+      "options": [
+        "Null pointer",
+        "Pointer to current object",
+        "Global pointer",
+        "Array pointer"
+      ],
+      "correctAnswer": 1,
+      "explanation": "'this' is an implicit pointer available in member functions, pointing to the current object instance.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G110",
+      "question": "What is VLAN?",
+      "options": [
+        "Virtual Line",
+        "Virtual LAN - logical network segmentation",
+        "Very Large Area Network",
+        "Verified LAN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "VLAN (Virtual LAN) logically segments a physical network into separate broadcast domains.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G111",
+      "question": "What is data warehousing?",
+      "options": [
+        "File storage",
+        "Central repository for analytical data",
+        "Database backup",
+        "Data encryption"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Data warehouse is a central repository storing integrated historical data from multiple sources for analysis.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G112",
+      "question": "What is the complexity of inserting in a hash table?",
+      "options": [
+        "O(1) average",
+        "O(n)",
+        "O(log n)",
+        "O(n²)"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Hash table insertion is O(1) average case, though worst case is O(n) if many collisions occur.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G113",
+      "question": "What is greedy algorithm characteristic?",
+      "options": [
+        "Explores all solutions",
+        "Makes locally optimal choices",
+        "Uses recursion only",
+        "Requires sorted data"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Greedy algorithms make locally optimal choices at each step, which may or may not lead to global optimum.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G114",
+      "question": "What is DMA in computers?",
+      "options": [
+        "Direct Memory Access",
+        "Data Management Area",
+        "Dynamic Memory Allocation",
+        "Disk Management Architecture"
+      ],
+      "correctAnswer": 0,
+      "explanation": "DMA allows hardware devices to access memory directly without CPU intervention, improving performance.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G115",
+      "question": "What is static binding?",
+      "options": [
+        "Runtime method resolution",
+        "Compile-time method resolution",
+        "Memory allocation",
+        "Variable declaration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Static binding resolves function calls at compile time based on reference type, not object type.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G116",
+      "question": "What is BGP protocol used for?",
+      "options": [
+        "Local routing",
+        "Inter-domain routing between autonomous systems",
+        "Email transfer",
+        "Web hosting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "BGP (Border Gateway Protocol) is used for routing between autonomous systems on the internet.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G117",
+      "question": "What is OLAP?",
+      "options": [
+        "Online Application Protocol",
+        "Online Analytical Processing",
+        "Offline Local Analysis",
+        "Operational Logic And Processing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "OLAP (Online Analytical Processing) supports complex analytical queries on data warehouses.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G118",
+      "question": "What is a segment tree used for?",
+      "options": [
+        "String matching",
+        "Range queries and updates",
+        "Graph traversal",
+        "Sorting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Segment tree efficiently handles range queries (sum, min, max) and updates in O(log n) time.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G119",
+      "question": "What is the master theorem used for?",
+      "options": [
+        "Database design",
+        "Analyzing divide and conquer recurrences",
+        "Network configuration",
+        "Memory management"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Master theorem provides a quick way to solve recurrence relations common in divide and conquer algorithms.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G120",
+      "question": "What is virtual address space?",
+      "options": [
+        "Physical RAM",
+        "Logical addresses seen by process",
+        "Disk space",
+        "Network address"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Virtual address space is the logical address range a process sees, independent of physical memory layout.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G121",
+      "question": "What is function overriding?",
+      "options": [
+        "Same function in same class",
+        "Derived class redefining base class function",
+        "Different parameter types",
+        "Static functions"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Overriding is when a derived class provides its own implementation of a virtual function from the base class.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G122",
+      "question": "What is the purpose of firewall?",
+      "options": [
+        "Speed up internet",
+        "Filter network traffic for security",
+        "Compress data",
+        "Route packets"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Firewall monitors and filters incoming and outgoing network traffic based on security rules.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G123",
+      "question": "What is ETL in data processing?",
+      "options": [
+        "Email Transfer Logic",
+        "Extract, Transform, Load",
+        "Embedded Table Layout",
+        "Error Testing Logic"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ETL is the process of extracting data from sources, transforming it, and loading into a data warehouse.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G124",
+      "question": "What is adjacency list representation?",
+      "options": [
+        "Matrix of edges",
+        "Array of linked lists of neighbors",
+        "Tree structure",
+        "Hash table"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Adjacency list represents a graph as an array where each element is a list of adjacent vertices.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G125",
+      "question": "What is memoization?",
+      "options": [
+        "Note taking",
+        "Caching computed results for reuse",
+        "Memory allocation",
+        "Memorization technique"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Memoization stores results of expensive function calls and returns cached result for same inputs.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G126",
+      "question": "What is process control block?",
+      "options": [
+        "CPU component",
+        "Data structure storing process information",
+        "Memory block",
+        "File structure"
+      ],
+      "correctAnswer": 1,
+      "explanation": "PCB is a data structure containing all information needed to manage a process (state, registers, memory).",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G127",
+      "question": "What is method hiding in OOP?",
+      "options": [
+        "Private methods",
+        "Hiding base class method with same name in derived",
+        "Encryption",
+        "Abstract methods"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Method hiding occurs when a derived class defines a method with the same name as a non-virtual base class method.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G128",
+      "question": "What is load balancing?",
+      "options": [
+        "Weight distribution",
+        "Distributing workload across multiple servers",
+        "Memory management",
+        "Disk defragmentation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Load balancing distributes network traffic or workload across multiple servers to ensure no single server is overwhelmed.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G129",
+      "question": "What is sharding in database?",
+      "options": [
+        "Data deletion",
+        "Horizontal partitioning across servers",
+        "Indexing",
+        "Backup"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sharding horizontally partitions data across multiple database servers for scalability.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G130",
+      "question": "What is topological sort used for?",
+      "options": [
+        "Sorting numbers",
+        "Ordering tasks with dependencies (DAG)",
+        "Binary tree traversal",
+        "String sorting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Topological sort orders vertices in a DAG so that for every edge u→v, u comes before v.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G131",
+      "question": "What is RISC architecture?",
+      "options": [
+        "Complex instructions",
+        "Reduced Instruction Set Computing",
+        "Random Instruction Set",
+        "Recursive Instructions"
+      ],
+      "correctAnswer": 1,
+      "explanation": "RISC uses simple, fixed-length instructions that execute in one cycle, enabling pipelining.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G132",
+      "question": "What is IPC in operating systems?",
+      "options": [
+        "Internet Protocol Connection",
+        "Inter-Process Communication",
+        "Internal Process Control",
+        "Instruction Per Cycle"
+      ],
+      "correctAnswer": 1,
+      "explanation": "IPC refers to mechanisms for processes to communicate and synchronize (pipes, message queues, shared memory).",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G133",
+      "question": "What is diamond problem in OOP?",
+      "options": [
+        "Shape drawing",
+        "Ambiguity in multiple inheritance",
+        "Memory leak",
+        "Performance issue"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Diamond problem occurs in multiple inheritance when a class inherits from two classes that share a common ancestor.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G134",
+      "question": "What is SSL/TLS used for?",
+      "options": [
+        "Email sending",
+        "Secure encrypted communication",
+        "File compression",
+        "Domain resolution"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SSL/TLS provides secure encrypted communication over networks, commonly used for HTTPS.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G135",
+      "question": "What is a materialized view?",
+      "options": [
+        "Physical table copy",
+        "Precomputed query result stored physically",
+        "Virtual table",
+        "Temporary view"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Materialized view stores query results physically, trading storage for faster query performance.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G136",
+      "question": "What is Bellman-Ford algorithm used for?",
+      "options": [
+        "Minimum spanning tree",
+        "Shortest path with negative edges",
+        "Sorting",
+        "String matching"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bellman-Ford finds shortest paths and can handle negative edge weights, unlike Dijkstra's algorithm.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G137",
+      "question": "What is the purpose of TLB?",
+      "options": [
+        "Thread scheduling",
+        "Translation Lookaside Buffer for fast address translation",
+        "Network routing",
+        "File caching"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TLB caches page table entries for fast virtual-to-physical address translation.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G138",
+      "question": "What is garbage collection?",
+      "options": [
+        "Deleting files",
+        "Automatic memory reclamation",
+        "Disk cleanup",
+        "Log removal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Garbage collection automatically frees memory occupied by objects no longer in use.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G139",
+      "question": "What is OSPF protocol?",
+      "options": [
+        "Email protocol",
+        "Interior gateway routing protocol",
+        "File transfer",
+        "Web server"
+      ],
+      "correctAnswer": 1,
+      "explanation": "OSPF (Open Shortest Path First) is a link-state routing protocol for routing within an autonomous system.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G140",
+      "question": "What is database partitioning?",
+      "options": [
+        "Data deletion",
+        "Dividing table into smaller pieces",
+        "Creating indexes",
+        "Joining tables"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Partitioning divides large tables into smaller, more manageable pieces for better performance and manageability.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G141",
+      "question": "What is AVL tree rotation used for?",
+      "options": [
+        "Sorting",
+        "Maintaining balance after insert/delete",
+        "Compression",
+        "Encryption"
+      ],
+      "correctAnswer": 1,
+      "explanation": "AVL rotations (single or double) restore balance when the balance factor exceeds ±1.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G142",
+      "question": "What is asymptotic analysis?",
+      "options": [
+        "Hardware analysis",
+        "Analyzing algorithm efficiency as input grows",
+        "Code review",
+        "Testing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Asymptotic analysis studies algorithm behavior as input size approaches infinity.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G143",
+      "question": "What is CPU pipelining?",
+      "options": [
+        "Multiple CPUs",
+        "Overlapping instruction execution stages",
+        "Memory allocation",
+        "Process scheduling"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Pipelining overlaps execution of multiple instructions by dividing execution into stages.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G144",
+      "question": "What is working set in memory management?",
+      "options": [
+        "All processes",
+        "Set of pages actively used by process",
+        "Available memory",
+        "Cache size"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Working set is the set of pages a process is currently using, used for page replacement decisions.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G145",
+      "question": "What is late binding?",
+      "options": [
+        "Compile-time resolution",
+        "Runtime method resolution",
+        "Variable declaration",
+        "Memory allocation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Late binding (dynamic binding) resolves method calls at runtime based on actual object type.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G146",
+      "question": "What is QoS in networking?",
+      "options": [
+        "Quick Online Service",
+        "Quality of Service - prioritizing traffic",
+        "Query over Server",
+        "Queue of Signals"
+      ],
+      "correctAnswer": 1,
+      "explanation": "QoS provides mechanisms to prioritize certain types of network traffic for better performance.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G147",
+      "question": "What is CAP theorem about?",
+      "options": [
+        "Memory limits",
+        "Distributed system trade-offs (Consistency, Availability, Partition tolerance)",
+        "CPU capacity",
+        "Cache performance"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CAP theorem states a distributed system can only guarantee two of: Consistency, Availability, Partition tolerance.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G148",
+      "question": "What is a skip list?",
+      "options": [
+        "Linked list with multiple levels for fast search",
+        "Array type",
+        "Tree structure",
+        "Graph type"
+      ],
+      "correctAnswer": 0,
+      "explanation": "Skip list is a probabilistic data structure with multiple levels of linked lists for O(log n) average search.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G149",
+      "question": "What is amortized O(1) for dynamic array insert?",
+      "options": [
+        "Always O(1)",
+        "O(1) on average over many operations",
+        "O(n)",
+        "O(log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dynamic array resize is O(n) occasionally, but averaging over many inserts gives O(1) amortized time.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G150",
+      "question": "What is branch prediction?",
+      "options": [
+        "Code branching",
+        "CPU predicting branch outcomes for pipelining",
+        "Memory prediction",
+        "Network routing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Branch prediction guesses the outcome of conditional branches to keep the pipeline full.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G151",
+      "question": "What is copy constructor?",
+      "options": [
+        "Constructor for copies",
+        "Constructor that creates object from another object",
+        "Default constructor",
+        "Destructor"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Copy constructor initializes a new object as a copy of an existing object of the same class.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G152",
+      "question": "What is ARP spoofing?",
+      "options": [
+        "Legitimate ARP",
+        "Attack sending fake ARP messages",
+        "Network optimization",
+        "Data compression"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ARP spoofing sends fake ARP messages to associate attacker's MAC with another host's IP (man-in-the-middle).",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G153",
+      "question": "What is a clustered index?",
+      "options": [
+        "Multiple indexes",
+        "Index that determines physical row order",
+        "Non-unique index",
+        "Temporary index"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Clustered index determines the physical order of data in a table - only one per table.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G154",
+      "question": "What is Floyd-Warshall algorithm for?",
+      "options": [
+        "Single source shortest path",
+        "All pairs shortest paths",
+        "Minimum spanning tree",
+        "Topological sort"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Floyd-Warshall finds shortest paths between all pairs of vertices using dynamic programming.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G155",
+      "question": "What is kernel mode?",
+      "options": [
+        "User interface mode",
+        "Privileged mode with full hardware access",
+        "Sleep mode",
+        "Debug mode"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Kernel mode has full access to hardware and all CPU instructions - used by OS kernel.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G156",
+      "question": "What is SOLID in OOP?",
+      "options": [
+        "Data structure",
+        "Five design principles for maintainable code",
+        "Programming language",
+        "Testing method"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SOLID: Single responsibility, Open/closed, Liskov substitution, Interface segregation, Dependency inversion.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G157",
+      "question": "What is VPN used for?",
+      "options": [
+        "Faster internet",
+        "Secure private connection over public network",
+        "File sharing",
+        "Email"
+      ],
+      "correctAnswer": 1,
+      "explanation": "VPN (Virtual Private Network) creates encrypted tunnel for secure communication over public networks.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G158",
+      "question": "What is BCNF?",
+      "options": [
+        "Database backup",
+        "Boyce-Codd Normal Form - stronger than 3NF",
+        "Base Configuration",
+        "Binary Code"
+      ],
+      "correctAnswer": 1,
+      "explanation": "BCNF is a stricter version of 3NF where every determinant must be a candidate key.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G159",
+      "question": "What is a B-tree property?",
+      "options": [
+        "Binary tree",
+        "All leaves at same depth",
+        "Unbalanced",
+        "Two children only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B-tree is self-balancing with all leaves at the same depth, optimized for disk-based storage.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G160",
+      "question": "What is the stable marriage problem?",
+      "options": [
+        "Mathematical puzzle",
+        "Matching problem with preferences",
+        "Sorting problem",
+        "Graph coloring"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stable marriage finds stable matching between two groups based on preferences (Gale-Shapley algorithm).",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G161",
+      "question": "What is memory-mapped I/O?",
+      "options": [
+        "Disk mapping",
+        "Treating I/O devices as memory addresses",
+        "Virtual memory",
+        "Cache mapping"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Memory-mapped I/O maps device registers to memory addresses for uniform access.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G162",
+      "question": "What is starvation vs deadlock?",
+      "options": [
+        "Same thing",
+        "Starvation is indefinite wait, deadlock is circular wait",
+        "Opposite conditions",
+        "Memory issues"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Starvation is indefinite waiting for resources; deadlock is circular wait where no progress is possible.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G163",
+      "question": "What is RAII in C++?",
+      "options": [
+        "Random Array Index",
+        "Resource Acquisition Is Initialization",
+        "Runtime Access",
+        "Return And Initialize"
+      ],
+      "correctAnswer": 1,
+      "explanation": "RAII ties resource lifetime to object lifetime - acquire in constructor, release in destructor.",
+      "topic": "Programming"
+    },
+    {
+      "id": "G164",
+      "question": "What is packet switching?",
+      "options": [
+        "Circuit reservation",
+        "Breaking data into packets routed independently",
+        "Physical switching",
+        "Line switching"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Packet switching breaks data into packets that are routed independently through the network.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G165",
+      "question": "What is a deadlock condition called circular wait?",
+      "options": [
+        "Linear waiting",
+        "Each process waits for resource held by next in chain",
+        "Random waiting",
+        "No waiting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Circular wait means processes form a cycle where each waits for a resource held by the next.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G166",
+      "question": "What is SQL injection?",
+      "options": [
+        "Database backup",
+        "Inserting malicious SQL through user input",
+        "Query optimization",
+        "Data migration"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SQL injection exploits unsanitized user input to execute malicious SQL commands.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G167",
+      "question": "What is data integrity?",
+      "options": [
+        "Data encryption",
+        "Accuracy and consistency of data",
+        "Data compression",
+        "Data backup"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Data integrity ensures data is accurate, consistent, and reliable throughout its lifecycle.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G168",
+      "question": "What is a suffix array?",
+      "options": [
+        "Array of prefixes",
+        "Sorted array of all suffixes of a string",
+        "Tree structure",
+        "Hash table"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Suffix array is a sorted array of all suffixes of a string, used for efficient string matching.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G169",
+      "question": "What is NP-complete?",
+      "options": [
+        "Simple problem",
+        "Problem verifiable in polynomial time, no known polynomial solution",
+        "Unsolvable",
+        "Linear time"
+      ],
+      "correctAnswer": 1,
+      "explanation": "NP-complete problems have solutions verifiable in polynomial time but no known polynomial-time algorithm.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G170",
+      "question": "What is multiprocessing vs multithreading?",
+      "options": [
+        "Same thing",
+        "Multiple processes vs multiple threads in one process",
+        "Sequential execution",
+        "Network types"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Multiprocessing uses multiple processes; multithreading uses multiple threads within a single process.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G171",
+      "question": "What is singleton pattern?",
+      "options": [
+        "One method class",
+        "Ensures only one instance of a class exists",
+        "Single thread",
+        "One variable"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Singleton pattern restricts instantiation to a single instance and provides global access to it.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G172",
+      "question": "What is XSS attack?",
+      "options": [
+        "Server attack",
+        "Cross-Site Scripting - injecting malicious scripts",
+        "Database attack",
+        "Network attack"
+      ],
+      "correctAnswer": 1,
+      "explanation": "XSS injects malicious scripts into web pages viewed by other users.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G173",
+      "question": "What is eventual consistency?",
+      "options": [
+        "Immediate consistency",
+        "System eventually becomes consistent if no new updates",
+        "Never consistent",
+        "Strong consistency"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Eventual consistency guarantees that given enough time without updates, all replicas converge.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G174",
+      "question": "What is a union-find data structure for?",
+      "options": [
+        "Set union operations",
+        "Disjoint set operations (union and find)",
+        "Sorting",
+        "Searching"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Union-Find efficiently supports union and find operations on disjoint sets, used in Kruskal's algorithm.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G175",
+      "question": "What is dynamic programming vs greedy?",
+      "options": [
+        "Same approach",
+        "DP considers all choices, greedy makes local optimal choice",
+        "Greedy is always better",
+        "DP is simpler"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DP explores all possibilities for optimal solution; greedy makes locally optimal choices hoping for global optimum.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G176",
+      "question": "What is CISC architecture?",
+      "options": [
+        "Simple instructions",
+        "Complex Instruction Set Computing - many specialized instructions",
+        "Cache Instructions",
+        "Control Instructions"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CISC uses complex, variable-length instructions that may take multiple cycles to execute.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G177",
+      "question": "What is fork() in Unix?",
+      "options": [
+        "File operation",
+        "Creates new process (child copy of parent)",
+        "Memory allocation",
+        "Network connection"
+      ],
+      "correctAnswer": 1,
+      "explanation": "fork() creates a new process by duplicating the calling process - child gets copy of parent's memory.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G178",
+      "question": "What is observer pattern?",
+      "options": [
+        "Watching code",
+        "One-to-many dependency for state change notification",
+        "Security pattern",
+        "Testing pattern"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Observer pattern defines dependency where multiple observers are notified when subject's state changes.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G179",
+      "question": "What is MITM attack?",
+      "options": [
+        "Memory attack",
+        "Man-in-the-Middle - intercepting communication",
+        "Malware type",
+        "Memory test"
+      ],
+      "correctAnswer": 1,
+      "explanation": "MITM attack intercepts communication between two parties, potentially altering or stealing data.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G180",
+      "question": "What is database replication?",
+      "options": [
+        "Data deletion",
+        "Copying data to multiple servers",
+        "Data compression",
+        "Index creation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Replication copies and maintains data across multiple servers for availability and fault tolerance.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G181",
+      "question": "What is a Bloom filter?",
+      "options": [
+        "Image filter",
+        "Probabilistic data structure for membership testing",
+        "Sort filter",
+        "Network filter"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bloom filter uses multiple hash functions for space-efficient membership testing with possible false positives.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G182",
+      "question": "What is the knapsack problem?",
+      "options": [
+        "Bag design",
+        "Optimization problem selecting items within capacity",
+        "Sorting",
+        "Searching"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Knapsack problem: select items with values and weights to maximize value within weight capacity.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G183",
+      "question": "What is superscalar architecture?",
+      "options": [
+        "Single issue",
+        "Multiple instructions issued per cycle",
+        "Very slow",
+        "Sequential only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Superscalar architecture issues and executes multiple instructions simultaneously in one cycle.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G184",
+      "question": "What is zombie process?",
+      "options": [
+        "Malware",
+        "Terminated process whose entry remains in process table",
+        "Background process",
+        "System process"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zombie process has completed but its entry remains until parent reads its exit status.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G185",
+      "question": "What is factory pattern?",
+      "options": [
+        "Manufacturing",
+        "Creates objects without specifying exact class",
+        "File creation",
+        "Database pattern"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Factory pattern provides interface for creating objects, letting subclasses decide which class to instantiate.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G186",
+      "question": "What is phishing?",
+      "options": [
+        "Fishing game",
+        "Deceptive attempt to obtain sensitive information",
+        "Network scanning",
+        "Data mining"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Phishing uses deceptive emails or websites to trick users into revealing sensitive information.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G187",
+      "question": "What is write-ahead logging?",
+      "options": [
+        "Future planning",
+        "Log changes before applying to database",
+        "Post-write logging",
+        "Read logging"
+      ],
+      "correctAnswer": 1,
+      "explanation": "WAL logs changes before applying them, ensuring recovery is possible if failure occurs mid-transaction.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G188",
+      "question": "What is consistent hashing?",
+      "options": [
+        "Regular hashing",
+        "Distributed hashing minimizing remapping when nodes change",
+        "Strong hashing",
+        "Weak hashing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Consistent hashing distributes data so adding/removing nodes affects minimal keys.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G189",
+      "question": "What is traveling salesman problem?",
+      "options": [
+        "Sales management",
+        "Find shortest route visiting all cities once",
+        "Sorting cities",
+        "City search"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TSP finds the shortest route visiting all cities exactly once and returning to origin (NP-hard).",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G190",
+      "question": "What is cache coherence?",
+      "options": [
+        "Clean cache",
+        "Consistency of data in multiple caches",
+        "Cache size",
+        "Cache speed"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cache coherence ensures multiple caches in a multiprocessor system have consistent view of memory.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G191",
+      "question": "What is orphan process?",
+      "options": [
+        "Malware",
+        "Process whose parent has terminated",
+        "Child process",
+        "System process"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Orphan process's parent has terminated; it's adopted by init process (PID 1) in Unix.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G192",
+      "question": "What is MVC pattern?",
+      "options": [
+        "Memory View Cache",
+        "Model-View-Controller separation",
+        "Multi Version Control",
+        "Memory Virtual Copy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "MVC separates application into Model (data), View (UI), and Controller (logic) for better organization.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G193",
+      "question": "What is DDoS attack?",
+      "options": [
+        "Direct attack",
+        "Distributed Denial of Service - overwhelming with traffic",
+        "Data attack",
+        "Device attack"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DDoS uses multiple systems to flood a target with traffic, making it unavailable.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G194",
+      "question": "What is query optimization?",
+      "options": [
+        "Query writing",
+        "Finding efficient execution plan for query",
+        "Query deletion",
+        "Query backup"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Query optimization finds the most efficient way to execute a query considering indexes, joins, etc.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G195",
+      "question": "What is LRU cache?",
+      "options": [
+        "Large cache",
+        "Least Recently Used eviction policy",
+        "Latest cache",
+        "Linked cache"
+      ],
+      "correctAnswer": 1,
+      "explanation": "LRU evicts the least recently accessed item when cache is full, assuming recent items will be reused.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G196",
+      "question": "What is graph coloring problem?",
+      "options": [
+        "Drawing graphs",
+        "Assigning colors so adjacent vertices differ",
+        "Sorting vertices",
+        "Finding paths"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Graph coloring assigns colors to vertices such that no two adjacent vertices share the same color.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G197",
+      "question": "What is out-of-order execution?",
+      "options": [
+        "Error state",
+        "CPU executes instructions as operands become available",
+        "Sequential",
+        "Parallel only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Out-of-order execution allows CPU to execute instructions based on operand availability, not program order.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G198",
+      "question": "What is priority inversion?",
+      "options": [
+        "Normal priority",
+        "Lower priority task blocks higher priority task",
+        "Priority increase",
+        "No priority"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Priority inversion occurs when a high-priority task waits for a resource held by a lower-priority task.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G199",
+      "question": "What is dependency injection?",
+      "options": [
+        "Code injection",
+        "Providing dependencies externally instead of creating internally",
+        "SQL injection",
+        "Script injection"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DI passes dependencies to an object rather than having it create them, improving testability and flexibility.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G200",
+      "question": "What is buffer overflow?",
+      "options": [
+        "Memory management",
+        "Writing data beyond buffer bounds",
+        "Network overflow",
+        "Disk overflow"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Buffer overflow writes data beyond allocated buffer, potentially overwriting adjacent memory (security vulnerability).",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G201",
+      "question": "What is two-phase locking protocol?",
+      "options": [
+        "Single phase",
+        "Growing phase (acquire) then shrinking phase (release)",
+        "Random locking",
+        "No locking"
+      ],
+      "correctAnswer": 1,
+      "explanation": "2PL ensures serializability: locks acquired in growing phase, released in shrinking phase - no new locks after first release.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G202",
+      "question": "What is Dijkstra's algorithm limitation?",
+      "options": [
+        "No limitation",
+        "Cannot handle negative edge weights",
+        "Only for trees",
+        "Only for directed graphs"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Dijkstra's assumes non-negative edge weights. Use Bellman-Ford for graphs with negative edges.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G203",
+      "question": "What is a system call?",
+      "options": [
+        "Function call",
+        "Request to OS kernel for privileged operation",
+        "User function",
+        "Library call"
+      ],
+      "correctAnswer": 1,
+      "explanation": "System call is the interface between user programs and kernel, requesting privileged operations.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G204",
+      "question": "What is TCP three-way handshake?",
+      "options": [
+        "Data transfer",
+        "SYN, SYN-ACK, ACK sequence to establish connection",
+        "Error handling",
+        "Encryption"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TCP establishes connections with: SYN (client), SYN-ACK (server), ACK (client).",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G205",
+      "question": "What is a hash collision?",
+      "options": [
+        "Hash error",
+        "Two keys mapping to same hash value",
+        "Memory error",
+        "Network collision"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Collision occurs when different keys produce the same hash value, requiring resolution strategies.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G206",
+      "question": "What is code refactoring?",
+      "options": [
+        "Rewriting from scratch",
+        "Restructuring code without changing behavior",
+        "Adding features",
+        "Debugging"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Refactoring improves code structure, readability, and maintainability without changing external behavior.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G207",
+      "question": "What is ransomware?",
+      "options": [
+        "Anti-virus",
+        "Malware that encrypts data and demands payment",
+        "Spam filter",
+        "Firewall"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Ransomware encrypts victim's files and demands ransom for decryption key.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G208",
+      "question": "What is database transaction isolation?",
+      "options": [
+        "Separate databases",
+        "Concurrent transactions don't interfere with each other",
+        "Data backup",
+        "Query separation"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Isolation ensures concurrent transactions execute as if they were serial, preventing interference.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G209",
+      "question": "What is depth-first search used for?",
+      "options": [
+        "Shortest path in weighted graph",
+        "Topological sorting, cycle detection, path finding",
+        "Minimum spanning tree",
+        "Level order traversal"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DFS is used for topological sort, cycle detection, path finding, and strongly connected components.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G210",
+      "question": "What is demand paging?",
+      "options": [
+        "All pages loaded at start",
+        "Pages loaded only when accessed",
+        "Page deletion",
+        "Page sorting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Demand paging loads pages into memory only when they are actually needed, not in advance.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G211",
+      "question": "What is sliding window protocol?",
+      "options": [
+        "GUI component",
+        "Flow control mechanism allowing multiple unacknowledged frames",
+        "Encryption",
+        "Routing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sliding window allows sender to transmit multiple frames before requiring acknowledgment.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G212",
+      "question": "What is a circular queue advantage?",
+      "options": [
+        "Unlimited size",
+        "Efficient use of array space, no shifting needed",
+        "Faster access",
+        "Automatic sorting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Circular queue wraps around, utilizing empty spaces at the front without shifting elements.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G213",
+      "question": "What is unit testing?",
+      "options": [
+        "Testing entire system",
+        "Testing individual components in isolation",
+        "User testing",
+        "Integration testing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Unit testing tests individual functions or methods in isolation to verify correctness.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G214",
+      "question": "What is keylogger?",
+      "options": [
+        "Password manager",
+        "Malware that records keystrokes",
+        "Encryption tool",
+        "Network monitor"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Keylogger captures and records keystrokes to steal passwords and sensitive information.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G215",
+      "question": "What is MVCC in database?",
+      "options": [
+        "Memory management",
+        "Multi-Version Concurrency Control - readers don't block writers",
+        "View controller",
+        "Memory cache"
+      ],
+      "correctAnswer": 1,
+      "explanation": "MVCC allows concurrent read/write by maintaining multiple versions of data items.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G216",
+      "question": "What is A* algorithm?",
+      "options": [
+        "Simple search",
+        "Informed search using heuristic + path cost",
+        "Sorting algorithm",
+        "String matching"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A* combines path cost g(n) with heuristic estimate h(n) to find optimal path efficiently.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G217",
+      "question": "What is page replacement algorithm?",
+      "options": [
+        "Page creation",
+        "Selecting which page to remove when memory is full",
+        "Page sorting",
+        "Page compression"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Page replacement algorithms (LRU, FIFO, Optimal) decide which page to evict on page fault.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G218",
+      "question": "What is CIDR notation?",
+      "options": [
+        "Encryption",
+        "Classless Inter-Domain Routing - IP/prefix length format",
+        "Protocol",
+        "Hardware"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CIDR notation (e.g., 192.168.1.0/24) specifies IP address and subnet mask length.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G219",
+      "question": "What is doubly linked list advantage over singly?",
+      "options": [
+        "Less memory",
+        "Bidirectional traversal, easier deletion",
+        "Faster insertion",
+        "Automatic sorting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Doubly linked list allows traversal in both directions and easier deletion of a given node.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G220",
+      "question": "What is test-driven development?",
+      "options": [
+        "Testing after coding",
+        "Writing tests before implementing code",
+        "Manual testing",
+        "System testing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TDD writes failing tests first, then implements code to pass tests, then refactors.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G221",
+      "question": "What is social engineering attack?",
+      "options": [
+        "Technical hack",
+        "Manipulating people to reveal information",
+        "Network attack",
+        "Database attack"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Social engineering exploits human psychology rather than technical vulnerabilities.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G222",
+      "question": "What is database deadlock?",
+      "options": [
+        "Slow query",
+        "Transactions waiting for each other's locks indefinitely",
+        "Connection timeout",
+        "Query error"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Database deadlock occurs when transactions are waiting for locks held by each other.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G223",
+      "question": "What is Prim's algorithm for?",
+      "options": [
+        "Shortest path",
+        "Minimum spanning tree",
+        "Topological sort",
+        "Graph coloring"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prim's algorithm builds minimum spanning tree by greedily adding nearest vertex.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G224",
+      "question": "What is CPU bound vs I/O bound process?",
+      "options": [
+        "Same type",
+        "CPU bound uses CPU heavily, I/O bound waits for I/O",
+        "Memory types",
+        "Network types"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CPU bound processes do heavy computation; I/O bound processes spend time waiting for I/O.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G225",
+      "question": "What is congestion control?",
+      "options": [
+        "Traffic management",
+        "Preventing network overload by controlling data rate",
+        "Error correction",
+        "Encryption"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Congestion control mechanisms prevent network congestion by adjusting transmission rate.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G226",
+      "question": "What is expression tree?",
+      "options": [
+        "Forest",
+        "Binary tree representing arithmetic expression",
+        "Search tree",
+        "Heap"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Expression tree represents expressions with operators as internal nodes and operands as leaves.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G227",
+      "question": "What is integration testing?",
+      "options": [
+        "Unit testing",
+        "Testing interaction between integrated components",
+        "Deployment testing",
+        "User testing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Integration testing verifies that different modules or services work correctly together.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G228",
+      "question": "What is rootkit?",
+      "options": [
+        "Admin tool",
+        "Malware that hides its presence and provides privileged access",
+        "Antivirus",
+        "Firewall"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Rootkit hides itself and other malware while providing persistent privileged access.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G229",
+      "question": "What is serializability?",
+      "options": [
+        "Data format",
+        "Concurrent execution equivalent to some serial execution",
+        "Sorting",
+        "Compression"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Serializability ensures concurrent transaction execution is equivalent to some serial order.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G230",
+      "question": "What is divide and conquer paradigm?",
+      "options": [
+        "Linear approach",
+        "Break problem into subproblems, solve recursively, combine",
+        "Greedy approach",
+        "Dynamic programming"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Divide and conquer divides problem, solves subproblems recursively, and combines solutions.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G231",
+      "question": "What is memory hierarchy?",
+      "options": [
+        "Single memory",
+        "Levels of memory with different speed, size, cost trade-offs",
+        "Memory sorting",
+        "Memory encryption"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Memory hierarchy: registers → cache → RAM → disk, trading off speed, size, and cost.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G232",
+      "question": "What is round-robin scheduling quantum?",
+      "options": [
+        "Time measurement",
+        "Fixed time slice for each process",
+        "Memory unit",
+        "CPU speed"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Time quantum is the fixed time slice each process gets before being preempted in round-robin.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G233",
+      "question": "What is socket in networking?",
+      "options": [
+        "Physical connector",
+        "Endpoint for communication (IP + port)",
+        "Protocol",
+        "Router"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Socket is an endpoint identified by IP address and port number for network communication.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G234",
+      "question": "What is heap property?",
+      "options": [
+        "Random order",
+        "Parent greater/smaller than children (max/min heap)",
+        "Sorted array",
+        "Balanced tree"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Max-heap: parent ≥ children; Min-heap: parent ≤ children.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G235",
+      "question": "What is regression testing?",
+      "options": [
+        "New feature testing",
+        "Testing that changes haven't broken existing functionality",
+        "Performance testing",
+        "Security testing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Regression testing ensures new changes don't adversely affect existing working functionality.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G236",
+      "question": "What is zero-day vulnerability?",
+      "options": [
+        "Fixed vulnerability",
+        "Unknown vulnerability with no patch available",
+        "Old vulnerability",
+        "Minor bug"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Zero-day is a vulnerability unknown to vendor with no patch, actively exploited by attackers.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G237",
+      "question": "What is database index B+ tree advantage?",
+      "options": [
+        "Simple structure",
+        "All data in leaves, efficient range queries",
+        "Less space",
+        "Faster updates"
+      ],
+      "correctAnswer": 1,
+      "explanation": "B+ tree stores all data in leaves, supports efficient range queries through leaf links.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G238",
+      "question": "What is time complexity of building a heap?",
+      "options": [
+        "O(n log n)",
+        "O(n)",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Building heap by sifting down from middle to root is O(n), not O(n log n).",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G239",
+      "question": "What is backtracking algorithm?",
+      "options": [
+        "Linear search",
+        "Incrementally build solution, abandon path if invalid",
+        "Sorting",
+        "Hashing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Backtracking builds candidates incrementally, abandoning a candidate when it's determined to be invalid.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G240",
+      "question": "What is bus in computer architecture?",
+      "options": [
+        "Vehicle",
+        "Communication pathway between components",
+        "Memory type",
+        "CPU part"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bus is a communication system that transfers data between computer components.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G241",
+      "question": "What is deadlock prevention vs avoidance?",
+      "options": [
+        "Same thing",
+        "Prevention eliminates condition, avoidance checks before allocation",
+        "Detection methods",
+        "Recovery methods"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prevention ensures deadlock conditions can't occur; avoidance dynamically checks if allocation is safe.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G242",
+      "question": "What is network latency?",
+      "options": [
+        "Bandwidth",
+        "Time delay for data to travel from source to destination",
+        "Throughput",
+        "Packet size"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Latency is the time delay in network communication, measured in milliseconds.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G243",
+      "question": "What is adjacency matrix space complexity?",
+      "options": [
+        "O(V)",
+        "O(V²)",
+        "O(E)",
+        "O(V+E)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Adjacency matrix requires V×V space regardless of number of edges.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G244",
+      "question": "What is acceptance testing?",
+      "options": [
+        "Developer testing",
+        "Testing by end-users to verify requirements",
+        "Unit testing",
+        "Code review"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Acceptance testing verifies the system meets business requirements and is acceptable to users.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G245",
+      "question": "What is penetration testing?",
+      "options": [
+        "Network setup",
+        "Authorized simulated attack to find vulnerabilities",
+        "Performance test",
+        "Load test"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Penetration testing simulates real attacks to identify security vulnerabilities before malicious hackers.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G246",
+      "question": "What is stored procedure vs function in database?",
+      "options": [
+        "Same thing",
+        "Procedure may not return value, function must return",
+        "Different syntax only",
+        "Size difference"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Functions must return a value and can be used in SQL; procedures may not return and execute actions.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G247",
+      "question": "What is counting sort limitation?",
+      "options": [
+        "No limitation",
+        "Requires known range of integer values",
+        "Only for strings",
+        "Unstable"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Counting sort needs to know the range of input values and works only for integers.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G248",
+      "question": "What is pipelining hazard?",
+      "options": [
+        "Pipeline benefit",
+        "Situations that prevent next instruction from executing",
+        "Memory error",
+        "Branch error"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Hazards (data, control, structural) prevent smooth pipeline flow, requiring stalls or forwarding.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G249",
+      "question": "What is spin lock?",
+      "options": [
+        "Sleep lock",
+        "Lock that busy-waits in a loop until available",
+        "Database lock",
+        "File lock"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Spin lock continuously checks lock availability in a loop, used for short critical sections.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G250",
+      "question": "What is ICMP ping used for?",
+      "options": [
+        "Data transfer",
+        "Testing network connectivity and measuring round-trip time",
+        "Email",
+        "Web browsing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Ping uses ICMP echo request/reply to test if a host is reachable and measure latency.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G251",
+      "question": "What is graph strongly connected component?",
+      "options": [
+        "Any subgraph",
+        "Maximal set of vertices with paths between all pairs",
+        "Single vertex",
+        "Cycle"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SCC is a maximal set of vertices where every vertex is reachable from every other vertex.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G252",
+      "question": "What is continuous integration?",
+      "options": [
+        "Manual deployment",
+        "Frequently merging code changes with automated testing",
+        "One-time integration",
+        "Final testing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CI frequently integrates code changes and runs automated tests to detect problems early.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G253",
+      "question": "What is encryption vs hashing?",
+      "options": [
+        "Same thing",
+        "Encryption is reversible, hashing is one-way",
+        "Hashing is reversible",
+        "Both one-way"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Encryption can be decrypted with a key; hashing is one-way and cannot be reversed.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G254",
+      "question": "What is database view vs materialized view?",
+      "options": [
+        "Same thing",
+        "View is virtual query, materialized view stores results",
+        "Size difference",
+        "Performance same"
+      ],
+      "correctAnswer": 1,
+      "explanation": "View is a stored query executed on access; materialized view stores actual results.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G255",
+      "question": "What is radix sort?",
+      "options": [
+        "Comparison sort",
+        "Non-comparison sort processing digits/characters",
+        "Binary sort",
+        "Quick sort variant"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Radix sort sorts by processing individual digits, achieving O(nk) for k-digit numbers.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G256",
+      "question": "What is register in CPU?",
+      "options": [
+        "Database",
+        "Small, fast storage location within CPU",
+        "RAM type",
+        "Cache level"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Registers are the fastest storage, located in CPU, holding data being processed.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G257",
+      "question": "What is file descriptor?",
+      "options": [
+        "File name",
+        "Integer handle for open file/resource",
+        "File size",
+        "File type"
+      ],
+      "correctAnswer": 1,
+      "explanation": "File descriptor is an integer that uniquely identifies an open file in a process.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G258",
+      "question": "What is network bandwidth?",
+      "options": [
+        "Latency",
+        "Maximum data transfer rate",
+        "Packet size",
+        "Error rate"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bandwidth is the maximum rate of data transfer, measured in bits per second.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G259",
+      "question": "What is binary search tree property?",
+      "options": [
+        "Random order",
+        "Left subtree < node < right subtree",
+        "Balanced always",
+        "Complete tree"
+      ],
+      "correctAnswer": 1,
+      "explanation": "BST property: all nodes in left subtree are smaller, all in right subtree are larger.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G260",
+      "question": "What is agile sprint?",
+      "options": [
+        "Long phase",
+        "Short, time-boxed iteration (usually 2-4 weeks)",
+        "Final release",
+        "Testing phase"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sprint is a fixed-duration iteration where a potentially shippable increment is created.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G261",
+      "question": "What is two-factor authentication?",
+      "options": [
+        "Single password",
+        "Using two different authentication methods",
+        "Double password",
+        "Biometric only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "2FA requires two different factors: something you know, have, or are.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G262",
+      "question": "What is database normalization 1NF?",
+      "options": [
+        "No normalization",
+        "Atomic values, no repeating groups",
+        "No redundancy",
+        "No nulls"
+      ],
+      "correctAnswer": 1,
+      "explanation": "1NF requires atomic values (no lists) and a unique identifier for each row.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G263",
+      "question": "What is time complexity of inserting into AVL tree?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "AVL tree maintains balance, so insert is O(log n) including any necessary rotations.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G264",
+      "question": "What is Kruskal's vs Prim's algorithm?",
+      "options": [
+        "Same approach",
+        "Kruskal's edge-based, Prim's vertex-based for MST",
+        "Different problems",
+        "Same complexity"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Kruskal's processes edges by weight; Prim's grows tree from a starting vertex.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G265",
+      "question": "What is instruction cycle?",
+      "options": [
+        "Program loop",
+        "Fetch-decode-execute sequence",
+        "Clock cycle",
+        "Memory cycle"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Instruction cycle: fetch instruction, decode it, execute it, store results.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G266",
+      "question": "What is virtual file system?",
+      "options": [
+        "Cloud storage",
+        "Abstraction layer for different file systems",
+        "Temporary files",
+        "Network files"
+      ],
+      "correctAnswer": 1,
+      "explanation": "VFS provides uniform interface to different file system types (ext4, NTFS, etc.).",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G267",
+      "question": "What is network subnet?",
+      "options": [
+        "Internet",
+        "Logical subdivision of an IP network",
+        "Protocol",
+        "Hardware"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Subnet is a logical subdivision of a larger network for organization and security.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G268",
+      "question": "What is complete binary tree?",
+      "options": [
+        "All nodes have 2 children",
+        "All levels filled except last, which is left-filled",
+        "Balanced tree",
+        "Search tree"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Complete binary tree has all levels full except possibly the last, filled left to right.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G269",
+      "question": "What is code review?",
+      "options": [
+        "Testing",
+        "Systematic examination of code by peers",
+        "Debugging",
+        "Deployment"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Code review is peer examination of code to find bugs, improve quality, and share knowledge.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G270",
+      "question": "What is SSL certificate?",
+      "options": [
+        "License",
+        "Digital certificate verifying website identity and enabling encryption",
+        "Password",
+        "Username"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SSL certificate authenticates website identity and enables encrypted HTTPS connection.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G271",
+      "question": "What is horizontal vs vertical scaling?",
+      "options": [
+        "Same thing",
+        "Horizontal adds machines, vertical adds resources to one machine",
+        "Size difference",
+        "Speed difference"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Horizontal scaling adds more machines; vertical scaling adds more power to existing machine.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G272",
+      "question": "What is tail recursion?",
+      "options": [
+        "Any recursion",
+        "Recursive call is last operation, can be optimized to iteration",
+        "Deep recursion",
+        "Mutual recursion"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Tail recursion has recursive call as last operation, allowing compiler optimization to iteration.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G273",
+      "question": "What is memory-mapped file?",
+      "options": [
+        "Disk file",
+        "File mapped to process virtual address space",
+        "Cache file",
+        "Temporary file"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Memory-mapped file is accessed through memory addresses rather than file I/O operations.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G274",
+      "question": "What is network MTU?",
+      "options": [
+        "Speed",
+        "Maximum Transmission Unit - largest packet size",
+        "Protocol",
+        "Address"
+      ],
+      "correctAnswer": 1,
+      "explanation": "MTU is the largest packet size that can be transmitted without fragmentation.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G275",
+      "question": "What is perfect binary tree?",
+      "options": [
+        "BST",
+        "All internal nodes have 2 children, all leaves at same level",
+        "Any tree",
+        "Balanced tree"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Perfect binary tree: all internal nodes have exactly 2 children, all leaves at same depth.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G276",
+      "question": "What is sprint retrospective?",
+      "options": [
+        "Planning meeting",
+        "Team reflection on what went well and what to improve",
+        "Code review",
+        "Demo"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Retrospective is a meeting to reflect on the sprint and identify improvements.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G277",
+      "question": "What is principle of least privilege?",
+      "options": [
+        "Maximum access",
+        "Users get minimum access needed for their role",
+        "No access",
+        "Full access"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Least privilege grants only the minimum permissions necessary to perform required tasks.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G278",
+      "question": "What is database checkpoint?",
+      "options": [
+        "Backup point",
+        "Point where all changes are written to disk",
+        "Query point",
+        "Index point"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Checkpoint ensures all modified data is written to disk, limiting recovery work needed.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G279",
+      "question": "What is memoization vs tabulation in DP?",
+      "options": [
+        "Same thing",
+        "Memoization is top-down, tabulation is bottom-up",
+        "Memoization is bottom-up",
+        "Different problems"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Memoization solves recursively caching results; tabulation iteratively fills table bottom-up.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G280",
+      "question": "What is interrupt vector table?",
+      "options": [
+        "Process table",
+        "Table mapping interrupt numbers to handler addresses",
+        "Memory table",
+        "File table"
+      ],
+      "correctAnswer": 1,
+      "explanation": "IVT contains addresses of interrupt handlers, indexed by interrupt number.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G281",
+      "question": "What is NAT traversal?",
+      "options": [
+        "Network attack",
+        "Techniques to establish connections through NAT",
+        "Encryption",
+        "Routing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "NAT traversal allows P2P connections through NAT devices using techniques like STUN, TURN.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G282",
+      "question": "What is deque?",
+      "options": [
+        "Queue",
+        "Double-ended queue allowing insert/delete at both ends",
+        "Stack",
+        "Array"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Deque (double-ended queue) supports efficient insertion and deletion at both front and rear.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G283",
+      "question": "What is technical debt?",
+      "options": [
+        "Financial debt",
+        "Cost of additional work from choosing quick solution over better approach",
+        "Bug count",
+        "Test coverage"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Technical debt is the implied cost of future rework caused by choosing quick solutions now.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G284",
+      "question": "What is input validation?",
+      "options": [
+        "Output checking",
+        "Verifying user input meets expected format/constraints",
+        "Database check",
+        "Network check"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Input validation ensures user-provided data is safe and properly formatted before processing.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G285",
+      "question": "What is ACID Isolation levels?",
+      "options": [
+        "Single level",
+        "Read Uncommitted, Read Committed, Repeatable Read, Serializable",
+        "Two levels",
+        "No levels"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SQL defines 4 isolation levels with different trade-offs between consistency and concurrency.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G286",
+      "question": "What is linear probing in hashing?",
+      "options": [
+        "Binary search",
+        "Resolving collision by checking next sequential slots",
+        "Chaining",
+        "Rehashing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Linear probing handles collisions by sequentially checking the next available slot.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G287",
+      "question": "What is branch and bound algorithm?",
+      "options": [
+        "Graph algorithm",
+        "Optimization exploring solution space with pruning",
+        "Sorting",
+        "Searching"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Branch and bound systematically explores solution space, pruning branches that can't improve.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G288",
+      "question": "What is DMA controller?",
+      "options": [
+        "CPU",
+        "Hardware that manages direct memory access without CPU",
+        "Memory chip",
+        "Bus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DMA controller handles data transfer between memory and devices without CPU involvement.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G289",
+      "question": "What is inode in Unix?",
+      "options": [
+        "Node",
+        "Data structure storing file metadata (not name)",
+        "Directory",
+        "Link"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Inode stores file metadata (permissions, size, pointers to data blocks) but not the filename.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G290",
+      "question": "What is network proxy?",
+      "options": [
+        "Direct connection",
+        "Intermediary server between client and destination",
+        "Router",
+        "Switch"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Proxy acts as intermediary, forwarding requests and responses between client and server.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G291",
+      "question": "What is thread vs process?",
+      "options": [
+        "Same thing",
+        "Thread is lightweight execution unit within process",
+        "Process is lighter",
+        "Thread has own memory"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Threads share process memory and resources; processes have separate address spaces.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G292",
+      "question": "What is directed acyclic graph used for?",
+      "options": [
+        "Any graph problem",
+        "Dependency resolution, task scheduling, git commits",
+        "Shortest path only",
+        "Cycles"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DAGs model dependencies, enable topological sorting, and are used in build systems, git, etc.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G293",
+      "question": "What is HTTPS handshake?",
+      "options": [
+        "Data transfer",
+        "Process of establishing secure connection with key exchange",
+        "Error handling",
+        "Compression"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HTTPS handshake negotiates encryption parameters and exchanges keys for secure communication.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G294",
+      "question": "What is continuous delivery vs deployment?",
+      "options": [
+        "Same thing",
+        "Delivery is ready to deploy, deployment is automatic release",
+        "Opposite",
+        "Delivery is automatic"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Continuous delivery keeps code deployable; continuous deployment automatically releases every change.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G295",
+      "question": "What is cross-site request forgery (CSRF)?",
+      "options": [
+        "XSS",
+        "Attack tricking user to perform unwanted actions on authenticated site",
+        "SQL injection",
+        "Phishing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CSRF tricks authenticated users into submitting malicious requests to a site they're logged into.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G296",
+      "question": "What is write-back vs write-through cache?",
+      "options": [
+        "Same thing",
+        "Write-back delays writing to main memory, write-through writes immediately",
+        "Speed same",
+        "Size same"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Write-back writes to main memory only when evicting; write-through writes immediately to both.",
+      "topic": "Computer Architecture"
+    },
+    {
+      "id": "G297",
+      "question": "What is race condition fix?",
+      "options": [
+        "Faster code",
+        "Synchronization mechanisms (mutex, semaphore, locks)",
+        "More threads",
+        "Less memory"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Race conditions are prevented using synchronization: mutexes, semaphores, locks, atomic operations.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G298",
+      "question": "What is graph bipartite?",
+      "options": [
+        "Two vertices",
+        "Vertices can be divided into two sets with edges only between sets",
+        "Complete graph",
+        "Directed graph"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bipartite graph's vertices can be partitioned into two disjoint sets with edges only between sets.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G299",
+      "question": "What is TCP vs UDP?",
+      "options": [
+        "Same protocol",
+        "TCP is reliable/ordered, UDP is fast/unreliable",
+        "UDP is reliable",
+        "TCP is faster"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TCP provides reliable, ordered delivery with error checking; UDP is faster but unreliable.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G300",
+      "question": "What is API in software?",
+      "options": [
+        "Hardware",
+        "Application Programming Interface - defined way to interact with software",
+        "Database",
+        "Protocol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "API defines how software components should interact, enabling integration between systems.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G301",
+      "question": "What is salting in password hashing?",
+      "options": [
+        "Encryption",
+        "Adding random data before hashing to prevent rainbow table attacks",
+        "Compression",
+        "Encoding"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Salt is random data added to password before hashing, making precomputed attacks ineffective.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G302",
+      "question": "What is database cursor types?",
+      "options": [
+        "Single type",
+        "Forward-only, static, dynamic, keyset",
+        "Mouse pointer",
+        "Text cursor"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Cursor types differ in scrollability and sensitivity to changes: forward-only, static, dynamic, keyset.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G303",
+      "question": "What is amortized analysis?",
+      "options": [
+        "Single operation",
+        "Average cost over sequence of operations",
+        "Worst case only",
+        "Best case only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Amortized analysis averages cost over sequence, giving realistic average even with occasional expensive operations.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G304",
+      "question": "What is virtual memory page size trade-off?",
+      "options": [
+        "No trade-off",
+        "Large pages reduce table size but increase internal fragmentation",
+        "Size doesn't matter",
+        "Always use large"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Larger pages mean smaller page tables but more internal fragmentation; smaller pages are opposite.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G305",
+      "question": "What is DNS caching?",
+      "options": [
+        "No caching",
+        "Storing DNS query results to speed up future lookups",
+        "File caching",
+        "Memory caching"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DNS caching stores resolved domain-IP mappings to avoid repeated queries.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G306",
+      "question": "What is threaded binary tree?",
+      "options": [
+        "Multi-threaded",
+        "Tree with threads pointing to inorder successor/predecessor",
+        "Linked list",
+        "Array"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Threaded binary tree uses null pointers to point to inorder successor/predecessor for efficient traversal.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G307",
+      "question": "What is microservices architecture?",
+      "options": [
+        "Small program",
+        "Application as collection of loosely coupled services",
+        "Monolith",
+        "Library"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Microservices structures application as independent, deployable services communicating via APIs.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G308",
+      "question": "What is session hijacking?",
+      "options": [
+        "New session",
+        "Stealing or predicting session token to impersonate user",
+        "Session creation",
+        "Logout"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Session hijacking steals session identifiers to take over authenticated user sessions.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G309",
+      "question": "What is database trigger timing?",
+      "options": [
+        "Random",
+        "BEFORE, AFTER, or INSTEAD OF the triggering event",
+        "Always before",
+        "Always after"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Triggers can execute BEFORE, AFTER, or INSTEAD OF INSERT/UPDATE/DELETE operations.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G310",
+      "question": "What is worst case for hash table?",
+      "options": [
+        "O(1)",
+        "O(n) when all keys collide",
+        "O(log n)",
+        "O(n²)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Worst case O(n) occurs when all keys hash to same bucket, degenerating to linked list.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G311",
+      "question": "What is Floyd's cycle detection?",
+      "options": [
+        "Sorting",
+        "Using slow and fast pointers to detect cycle in linked list",
+        "Path finding",
+        "Minimum spanning tree"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Floyd's algorithm uses two pointers moving at different speeds to detect cycles in O(n) time, O(1) space.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G312",
+      "question": "What is context switch overhead?",
+      "options": [
+        "Benefit",
+        "Time and resources spent saving/loading process state",
+        "Memory usage",
+        "CPU speed"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Context switch overhead includes saving registers, updating PCB, and loading new process state.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G313",
+      "question": "What is network jitter?",
+      "options": [
+        "Speed",
+        "Variation in packet delay",
+        "Bandwidth",
+        "Latency"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Jitter is the variation in delay between packets, problematic for real-time applications.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G314",
+      "question": "What is splay tree?",
+      "options": [
+        "Balanced tree",
+        "Self-adjusting BST moving accessed nodes to root",
+        "Red-black tree",
+        "AVL tree"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Splay tree moves accessed nodes to root, providing good amortized performance for repeated access patterns.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G315",
+      "question": "What is DevOps?",
+      "options": [
+        "Development only",
+        "Culture and practices unifying development and operations",
+        "Operations only",
+        "Testing"
+      ],
+      "correctAnswer": 1,
+      "explanation": "DevOps combines development and operations practices for faster, more reliable software delivery.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G316",
+      "question": "What is defense in depth?",
+      "options": [
+        "Single security layer",
+        "Multiple security layers so breach of one doesn't compromise all",
+        "Firewall only",
+        "Encryption only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Defense in depth uses multiple security layers so attackers must breach several controls.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G317",
+      "question": "What is database constraint?",
+      "options": [
+        "Limit on queries",
+        "Rule enforcing data integrity",
+        "Index type",
+        "View type"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Constraints enforce data integrity rules: PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK, NOT NULL.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G318",
+      "question": "What is stable sorting importance?",
+      "options": [
+        "No importance",
+        "Preserves relative order of equal elements",
+        "Speed",
+        "Memory"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stable sorting preserves original order of equal elements, important for multi-key sorting.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G319",
+      "question": "What is process scheduling goal?",
+      "options": [
+        "Single goal",
+        "Balance throughput, response time, fairness, resource utilization",
+        "Speed only",
+        "Memory only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Schedulers balance multiple goals: throughput, response time, fairness, and resource utilization.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G320",
+      "question": "What is HTTP status code 404?",
+      "options": [
+        "Success",
+        "Not Found - requested resource doesn't exist",
+        "Server error",
+        "Redirect"
+      ],
+      "correctAnswer": 1,
+      "explanation": "404 indicates the server cannot find the requested resource (page not found).",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G321",
+      "question": "What is LRU implementation?",
+      "options": [
+        "Array",
+        "Hash map + doubly linked list for O(1) operations",
+        "Binary tree",
+        "Heap"
+      ],
+      "correctAnswer": 1,
+      "explanation": "LRU cache uses hash map for O(1) lookup and doubly linked list for O(1) reordering.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G322",
+      "question": "What is kanban vs scrum?",
+      "options": [
+        "Same thing",
+        "Kanban is continuous flow, Scrum uses fixed sprints",
+        "Scrum is flow",
+        "Kanban has sprints"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Kanban emphasizes continuous flow; Scrum uses time-boxed sprints with defined ceremonies.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G323",
+      "question": "What is honeypot?",
+      "options": [
+        "Real server",
+        "Decoy system to detect, deflect, or study attacks",
+        "Firewall",
+        "Antivirus"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Honeypot is a decoy system designed to lure attackers and study their methods.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G324",
+      "question": "What is database denormalization reason?",
+      "options": [
+        "Save space",
+        "Improve read performance at cost of redundancy",
+        "Enforce integrity",
+        "Reduce redundancy"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Denormalization adds redundancy to reduce joins and improve read performance.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G325",
+      "question": "What is insertion sort best case?",
+      "options": [
+        "O(n²)",
+        "O(n) for nearly sorted array",
+        "O(n log n)",
+        "O(log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Insertion sort is O(n) when array is nearly sorted, as few shifts are needed.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G326",
+      "question": "What is thrashing prevention?",
+      "options": [
+        "More processes",
+        "Working set model, page fault frequency control",
+        "Faster CPU",
+        "More disk"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Prevent thrashing by tracking working sets and adjusting degree of multiprogramming.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G327",
+      "question": "What is REST API principle?",
+      "options": [
+        "Stateful",
+        "Stateless, uniform interface, client-server separation",
+        "Connection-oriented",
+        "Binary protocol"
+      ],
+      "correctAnswer": 1,
+      "explanation": "REST: stateless, uniform interface, client-server, cacheable, layered system.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G328",
+      "question": "What is trie time complexity for search?",
+      "options": [
+        "O(n)",
+        "O(m) where m is key length",
+        "O(log n)",
+        "O(1)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Trie search is O(m) where m is key length, independent of number of keys stored.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G329",
+      "question": "What is pair programming?",
+      "options": [
+        "Solo coding",
+        "Two developers working together at one workstation",
+        "Remote coding",
+        "Code review"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Pair programming: one developer writes code (driver), other reviews in real-time (navigator).",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G330",
+      "question": "What is least privilege in database?",
+      "options": [
+        "Maximum access",
+        "Grant only necessary permissions for tasks",
+        "No access",
+        "Full admin"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Apply least privilege: users get only permissions needed for their specific tasks.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G331",
+      "question": "What is optimistic vs pessimistic locking?",
+      "options": [
+        "Same thing",
+        "Optimistic checks conflicts at commit, pessimistic locks immediately",
+        "Speed difference",
+        "Size difference"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Optimistic locking checks for conflicts at commit; pessimistic locks resources immediately.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G332",
+      "question": "What is complexity of finding median?",
+      "options": [
+        "O(n log n)",
+        "O(n) using quickselect",
+        "O(n²)",
+        "O(log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Quickselect finds median in O(n) average time using partitioning similar to quicksort.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G333",
+      "question": "What is interrupt latency?",
+      "options": [
+        "No delay",
+        "Time between interrupt signal and start of handler execution",
+        "CPU speed",
+        "Memory access"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Interrupt latency is the delay from interrupt occurrence to beginning of interrupt handler.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G334",
+      "question": "What is HTTP/2 improvement?",
+      "options": [
+        "Same as HTTP/1",
+        "Multiplexing, header compression, server push",
+        "Slower",
+        "Less secure"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HTTP/2 adds multiplexing, header compression, and server push for better performance.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G335",
+      "question": "What is weighted graph?",
+      "options": [
+        "Heavy graph",
+        "Graph with numeric values (weights) on edges",
+        "Directed graph",
+        "Tree"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Weighted graph assigns numeric values to edges, representing cost, distance, or capacity.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G336",
+      "question": "What is smoke testing?",
+      "options": [
+        "Detailed testing",
+        "Quick tests to verify basic functionality works",
+        "Performance test",
+        "Security test"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Smoke testing is shallow, wide testing to verify critical functionality before deeper testing.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G337",
+      "question": "What is security through obscurity?",
+      "options": [
+        "Good practice",
+        "Relying on secrecy of design rather than strong security measures",
+        "Best approach",
+        "Standard method"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Security through obscurity is weak - security should come from strong measures, not hidden implementation.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G338",
+      "question": "What is database join algorithm?",
+      "options": [
+        "Single method",
+        "Nested loop, hash join, merge join",
+        "No algorithm",
+        "Sort only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Join algorithms: nested loop (simple), hash join (equality), merge join (sorted input).",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G339",
+      "question": "What is quicksort partition?",
+      "options": [
+        "Division",
+        "Rearranging elements around pivot - smaller left, larger right",
+        "Sorting",
+        "Merging"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Partition places elements smaller than pivot on left, larger on right, pivot in correct position.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G340",
+      "question": "What is semaphore binary vs counting?",
+      "options": [
+        "Same thing",
+        "Binary is 0/1, counting allows multiple resources",
+        "Size difference",
+        "Speed difference"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Binary semaphore is 0 or 1 (mutex); counting semaphore allows specified number of concurrent accesses.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G341",
+      "question": "What is network ACK?",
+      "options": [
+        "Attack",
+        "Acknowledgment confirming receipt of data",
+        "Error",
+        "Request"
+      ],
+      "correctAnswer": 1,
+      "explanation": "ACK (acknowledgment) confirms successful receipt of data, enabling reliable transmission.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G342",
+      "question": "What is max-heap extract-max complexity?",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(1)",
+        "O(n log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Extract-max removes root O(1), then heapifies to restore property O(log n).",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G343",
+      "question": "What is load testing?",
+      "options": [
+        "Unit testing",
+        "Testing system behavior under expected and peak load",
+        "Security testing",
+        "Code review"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Load testing verifies system performance under expected normal and peak load conditions.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G344",
+      "question": "What is authentication vs authorization?",
+      "options": [
+        "Same thing",
+        "Authentication verifies identity, authorization verifies permissions",
+        "Opposite meanings",
+        "Both verify permissions"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Authentication: who are you? Authorization: what can you access?",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G345",
+      "question": "What is database OLTP?",
+      "options": [
+        "Analytics",
+        "Online Transaction Processing - fast, simple transactions",
+        "Batch processing",
+        "Reporting"
+      ],
+      "correctAnswer": 1,
+      "explanation": "OLTP handles high volumes of simple transactions quickly (inserts, updates, deletes).",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G346",
+      "question": "What is selection sort complexity?",
+      "options": [
+        "O(n)",
+        "O(n²) always",
+        "O(n log n)",
+        "O(log n)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Selection sort is O(n²) in all cases - always makes n² comparisons regardless of input.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G347",
+      "question": "What is round-robin fairness?",
+      "options": [
+        "Unfair",
+        "Each process gets equal CPU time share",
+        "Priority-based",
+        "Random"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Round-robin provides fairness by giving each process equal time quantum in circular order.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G348",
+      "question": "What is IPv4 vs IPv6 address size?",
+      "options": [
+        "Same size",
+        "IPv4 is 32-bit, IPv6 is 128-bit",
+        "IPv4 is larger",
+        "64-bit each"
+      ],
+      "correctAnswer": 1,
+      "explanation": "IPv4: 32 bits (~4 billion addresses); IPv6: 128 bits (vastly more addresses).",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G349",
+      "question": "What is graph Eulerian path?",
+      "options": [
+        "Shortest path",
+        "Path visiting every edge exactly once",
+        "Hamiltonian",
+        "Minimum spanning"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Eulerian path visits every edge exactly once; exists if at most 2 vertices have odd degree.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G350",
+      "question": "What is scrum master role?",
+      "options": [
+        "Project manager",
+        "Facilitator removing impediments and ensuring scrum practices",
+        "Developer",
+        "Tester"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Scrum master facilitates scrum process, removes impediments, and coaches the team.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G351",
+      "question": "What is certificate authority?",
+      "options": [
+        "Company",
+        "Trusted entity that issues digital certificates",
+        "Government",
+        "ISP"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CA is a trusted third party that issues and verifies digital certificates.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G352",
+      "question": "What is database schema?",
+      "options": [
+        "Data",
+        "Structure defining tables, columns, relationships, constraints",
+        "Query",
+        "Index"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Schema defines the logical structure of database: tables, columns, data types, relationships.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G353",
+      "question": "What is merge sort space complexity?",
+      "options": [
+        "O(1)",
+        "O(n)",
+        "O(log n)",
+        "O(n²)"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Merge sort requires O(n) additional space for temporary arrays during merging.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G354",
+      "question": "What is real-time OS characteristic?",
+      "options": [
+        "Fast",
+        "Guaranteed response within deadline",
+        "Large",
+        "Network-based"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Real-time OS guarantees processing completion within strict time constraints.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G355",
+      "question": "What is network broadcast?",
+      "options": [
+        "One-to-one",
+        "One-to-all nodes in network",
+        "Point-to-point",
+        "Multicast"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Broadcast sends message to all devices on the network simultaneously.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G356",
+      "question": "What is Hamiltonian path?",
+      "options": [
+        "Eulerian",
+        "Path visiting every vertex exactly once",
+        "Shortest path",
+        "Minimum spanning"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Hamiltonian path visits every vertex exactly once (NP-complete to find).",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G357",
+      "question": "What is product backlog?",
+      "options": [
+        "Bug list",
+        "Prioritized list of features and requirements",
+        "Sprint tasks",
+        "Done items"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Product backlog is the ordered list of everything that might be needed in the product.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G358",
+      "question": "What is brute force attack?",
+      "options": [
+        "Physical attack",
+        "Trying all possible combinations to crack password/encryption",
+        "SQL injection",
+        "XSS"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Brute force systematically tries all possible combinations until finding the correct one.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G359",
+      "question": "What is database HAVING clause?",
+      "options": [
+        "Same as WHERE",
+        "Filters groups after GROUP BY",
+        "Sorts results",
+        "Joins tables"
+      ],
+      "correctAnswer": 1,
+      "explanation": "HAVING filters groups after aggregation, while WHERE filters rows before grouping.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G360",
+      "question": "What is topological sort requirement?",
+      "options": [
+        "Any graph",
+        "Directed Acyclic Graph (DAG)",
+        "Undirected graph",
+        "Cyclic graph"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Topological sort requires DAG - directed graph with no cycles.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G361",
+      "question": "What is preemptive scheduling?",
+      "options": [
+        "Non-interruptible",
+        "OS can interrupt running process to run another",
+        "Cooperative",
+        "FCFS"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Preemptive scheduling allows OS to interrupt running process based on priority or time quantum.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G362",
+      "question": "What is network gateway?",
+      "options": [
+        "Router",
+        "Node connecting networks using different protocols",
+        "Switch",
+        "Hub"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Gateway connects networks that may use different protocols, performing necessary conversions.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G363",
+      "question": "What is graph minimum cut?",
+      "options": [
+        "Shortest path",
+        "Minimum edges to disconnect graph into two parts",
+        "Maximum flow",
+        "Spanning tree"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Minimum cut is the smallest set of edges whose removal disconnects the graph.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G364",
+      "question": "What is sprint planning?",
+      "options": [
+        "Annual planning",
+        "Meeting to plan what to accomplish in upcoming sprint",
+        "Review meeting",
+        "Retrospective"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sprint planning selects backlog items for the sprint and plans how to complete them.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G365",
+      "question": "What is intrusion detection system?",
+      "options": [
+        "Firewall",
+        "System monitoring network/system for malicious activity",
+        "Antivirus",
+        "VPN"
+      ],
+      "correctAnswer": 1,
+      "explanation": "IDS monitors and analyzes network traffic or system calls to detect malicious activity.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G366",
+      "question": "What is database redo log?",
+      "options": [
+        "Backup",
+        "Log of changes to replay for crash recovery",
+        "Query log",
+        "Error log"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Redo log records changes to be replayed during crash recovery to restore committed transactions.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G367",
+      "question": "What is bucket sort?",
+      "options": [
+        "Comparison sort",
+        "Distributes elements into buckets then sorts each bucket",
+        "Binary sort",
+        "Heap sort"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bucket sort distributes elements into buckets, sorts each, then concatenates for O(n+k) average.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G368",
+      "question": "What is process state?",
+      "options": [
+        "Single state",
+        "New, ready, running, waiting, terminated",
+        "Two states",
+        "No states"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Process states: new (created), ready (waiting for CPU), running, waiting (I/O), terminated.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G369",
+      "question": "What is TCP window size?",
+      "options": [
+        "Display size",
+        "Amount of data sender can transmit before acknowledgment",
+        "Packet size",
+        "Buffer size"
+      ],
+      "correctAnswer": 1,
+      "explanation": "TCP window size controls flow by limiting unacknowledged data in flight.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G370",
+      "question": "What is sparse vs dense graph?",
+      "options": [
+        "Same thing",
+        "Sparse has few edges, dense has many edges relative to vertices",
+        "Size difference",
+        "Weight difference"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Sparse: E << V²; Dense: E ≈ V². Affects choice of representation (list vs matrix).",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G371",
+      "question": "What is user story format?",
+      "options": [
+        "Technical spec",
+        "As a [role], I want [feature] so that [benefit]",
+        "Bug report",
+        "Test case"
+      ],
+      "correctAnswer": 1,
+      "explanation": "User story format: As a [type of user], I want [goal] so that [reason/benefit].",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G372",
+      "question": "What is vulnerability assessment?",
+      "options": [
+        "Attack",
+        "Systematic identification and evaluation of security weaknesses",
+        "Penetration test",
+        "Audit"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Vulnerability assessment identifies, quantifies, and prioritizes security vulnerabilities.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G373",
+      "question": "What is database stored procedure advantage?",
+      "options": [
+        "None",
+        "Reduced network traffic, precompiled, reusable",
+        "More network traffic",
+        "Slower"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Stored procedures reduce network traffic, are precompiled for performance, and promote reuse.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G374",
+      "question": "What is shell sort?",
+      "options": [
+        "Command line sort",
+        "Improved insertion sort using gap sequences",
+        "Quick sort",
+        "Merge sort"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Shell sort improves insertion sort by comparing elements at decreasing gap distances.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G375",
+      "question": "What is swapping in OS?",
+      "options": [
+        "Data exchange",
+        "Moving entire process between memory and disk",
+        "Context switch",
+        "Paging"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Swapping moves entire processes between main memory and disk to free memory.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G376",
+      "question": "What is network collision domain?",
+      "options": [
+        "Security zone",
+        "Network segment where packet collisions can occur",
+        "Broadcast domain",
+        "Subnet"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Collision domain is area where simultaneous transmissions can result in collisions (shared medium).",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G377",
+      "question": "What is union-find path compression?",
+      "options": [
+        "Data compression",
+        "Flattening tree during find operation for efficiency",
+        "File compression",
+        "Network compression"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Path compression makes all nodes on find path point directly to root, improving future operations.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G378",
+      "question": "What is sprint velocity?",
+      "options": [
+        "Speed",
+        "Amount of work team completes in a sprint",
+        "Time taken",
+        "Team size"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Velocity measures work completed (usually story points) per sprint, used for planning.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G379",
+      "question": "What is security token?",
+      "options": [
+        "Password",
+        "Physical or digital device for authentication",
+        "Username",
+        "Certificate"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Security token is a physical device or software generating one-time codes for authentication.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G380",
+      "question": "What is database transaction log?",
+      "options": [
+        "Query history",
+        "Record of all changes for recovery and replication",
+        "Error log",
+        "Access log"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Transaction log records all database modifications for crash recovery and replication.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G381",
+      "question": "What is quick select algorithm?",
+      "options": [
+        "Sorting",
+        "Finding kth smallest element in O(n) average time",
+        "Binary search",
+        "Selection sort"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Quickselect finds kth smallest element in O(n) average time using partitioning.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G382",
+      "question": "What is memory leak?",
+      "options": [
+        "Physical damage",
+        "Allocated memory not freed when no longer needed",
+        "Data leak",
+        "Network leak"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Memory leak occurs when allocated memory is not released, gradually exhausting available memory.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G383",
+      "question": "What is network DNS record type A?",
+      "options": [
+        "Authorization",
+        "Maps domain name to IPv4 address",
+        "Alias",
+        "Authentication"
+      ],
+      "correctAnswer": 1,
+      "explanation": "A record maps a domain name to an IPv4 address.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G384",
+      "question": "What is graph articulation point?",
+      "options": [
+        "Edge",
+        "Vertex whose removal disconnects the graph",
+        "Starting point",
+        "End point"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Articulation point (cut vertex) is a vertex whose removal increases connected components.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G385",
+      "question": "What is definition of done?",
+      "options": [
+        "Task assigned",
+        "Shared understanding of what complete means for an item",
+        "Started work",
+        "Code written"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Definition of Done is team's shared criteria for when work item is truly complete.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G386",
+      "question": "What is security audit?",
+      "options": [
+        "Attack",
+        "Systematic evaluation of security policies and controls",
+        "Penetration test",
+        "Vulnerability scan"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Security audit systematically evaluates security measures against standards and best practices.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G387",
+      "question": "What is database 2NF?",
+      "options": [
+        "First step",
+        "1NF plus no partial dependencies on composite key",
+        "Final form",
+        "No normalization"
+      ],
+      "correctAnswer": 1,
+      "explanation": "2NF: meets 1NF and no non-key attribute depends on part of a composite primary key.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G388",
+      "question": "What is external sorting?",
+      "options": [
+        "Internal sorting",
+        "Sorting data too large to fit in memory using disk",
+        "Quick sort",
+        "Merge sort only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "External sorting handles data larger than memory, typically using merge sort with disk I/O.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G389",
+      "question": "What is disk scheduling SCAN?",
+      "options": [
+        "Security scan",
+        "Move head in one direction servicing requests, then reverse",
+        "File scan",
+        "Memory scan"
+      ],
+      "correctAnswer": 1,
+      "explanation": "SCAN (elevator) algorithm moves head in one direction until end, servicing requests, then reverses.",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G390",
+      "question": "What is network CNAME record?",
+      "options": [
+        "Certificate",
+        "Canonical Name - alias pointing to another domain name",
+        "Cache",
+        "Connection"
+      ],
+      "correctAnswer": 1,
+      "explanation": "CNAME record creates an alias, pointing one domain name to another domain name.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G391",
+      "question": "What is minimum spanning tree property?",
+      "options": [
+        "Maximum edges",
+        "Connects all vertices with minimum total edge weight",
+        "Shortest path",
+        "Maximum flow"
+      ],
+      "correctAnswer": 1,
+      "explanation": "MST connects all vertices in a weighted graph with minimum total edge weight, using V-1 edges.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G392",
+      "question": "What is burndown chart?",
+      "options": [
+        "Fire chart",
+        "Graph showing remaining work vs time in sprint",
+        "Burn rate",
+        "Cost chart"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Burndown chart shows work remaining over time, helping track sprint progress.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G393",
+      "question": "What is patch management?",
+      "options": [
+        "Software patches",
+        "Process of acquiring, testing, installing security updates",
+        "Bug fixing",
+        "Code review"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Patch management is the systematic process of keeping software updated with security patches.",
+      "topic": "Cyber Security"
+    },
+    {
+      "id": "G394",
+      "question": "What is database explain plan?",
+      "options": [
+        "Documentation",
+        "Query execution plan showing how database will process query",
+        "Table description",
+        "Index list"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Explain plan shows how database will execute a query: joins, indexes used, estimated cost.",
+      "topic": "Database Systems"
+    },
+    {
+      "id": "G395",
+      "question": "What is randomized algorithm?",
+      "options": [
+        "Deterministic",
+        "Algorithm using random numbers in its logic",
+        "Sorting only",
+        "Search only"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Randomized algorithms use random numbers, often providing good average-case performance.",
+      "topic": "Algorithms"
+    },
+    {
+      "id": "G396",
+      "question": "What is file allocation method?",
+      "options": [
+        "Single method",
+        "Contiguous, linked, indexed allocation",
+        "No method",
+        "Random"
+      ],
+      "correctAnswer": 1,
+      "explanation": "File allocation methods: contiguous (sequential), linked (pointer chain), indexed (index block).",
+      "topic": "Operating Systems"
+    },
+    {
+      "id": "G397",
+      "question": "What is network traceroute?",
+      "options": [
+        "Tracking users",
+        "Showing path packets take to destination with hop times",
+        "File path",
+        "Routing table"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Traceroute displays the route packets take and latency to each hop along the path.",
+      "topic": "Computer Networks"
+    },
+    {
+      "id": "G398",
+      "question": "What is graph bridge?",
+      "options": [
+        "Vertex",
+        "Edge whose removal disconnects the graph",
+        "Path",
+        "Cycle"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Bridge (cut edge) is an edge whose removal increases the number of connected components.",
+      "topic": "Data Structures"
+    },
+    {
+      "id": "G399",
+      "question": "What is epic in agile?",
+      "options": [
+        "Small story",
+        "Large user story spanning multiple sprints",
+        "Bug",
+        "Task"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Epic is a large body of work that can be broken down into smaller user stories.",
+      "topic": "Software Engineering"
+    },
+    {
+      "id": "G400",
+      "question": "What is incident response?",
+      "options": [
+        "Prevention",
+        "Organized approach to handling security breaches",
+        "Attack",
+        "Audit"
+      ],
+      "correctAnswer": 1,
+      "explanation": "Incident response is the process of detecting, responding to, and recovering from security incidents.",
+      "topic": "Cyber Security"
+    }
+  ]
+}

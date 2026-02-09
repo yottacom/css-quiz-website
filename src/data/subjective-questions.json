@@ -1,0 +1,183 @@
+{
+  "metadata": {
+    "totalQuestions": 48,
+    "years": [2024, 2025],
+    "sections": ["Section A", "Section B"]
+  },
+  "questions": [
+    {
+      "id": "2024-P1-Q2",
+      "year": 2024,
+      "paper": 1,
+      "questionNumber": 2,
+      "section": "A",
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 6,
+          "question": "Discuss the future of Information Technology (IT) in Pakistan and its huge impact on all our daily lives.",
+          "answer": "**Future of IT in Pakistan:**\n\n1. **Digital Transformation:**\n   - E-governance initiatives (NADRA, FBR online)\n   - Digital payments (JazzCash, Easypaisa, Raast)\n   - Smart cities development\n\n2. **IT Industry Growth:**\n   - $2.6B+ IT exports (2023)\n   - Growing freelance community (2nd largest)\n   - Software houses and startups\n\n3. **Impact on Daily Life:**\n   - **Education:** Online learning, virtual classrooms\n   - **Healthcare:** Telemedicine, digital health records\n   - **Banking:** Mobile banking, online transactions\n   - **Commerce:** E-commerce platforms (Daraz, foodpanda)\n   - **Communication:** Social media, video conferencing\n\n4. **Challenges:**\n   - Digital divide (urban vs rural)\n   - Cybersecurity concerns\n   - Infrastructure limitations\n   - Brain drain\n\n5. **Future Prospects:**\n   - AI and machine learning adoption\n   - Cloud computing growth\n   - 5G implementation\n   - Tech parks and incubators"
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Discuss the difference between a computer virus, a trojan and a worm?",
+          "answer": "**Comparison of Malware Types:**\n\n| Feature | Virus | Trojan | Worm |\n|---------|-------|--------|------|\n| **Self-replication** | Yes, needs host file | No | Yes, standalone |\n| **Spreads via** | Infected files | Deception (disguised) | Network automatically |\n| **Host required** | Yes | No | No |\n| **User action needed** | Yes | Yes (to install) | No |\n| **Primary purpose** | Damage/disrupt | Steal data, backdoor | Spread, consume resources |\n\n**Virus:**\n- Attaches to legitimate programs\n- Activates when host program runs\n- Examples: ILOVEYOU, Melissa\n\n**Trojan:**\n- Disguised as legitimate software\n- Doesn't replicate itself\n- Creates backdoors for attackers\n- Examples: Zeus, Emotet\n\n**Worm:**\n- Self-contained, no host needed\n- Spreads through network vulnerabilities\n- Can spread very rapidly\n- Examples: WannaCry, SQL Slammer"
+        },
+        {
+          "part": "c",
+          "marks": 8,
+          "question": "Discuss the pros and cons of LaTeX in comparison to other document processors.",
+          "answer": "**LaTeX vs Other Document Processors (Word, Google Docs):**\n\n**Advantages of LaTeX:**\n\n1. **Typographical Quality:**\n   - Professional typesetting\n   - Superior mathematical equations\n   - Consistent formatting\n\n2. **Academic Use:**\n   - Standard for scientific papers\n   - Built-in bibliography management (BibTeX)\n   - Cross-references handled automatically\n\n3. **Portability:**\n   - Plain text source files\n   - Works across all platforms\n   - Version control friendly (Git)\n\n4. **Separation of Content and Style:**\n   - Focus on writing, not formatting\n   - Easy style changes via templates\n\n5. **Free and Open Source**\n\n**Disadvantages of LaTeX:**\n\n1. **Learning Curve:**\n   - Steep initial learning curve\n   - Syntax can be complex\n   - Error messages often cryptic\n\n2. **Collaboration:**\n   - Harder to collaborate than Google Docs\n   - Requires LaTeX knowledge from all collaborators\n\n3. **Real-time Preview:**\n   - No WYSIWYG editing\n   - Compile to see output\n\n4. **Simple Documents:**\n   - Overkill for simple documents\n   - Word processors faster for quick tasks\n\n5. **Tables and Images:**\n   - Positioning can be frustrating\n   - Complex table syntax"
+        }
+      ]
+    },
+    {
+      "id": "2024-P1-Q3",
+      "year": 2024,
+      "paper": 1,
+      "questionNumber": 3,
+      "section": "A",
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 6,
+          "question": "Write a program that prompts the user to enter a letter grade A, B, C, D, or F and displays its corresponding numeric value 4, 3, 2, 1, or 0.",
+          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    char grade;\n    \n    cout << \"Enter a letter grade (A, B, C, D, or F): \";\n    cin >> grade;\n    \n    // Convert to uppercase\n    grade = toupper(grade);\n    \n    int numericValue;\n    \n    switch(grade) {\n        case 'A':\n            numericValue = 4;\n            break;\n        case 'B':\n            numericValue = 3;\n            break;\n        case 'C':\n            numericValue = 2;\n            break;\n        case 'D':\n            numericValue = 1;\n            break;\n        case 'F':\n            numericValue = 0;\n            break;\n        default:\n            cout << \"Invalid grade entered!\" << endl;\n            return 1;\n    }\n    \n    cout << \"The numeric value for grade \" << grade \n         << \" is: \" << numericValue << endl;\n    \n    return 0;\n}\n```\n\n**Output Example:**\n```\nEnter a letter grade (A, B, C, D, or F): B\nThe numeric value for grade B is: 3\n```"
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Write pseudocode OR C-language script for a mathematical expression calculation.",
+          "answer": "**Pseudocode for Expression Evaluation:**\n\n```\nALGORITHM EvaluateExpression(expression)\n    operandStack = empty stack\n    operatorStack = empty stack\n    \n    FOR each token in expression:\n        IF token is a number:\n            PUSH token to operandStack\n        ELSE IF token is '(':\n            PUSH token to operatorStack\n        ELSE IF token is ')':\n            WHILE top of operatorStack is not '(':\n                operator = POP operatorStack\n                operand2 = POP operandStack\n                operand1 = POP operandStack\n                result = APPLY operator to operand1, operand2\n                PUSH result to operandStack\n            POP '(' from operatorStack\n        ELSE IF token is an operator:\n            WHILE operatorStack not empty AND \n                  precedence(top) >= precedence(token):\n                operator = POP operatorStack\n                operand2 = POP operandStack\n                operand1 = POP operandStack\n                result = APPLY operator to operand1, operand2\n                PUSH result to operandStack\n            PUSH token to operatorStack\n    \n    WHILE operatorStack not empty:\n        operator = POP operatorStack\n        operand2 = POP operandStack\n        operand1 = POP operandStack\n        result = APPLY operator to operand1, operand2\n        PUSH result to operandStack\n    \n    RETURN top of operandStack\nEND ALGORITHM\n```"
+        },
+        {
+          "part": "c",
+          "marks": 8,
+          "question": "Write a version of Breadth First Search (BFS) that finds the distances from the start node to each of the others, rather than the actual paths.",
+          "answer": "```cpp\n#include <iostream>\n#include <vector>\n#include <queue>\n#include <climits>\nusing namespace std;\n\nvector<int> bfsDistances(vector<vector<int>>& graph, int start) {\n    int n = graph.size();\n    vector<int> distance(n, INT_MAX);  // Initialize all distances as infinity\n    vector<bool> visited(n, false);\n    queue<int> q;\n    \n    // Start node has distance 0\n    distance[start] = 0;\n    visited[start] = true;\n    q.push(start);\n    \n    while (!q.empty()) {\n        int current = q.front();\n        q.pop();\n        \n        // Visit all neighbors\n        for (int neighbor : graph[current]) {\n            if (!visited[neighbor]) {\n                visited[neighbor] = true;\n                distance[neighbor] = distance[current] + 1;\n                q.push(neighbor);\n            }\n        }\n    }\n    \n    return distance;\n}\n\nint main() {\n    // Example: Graph with 6 vertices (0 to 5)\n    // Adjacency list representation\n    vector<vector<int>> graph = {\n        {1, 2},     // 0 connects to 1, 2\n        {0, 3, 4},  // 1 connects to 0, 3, 4\n        {0, 4},     // 2 connects to 0, 4\n        {1, 5},     // 3 connects to 1, 5\n        {1, 2, 5},  // 4 connects to 1, 2, 5\n        {3, 4}      // 5 connects to 3, 4\n    };\n    \n    int startNode = 0;\n    vector<int> distances = bfsDistances(graph, startNode);\n    \n    cout << \"Distances from node \" << startNode << \":\" << endl;\n    for (int i = 0; i < distances.size(); i++) {\n        if (distances[i] == INT_MAX)\n            cout << \"Node \" << i << \": Unreachable\" << endl;\n        else\n            cout << \"Node \" << i << \": \" << distances[i] << endl;\n    }\n    \n    return 0;\n}\n```\n\n**Output:**\n```\nDistances from node 0:\nNode 0: 0\nNode 1: 1\nNode 2: 1\nNode 3: 2\nNode 4: 2\nNode 5: 3\n```\n\n**Time Complexity:** O(V + E)\n**Space Complexity:** O(V)"
+        }
+      ]
+    },
+    {
+      "id": "2024-P1-Q4",
+      "year": 2024,
+      "paper": 1,
+      "questionNumber": 4,
+      "section": "A",
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 6,
+          "question": "Write a program that displays the area and perimeter of a rectangle with the width of 4.5 and height of 7.9 using the formula: area = width * height.",
+          "answer": "```cpp\n#include <iostream>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    // Define dimensions\n    double width = 4.5;\n    double height = 7.9;\n    \n    // Calculate area\n    double area = width * height;\n    \n    // Calculate perimeter\n    double perimeter = 2 * (width + height);\n    \n    // Display results with 2 decimal places\n    cout << fixed << setprecision(2);\n    cout << \"Rectangle Dimensions:\" << endl;\n    cout << \"Width: \" << width << endl;\n    cout << \"Height: \" << height << endl;\n    cout << \"\\nCalculations:\" << endl;\n    cout << \"Area = \" << width << \" × \" << height \n         << \" = \" << area << \" square units\" << endl;\n    cout << \"Perimeter = 2 × (\" << width << \" + \" << height \n         << \") = \" << perimeter << \" units\" << endl;\n    \n    return 0;\n}\n```\n\n**Output:**\n```\nRectangle Dimensions:\nWidth: 4.50\nHeight: 7.90\n\nCalculations:\nArea = 4.50 × 7.90 = 35.55 square units\nPerimeter = 2 × (4.50 + 7.90) = 24.80 units\n```"
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Write a program that reads a Celsius degree from the console, then converts it to Fahrenheit and displays the result. Formula: Fahrenheit = (9/5) * Celsius + 32.",
+          "answer": "```cpp\n#include <iostream>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    double celsius, fahrenheit;\n    \n    // Prompt user for input\n    cout << \"Enter temperature in Celsius: \";\n    cin >> celsius;\n    \n    // Convert to Fahrenheit\n    // Note: Use 9.0/5.0 to avoid integer division\n    fahrenheit = (9.0 / 5.0) * celsius + 32;\n    \n    // Display result\n    cout << fixed << setprecision(2);\n    cout << celsius << \"°C = \" << fahrenheit << \"°F\" << endl;\n    \n    return 0;\n}\n```\n\n**Example Outputs:**\n```\nEnter temperature in Celsius: 0\n0.00°C = 32.00°F\n\nEnter temperature in Celsius: 100\n100.00°C = 212.00°F\n\nEnter temperature in Celsius: 37\n37.00°C = 98.60°F\n```"
+        },
+        {
+          "part": "c",
+          "marks": 8,
+          "question": "Write a program that prompts the user to enter the month and year and displays the number of days in the month.",
+          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nbool isLeapYear(int year) {\n    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);\n}\n\nint getDaysInMonth(int month, int year) {\n    switch(month) {\n        case 1: case 3: case 5: case 7: \n        case 8: case 10: case 12:\n            return 31;\n        case 4: case 6: case 9: case 11:\n            return 30;\n        case 2:\n            return isLeapYear(year) ? 29 : 28;\n        default:\n            return -1;\n    }\n}\n\nstring getMonthName(int month) {\n    string months[] = {\"\", \"January\", \"February\", \"March\", \n                       \"April\", \"May\", \"June\", \"July\", \n                       \"August\", \"September\", \"October\", \n                       \"November\", \"December\"};\n    return months[month];\n}\n\nint main() {\n    int month, year;\n    \n    cout << \"Enter month (1-12): \";\n    cin >> month;\n    \n    cout << \"Enter year: \";\n    cin >> year;\n    \n    // Validate input\n    if (month < 1 || month > 12) {\n        cout << \"Invalid month!\" << endl;\n        return 1;\n    }\n    \n    if (year < 1) {\n        cout << \"Invalid year!\" << endl;\n        return 1;\n    }\n    \n    int days = getDaysInMonth(month, year);\n    \n    cout << getMonthName(month) << \" \" << year \n         << \" has \" << days << \" days.\" << endl;\n    \n    return 0;\n}\n```\n\n**Example Outputs:**\n```\nEnter month (1-12): 2\nEnter year: 2024\nFebruary 2024 has 29 days.\n\nEnter month (1-12): 3\nEnter year: 2015\nMarch 2015 has 31 days.\n```"
+        }
+      ]
+    },
+    {
+      "id": "2024-P1-Q5",
+      "year": 2024,
+      "paper": 1,
+      "questionNumber": 5,
+      "section": "B",
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 6,
+          "question": "Show the output of the following Java code:\npublic class Test {\n  public static void main(String[] args) {\n    Double x = 3.5;\n    System.out.println(x.intValue());\n    System.out.println(x.compareTo(4.5));\n  }\n}",
+          "answer": "**Output:**\n```\n3\n-1\n```\n\n**Explanation:**\n\n1. **x.intValue()** returns `3`\n   - `intValue()` converts the Double to an int\n   - 3.5 truncated to integer is 3 (decimal part discarded)\n\n2. **x.compareTo(4.5)** returns `-1`\n   - `compareTo()` compares two Double values\n   - Returns negative if this < argument\n   - Returns 0 if equal\n   - Returns positive if this > argument\n   - Since 3.5 < 4.5, it returns -1\n\n**Note:** `Double` is the wrapper class for primitive `double`. It provides utility methods like `intValue()`, `compareTo()`, `parseDouble()`, etc."
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Illustrate the difference between overriding and overloading by the piece of pseudocode or program.",
+          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\n// ==================== OVERLOADING ====================\n// Same method name, different parameters (compile-time polymorphism)\n\nclass Calculator {\npublic:\n    // Overloaded methods - same name, different signatures\n    int add(int a, int b) {\n        return a + b;\n    }\n    \n    double add(double a, double b) {\n        return a + b;\n    }\n    \n    int add(int a, int b, int c) {\n        return a + b + c;\n    }\n};\n\n// ==================== OVERRIDING ====================\n// Same method signature in derived class (runtime polymorphism)\n\nclass Animal {\npublic:\n    virtual void speak() {\n        cout << \"Animal makes a sound\" << endl;\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() override {  // Overriding parent method\n        cout << \"Dog barks: Woof!\" << endl;\n    }\n};\n\nclass Cat : public Animal {\npublic:\n    void speak() override {  // Overriding parent method\n        cout << \"Cat meows: Meow!\" << endl;\n    }\n};\n\nint main() {\n    // Demonstrating Overloading\n    Calculator calc;\n    cout << \"=== OVERLOADING ===\"<< endl;\n    cout << \"add(2, 3) = \" << calc.add(2, 3) << endl;\n    cout << \"add(2.5, 3.5) = \" << calc.add(2.5, 3.5) << endl;\n    cout << \"add(1, 2, 3) = \" << calc.add(1, 2, 3) << endl;\n    \n    // Demonstrating Overriding\n    cout << \"\\n=== OVERRIDING ===\" << endl;\n    Animal* animal1 = new Dog();\n    Animal* animal2 = new Cat();\n    \n    animal1->speak();  // Calls Dog::speak()\n    animal2->speak();  // Calls Cat::speak()\n    \n    return 0;\n}\n```\n\n**Key Differences:**\n\n| Feature | Overloading | Overriding |\n|---------|-------------|------------|\n| **Definition** | Same name, different parameters | Same name and parameters in derived class |\n| **Binding** | Compile-time (static) | Runtime (dynamic) |\n| **Inheritance** | Not required | Required |\n| **Return type** | Can differ | Must be same or covariant |\n| **virtual keyword** | Not needed | Needed in base class |"
+        },
+        {
+          "part": "c",
+          "marks": 8,
+          "question": "How do you prevent a class from being extended? How do you prevent a method from being overridden? Exemplify with simple piece of code.",
+          "answer": "```cpp\n// In C++:\n\n// ==================== PREVENTING CLASS EXTENSION ====================\n// Use 'final' keyword on class\n\nclass FinalClass final {  // Cannot be inherited\npublic:\n    void display() {\n        cout << \"This class cannot be extended\" << endl;\n    }\n};\n\n// This would cause compilation error:\n// class Child : public FinalClass { };  // ERROR!\n\n// ==================== PREVENTING METHOD OVERRIDE ====================\n// Use 'final' keyword on method\n\nclass Base {\npublic:\n    virtual void canOverride() {\n        cout << \"This can be overridden\" << endl;\n    }\n    \n    virtual void cannotOverride() final {  // Cannot be overridden\n        cout << \"This cannot be overridden\" << endl;\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void canOverride() override {  // OK - allowed\n        cout << \"Overridden in Derived\" << endl;\n    }\n    \n    // This would cause compilation error:\n    // void cannotOverride() override { }  // ERROR!\n};\n\nint main() {\n    FinalClass f;\n    f.display();\n    \n    Derived d;\n    d.canOverride();      // \"Overridden in Derived\"\n    d.cannotOverride();   // \"This cannot be overridden\"\n    \n    return 0;\n}\n```\n\n**In Java:**\n```java\n// Prevent class extension\nfinal class FinalClass {\n    void display() {\n        System.out.println(\"Cannot extend this class\");\n    }\n}\n\n// Prevent method override\nclass Parent {\n    final void cannotOverride() {\n        System.out.println(\"Cannot override this method\");\n    }\n}\n```\n\n**Summary:**\n- **Prevent class extension:** Use `final` keyword on class\n- **Prevent method override:** Use `final` keyword on method"
+        }
+      ]
+    },
+    {
+      "id": "2024-P1-Q6",
+      "year": 2024,
+      "paper": 1,
+      "questionNumber": 6,
+      "section": "B",
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 8,
+          "question": "For the following data sets, which sorting algorithms would work well, and which would not?",
+          "answer": "| Dataset | Best Algorithm(s) | Avoid | Reason |\n|---------|------------------|-------|--------|\n| **a. 10 floating-point values** | Insertion Sort | Quick Sort | Small n, O(n²) is fine, low overhead |\n| **b. 1,000 integers** | Quick Sort, Merge Sort | Bubble Sort | O(n log n) efficient for medium size |\n| **c. 1,000 names** | Merge Sort | Quick Sort | Stable sort preserves order for equal names |\n| **d. 100,000 integers (0-1,000)** | Counting Sort, Radix Sort | Comparison sorts | O(n+k), k=1000 is small |\n| **e. 100,000 integers (0-1 billion)** | Quick Sort, Merge Sort | Counting Sort | k too large for counting sort |\n| **f. 100,000 names** | Merge Sort | Counting Sort | Strings need comparison-based sort |\n| **g. 1 million floating-point** | Quick Sort, Merge Sort | Insertion Sort | O(n log n) required, O(n²) too slow |\n| **h. 1 million names** | External Merge Sort | In-memory sorts | May need disk-based sorting |\n| **i. 1 million integers (uniform)** | Quick Sort | Merge Sort | Uniform distribution = balanced pivots |\n| **j. 1 million integers (non-uniform)** | Merge Sort | Quick Sort | Worst case for Quick Sort with skewed data |"
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Write an algorithm that implements binary search recursively. Does this version have any advantages or disadvantages compared to the non-recursive version?",
+          "answer": "```cpp\nint binarySearchRecursive(int arr[], int left, int right, int target) {\n    // Base case: element not found\n    if (left > right) {\n        return -1;\n    }\n    \n    int mid = left + (right - left) / 2;  // Avoid overflow\n    \n    // Found the element\n    if (arr[mid] == target) {\n        return mid;\n    }\n    \n    // Search left half\n    if (target < arr[mid]) {\n        return binarySearchRecursive(arr, left, mid - 1, target);\n    }\n    \n    // Search right half\n    return binarySearchRecursive(arr, mid + 1, right, target);\n}\n```\n\n**Advantages of Recursive Version:**\n- Cleaner, more readable code\n- Follows mathematical definition directly\n- Easier to prove correctness\n\n**Disadvantages of Recursive Version:**\n- Function call overhead (stack frames)\n- Risk of stack overflow for very large arrays\n- Slightly slower due to function calls\n- Uses O(log n) stack space vs O(1) for iterative\n\n**When to Use Which:**\n- **Recursive:** Teaching, readability is priority\n- **Iterative:** Performance-critical code, large datasets"
+        },
+        {
+          "part": "c",
+          "marks": 6,
+          "question": "Write an algorithm that deletes a specified cell from a doubly linked list. Draw a picture that shows the process graphically.",
+          "answer": "```cpp\nstruct Node {\n    int data;\n    Node* prev;\n    Node* next;\n};\n\nvoid deleteNode(Node*& head, Node* nodeToDelete) {\n    if (head == nullptr || nodeToDelete == nullptr) {\n        return;  // Nothing to delete\n    }\n    \n    // Case 1: Deleting head node\n    if (head == nodeToDelete) {\n        head = nodeToDelete->next;\n    }\n    \n    // Case 2: Node has a next node\n    if (nodeToDelete->next != nullptr) {\n        nodeToDelete->next->prev = nodeToDelete->prev;\n    }\n    \n    // Case 3: Node has a previous node\n    if (nodeToDelete->prev != nullptr) {\n        nodeToDelete->prev->next = nodeToDelete->next;\n    }\n    \n    // Free memory\n    delete nodeToDelete;\n}\n```\n\n**Graphical Representation:**\n\n```\nBEFORE DELETION (deleting node B):\n                \n   ┌─────┐     ┌─────┐     ┌─────┐\n   │  A  │ ←→  │  B  │ ←→  │  C  │\n   └─────┘     └─────┘     └─────┘\n      ↑           ↑\n      │    nodeToDelete\n     head\n\nSTEP 1: Update C's prev pointer\n   ┌─────┐     ┌─────┐     ┌─────┐\n   │  A  │ ←→  │  B  │  ←  │  C  │\n   └─────┘     └─────┘     └──┬──┘\n                  ↓           │\n              (being deleted) │\n                              ↓\n   ┌─────────────────────────────┐\n   └─────────── A ←──────────────┘\n\nSTEP 2: Update A's next pointer\n   ┌─────┐     ┌─────┐     ┌─────┐\n   │  A  │  →  │  B  │     │  C  │\n   └──┬──┘     └─────┘     └─────┘\n      │                       ↑\n      └───────────────────────┘\n\nAFTER DELETION:\n   ┌─────┐     ┌─────┐\n   │  A  │ ←→  │  C  │\n   └─────┘     └─────┘\n```"
+        }
+      ]
+    },
+    {
+      "id": "2024-P1-Q8",
+      "year": 2024,
+      "paper": 1,
+      "questionNumber": 8,
+      "section": "B",
+      "marks": 20,
+      "parts": [
+        {
+          "part": "I",
+          "marks": 5,
+          "question": "Write Regular Expression for date Format (e.g., 10.03.2024 | 12/30/2023 | 01/01/2022)",
+          "answer": "```regex\n^(0[1-9]|[12][0-9]|3[01])[.\\/](0[1-9]|1[0-2])[.\\/](19|20)\\d{2}$\n```\n\n**Explanation:**\n- `^` - Start of string\n- `(0[1-9]|[12][0-9]|3[01])` - Day (01-31)\n- `[.\\/]` - Separator (. or /)\n- `(0[1-9]|1[0-2])` - Month (01-12)\n- `[.\\/]` - Separator\n- `(19|20)\\d{2}` - Year (1900-2099)\n- `$` - End of string\n\n**Matches:** 10.03.2024, 12/30/2023, 01/01/2022"
+        },
+        {
+          "part": "II",
+          "marks": 5,
+          "question": "Write a Regular Expression that will match URL (e.g., http://example.edu.pk)",
+          "answer": "```regex\n^https?:\\/\\/([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}(\\/[a-zA-Z0-9._~:/?#[\\]@!$&'()*+,;=-]*)?$\n```\n\n**Simplified version:**\n```regex\n^https?:\\/\\/[a-zA-Z0-9][a-zA-Z0-9.-]*\\.[a-zA-Z]{2,}(\\/.*)?$\n```\n\n**Explanation:**\n- `^https?:\\/\\/` - Matches http:// or https://\n- `[a-zA-Z0-9][a-zA-Z0-9.-]*` - Domain name\n- `\\.[a-zA-Z]{2,}` - TLD (.com, .pk, .edu.pk)\n- `(\\/.*)?$` - Optional path\n\n**Matches:** http://example.edu.pk, https://www.google.com/search"
+        },
+        {
+          "part": "III",
+          "marks": 5,
+          "question": "Write a Regular Expression that will match an IP address (e.g., 192.168.0.1)",
+          "answer": "```regex\n^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$\n```\n\n**Explanation:**\n- `25[0-5]` - Matches 250-255\n- `2[0-4][0-9]` - Matches 200-249\n- `[01]?[0-9][0-9]?` - Matches 0-199\n- `\\.` - Literal dot\n- `{3}` - First three octets with dots\n- Last part is the fourth octet\n\n**Matches:** 192.168.0.1, 255.255.255.0, 10.0.0.1\n**Rejects:** 256.1.1.1, 192.168.1 (incomplete)"
+        },
+        {
+          "part": "IV",
+          "marks": 5,
+          "question": "Write a Regular Expression that will match an email address (e.g., abc@example.com)",
+          "answer": "```regex\n^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\n```\n\n**Explanation:**\n- `^` - Start of string\n- `[a-zA-Z0-9._%+-]+` - Local part (before @)\n  - Letters, numbers, dots, underscores, percent, plus, hyphen\n- `@` - Literal @ symbol\n- `[a-zA-Z0-9.-]+` - Domain name\n- `\\.` - Literal dot\n- `[a-zA-Z]{2,}` - TLD (minimum 2 characters)\n- `$` - End of string\n\n**Matches:** abc@example.com, user.name@domain.co.uk\n**Rejects:** @example.com, abc@.com"
+        }
+      ]
+    }
+  ]
+}

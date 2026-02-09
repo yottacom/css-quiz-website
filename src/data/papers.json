@@ -1,0 +1,72 @@
+{
+  "papers": [
+    {
+      "year": 2016,
+      "papers": [
+        { "id": "2016-paper-1", "title": "Computer Science Paper I", "year": 2016, "mcqCount": 20, "descriptiveCount": 7 },
+        { "id": "2016-paper-2", "title": "Computer Science Paper II", "year": 2016, "mcqCount": 20, "descriptiveCount": 7 }
+      ]
+    },
+    {
+      "year": 2017,
+      "papers": [
+        { "id": "2017-paper-1", "title": "Computer Science Paper I", "year": 2017, "mcqCount": 20, "descriptiveCount": 7 },
+        { "id": "2017-paper-2", "title": "Computer Science Paper II", "year": 2017, "mcqCount": 20, "descriptiveCount": 7 }
+      ]
+    },
+    {
+      "year": 2018,
+      "papers": [
+        { "id": "2018-paper-1", "title": "Computer Science Paper I", "year": 2018, "mcqCount": 20, "descriptiveCount": 7 },
+        { "id": "2018-paper-2", "title": "Computer Science Paper II", "year": 2018, "mcqCount": 20, "descriptiveCount": 7 }
+      ]
+    },
+    {
+      "year": 2019,
+      "papers": [
+        { "id": "2019-paper-1", "title": "Computer Science Paper I", "year": 2019, "mcqCount": 20, "descriptiveCount": 7 },
+        { "id": "2019-paper-2", "title": "Computer Science Paper II", "year": 2019, "mcqCount": 20, "descriptiveCount": 7 }
+      ]
+    },
+    {
+      "year": 2020,
+      "papers": [
+        { "id": "2020-paper-2", "title": "Computer Science Paper II", "year": 2020, "mcqCount": 20, "descriptiveCount": 7 }
+      ]
+    },
+    {
+      "year": 2021,
+      "papers": [
+        { "id": "2021-paper-1", "title": "Computer Science Paper I", "year": 2021, "mcqCount": 20, "descriptiveCount": 7 },
+        { "id": "2021-paper-2", "title": "Computer Science Paper II", "year": 2021, "mcqCount": 20, "descriptiveCount": 7 }
+      ]
+    },
+    {
+      "year": 2022,
+      "papers": [
+        { "id": "2022-paper-1", "title": "Computer Science Paper I", "year": 2022, "mcqCount": 20, "descriptiveCount": 7 },
+        { "id": "2022-paper-2", "title": "Computer Science Paper II", "year": 2022, "mcqCount": 20, "descriptiveCount": 7 }
+      ]
+    },
+    {
+      "year": 2023,
+      "papers": [
+        { "id": "2023-paper-2", "title": "Computer Science Paper II", "year": 2023, "mcqCount": 20, "descriptiveCount": 7 }
+      ]
+    },
+    {
+      "year": 2024,
+      "papers": [
+        { "id": "2024-paper-1", "title": "Computer Science Paper I", "year": 2024, "mcqCount": 20, "descriptiveCount": 7 },
+        { "id": "2024-paper-2", "title": "Computer Science Paper II", "year": 2024, "mcqCount": 20, "descriptiveCount": 7 }
+      ]
+    },
+    {
+      "year": 2025,
+      "papers": [
+        { "id": "2025-paper-1", "title": "Computer Science Paper I", "year": 2025, "mcqCount": 20, "descriptiveCount": 7 },
+        { "id": "2025-paper-2", "title": "Computer Science Paper II", "year": 2025, "mcqCount": 20, "descriptiveCount": 7 }
+      ]
+    }
+  ]
+}

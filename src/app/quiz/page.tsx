@@ -6,15 +6,15 @@ import QuizQuestion from '../components/QuizQuestion';
 import Link from 'next/link';
 
 interface MCQ {
-  id: number;
-  year: number;
-  paper: number;
+  id: string | number;
+  year?: number;
+  paper?: number;
   question: string;
   options: string[];
   correctAnswer: number;
   explanation: string;
   topic: string;
-  difficulty: string;
+  difficulty?: string;
 }
 
 export default function QuizPage() {
@@ -28,8 +28,8 @@ export default function QuizPage() {
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [answers, setAnswers] = useState<{ correct: boolean; mcq: MCQ }[]>([]);
 
-  const years = Array.from(new Set(mcqsData.mcqs.map(m => m.year))).sort((a, b) => b - a);
-  const topics = Array.from(new Set(mcqsData.mcqs.map(m => m.topic))).sort();
+  const years = Array.from(new Set(mcqsData.mcqs.map(m => m.year).filter((y): y is number => y !== undefined))).sort((a, b) => b - a);
+  const topics = Array.from(new Set(mcqsData.mcqs.map(m => m.topic).filter((t): t is string => t !== undefined))).sort();
 
   const filteredMCQs = useMemo(() => {
     let filtered = mcqsData.mcqs as MCQ[];

@@ -1,15 +1,15 @@
 'use client';
 
 interface MCQ {
-  id: number;
-  year: number;
-  paper: number;
+  id: string | number;
+  year?: number;
+  paper?: number;
   question: string;
   options: string[];
   correctAnswer: number;
   explanation: string;
   topic: string;
-  difficulty: string;
+  difficulty?: string;
 }
 
 interface QuizQuestionProps {

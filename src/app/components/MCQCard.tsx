@@ -3,15 +3,15 @@
 import { useState } from 'react';
 
 interface MCQ {
-  id: number;
-  year: number;
-  paper: number;
+  id: string | number;
+  year?: number;
+  paper?: number;
   question: string;
   options: string[];
   correctAnswer: number;
   explanation: string;
   topic: string;
-  difficulty: string;
+  difficulty?: string;
 }
 
 interface MCQCardProps {
@@ -31,15 +31,19 @@ export default function MCQCard({ mcq, showAnswer = false }: MCQCardProps) {
   return (
     <div className="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 border border-gray-100">
       <div className="flex flex-wrap items-center gap-2 mb-4">
-        <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">
-          {mcq.year}
-        </span>
+        {mcq.year && (
+          <span className="px-3 py-1 bg-blue-100 text-blue-800 text-xs font-medium rounded-full">
+            {mcq.year}
+          </span>
+        )}
         <span className="px-3 py-1 bg-purple-100 text-purple-800 text-xs font-medium rounded-full">
           {mcq.topic}
         </span>
-        <span className={`px-3 py-1 text-xs font-medium rounded-full ${difficultyColors[mcq.difficulty] || 'bg-gray-100 text-gray-800'}`}>
-          {mcq.difficulty}
-        </span>
+        {mcq.difficulty && (
+          <span className={`px-3 py-1 text-xs font-medium rounded-full ${difficultyColors[mcq.difficulty] || 'bg-gray-100 text-gray-800'}`}>
+            {mcq.difficulty}
+          </span>
+        )}
       </div>
 
       <h3 className="text-lg font-semibold text-gray-900 mb-4">

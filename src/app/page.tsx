@@ -4,8 +4,8 @@ import papersData from './../../src/data/papers.json';
 
 export default function Home() {
   const totalMCQs = mcqsData.mcqs.length;
-  const years = Array.from(new Set(mcqsData.mcqs.map(m => m.year))).sort();
-  const topics = Array.from(new Set(mcqsData.mcqs.map(m => m.topic)));
+  const years = Array.from(new Set(mcqsData.mcqs.map(m => m.year).filter((y): y is number => y !== undefined))).sort();
+  const topics = Array.from(new Set(mcqsData.mcqs.map(m => m.topic).filter((t): t is string => t !== undefined)));
   const totalPapers = papersData.papers.reduce((acc, y) => acc + y.papers.length, 0);
 
   return (

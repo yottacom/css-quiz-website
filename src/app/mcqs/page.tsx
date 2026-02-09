@@ -5,15 +5,15 @@ import mcqsData from './../../../src/data/mcqs.json';
 import MCQCard from '../components/MCQCard';
 
 interface MCQ {
-  id: number;
-  year: number;
-  paper: number;
+  id: string | number;
+  year?: number;
+  paper?: number;
   question: string;
   options: string[];
   correctAnswer: number;
   explanation: string;
   topic: string;
-  difficulty: string;
+  difficulty?: string;
 }
 
 const ITEMS_PER_PAGE = 20;
@@ -25,8 +25,8 @@ export default function MCQsPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
 
-  const years = Array.from(new Set(mcqsData.mcqs.map(m => m.year))).sort((a, b) => b - a);
-  const topics = Array.from(new Set(mcqsData.mcqs.map(m => m.topic))).sort();
+  const years = Array.from(new Set(mcqsData.mcqs.map(m => m.year).filter((y): y is number => y !== undefined))).sort((a, b) => b - a);
+  const topics = Array.from(new Set(mcqsData.mcqs.map(m => m.topic).filter((t): t is string => t !== undefined))).sort();
   const difficulties = ['Easy', 'Medium', 'Hard'];
 
   const filteredMCQs = useMemo(() => {

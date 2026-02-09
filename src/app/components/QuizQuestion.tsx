@@ -55,16 +55,16 @@ export default function QuizQuestion({
       {/* Options */}
       <div className="space-y-3 mb-6">
         {mcq.options.map((option, index) => {
-          let optionClass = 'bg-gray-50 border-gray-200 hover:border-blue-400 hover:bg-blue-50';
+          let optionClass = 'bg-gray-50 border-gray-200 text-black hover:border-blue-400 hover:bg-blue-50';
           
           if (showResult) {
             if (index === mcq.correctAnswer) {
-              optionClass = 'bg-green-100 border-green-500 text-green-800';
+              optionClass = 'bg-green-100 border-green-500 text-black';
             } else if (selectedAnswer === index && index !== mcq.correctAnswer) {
-              optionClass = 'bg-red-100 border-red-500 text-red-800';
+              optionClass = 'bg-red-100 border-red-500 text-black';
             }
           } else if (selectedAnswer === index) {
-            optionClass = 'bg-blue-100 border-blue-500';
+            optionClass = 'bg-blue-100 border-blue-500 text-black';
           }
 
           return (
@@ -76,10 +76,10 @@ export default function QuizQuestion({
                 !showResult ? 'cursor-pointer' : 'cursor-default'
               }`}
             >
-              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white border mr-3 font-semibold">
+              <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-white border mr-3 font-semibold text-black">
                 {String.fromCharCode(65 + index)}
               </span>
-              {option}
+              <span className="text-black">{option}</span>
             </button>
           );
         })}

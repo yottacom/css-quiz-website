@@ -46,7 +46,7 @@ export default function MCQCard({ mcq, showAnswer = false }: MCQCardProps) {
         )}
       </div>
 
-      <h3 className="text-lg font-semibold text-gray-900 mb-4">
+      <h3 className="text-lg font-semibold text-black mb-4">
         Q{mcq.id}. {mcq.question}
       </h3>
 
@@ -56,12 +56,12 @@ export default function MCQCard({ mcq, showAnswer = false }: MCQCardProps) {
             key={index}
             className={`p-3 rounded-lg border ${
               revealed && index === mcq.correctAnswer
-                ? 'bg-green-50 border-green-500 text-green-800'
-                : 'bg-gray-50 border-gray-200 text-gray-800'
+                ? 'bg-green-50 border-green-500'
+                : 'bg-gray-50 border-gray-200'
             }`}
           >
-            <span className="font-medium mr-2 text-gray-900">{String.fromCharCode(65 + index)}.</span>
-            <span className="text-gray-800">{option}</span>
+            <span className="font-medium mr-2 text-black">{String.fromCharCode(65 + index)}.</span>
+            <span className="text-black">{option}</span>
           </div>
         ))}
       </div>

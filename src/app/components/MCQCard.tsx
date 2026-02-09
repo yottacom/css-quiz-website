@@ -57,11 +57,11 @@ export default function MCQCard({ mcq, showAnswer = false }: MCQCardProps) {
             className={`p-3 rounded-lg border ${
               revealed && index === mcq.correctAnswer
                 ? 'bg-green-50 border-green-500 text-green-800'
-                : 'bg-gray-50 border-gray-200'
+                : 'bg-gray-50 border-gray-200 text-gray-800'
             }`}
           >
-            <span className="font-medium mr-2">{String.fromCharCode(65 + index)}.</span>
-            {option}
+            <span className="font-medium mr-2 text-gray-900">{String.fromCharCode(65 + index)}.</span>
+            <span className="text-gray-800">{option}</span>
           </div>
         ))}
       </div>

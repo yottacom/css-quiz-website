@@ -1,181 +1,316 @@
 {
   "metadata": {
+    "title": "CSS Computer Science Subjective Questions - Solved",
+    "description": "Complete solutions to CSS Computer Science past paper subjective questions (2016-2025)",
     "totalQuestions": 48,
-    "years": [2024, 2025],
-    "sections": ["Section A", "Section B"]
+    "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025]
   },
   "questions": [
+    {
+      "id": "2016-P1-Q2",
+      "year": 2016,
+      "paper": 1,
+      "section": "I",
+      "questionNumber": 2,
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 6,
+          "question": "Write a program to input choice from user for temperature conversion from Fahrenheit to Celsius or Celsius to Fahrenheit.",
+          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int choice;\n    float temp, converted;\n    \n    cout << \"1. Fahrenheit to Celsius\" << endl;\n    cout << \"2. Celsius to Fahrenheit\" << endl;\n    cout << \"Enter your choice: \";\n    cin >> choice;\n    \n    if (choice == 1) {\n        cout << \"Enter Temperature in Fahrenheit: \";\n        cin >> temp;\n        converted = (temp - 32) * 5.0 / 9.0;\n        cout << \"Same Temperature in Celsius: \" << converted << endl;\n    } else if (choice == 2) {\n        cout << \"Enter Temperature in Celsius: \";\n        cin >> temp;\n        converted = (temp * 9.0 / 5.0) + 32;\n        cout << \"Same Temperature in Fahrenheit: \" << converted << endl;\n    }\n    \n    cout << \"Press Any Key to Continue....\";\n    return 0;\n}\n```\n\n**Key Points:**\n- Formula F to C: C = (F - 32) × 5/9\n- Formula C to F: F = C × 9/5 + 32\n- Use float for precision"
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Which type of computer (supercomputers, mainframe computers, minicomputers, microcomputers) will suit an individual? Justify your answer.",
+          "answer": "**Microcomputers** are most suitable for individuals.\n\n**Justification:**\n\n1. **Cost**: Microcomputers are affordable for personal purchase ($500-$2000), while mainframes cost millions.\n\n2. **Size**: Compact enough for home/office use - fits on a desk.\n\n3. **Power Consumption**: Low power requirements, standard electrical outlets.\n\n4. **Ease of Use**: User-friendly operating systems (Windows, macOS), no specialized training needed.\n\n5. **Functionality**: Sufficient for personal tasks:\n   - Document processing\n   - Web browsing\n   - Entertainment\n   - Programming\n   - Small business applications\n\n6. **Maintenance**: Easy to maintain, upgrade, and repair.\n\n**Examples**: Desktop PCs, Laptops, Tablets, Smartphones"
+        },
+        {
+          "part": "c",
+          "marks": 8,
+          "question": "Design classes for a Student Registration System with Person, Teacher, Student, Course, Section, Allocation, and Registration classes.",
+          "answer": "```cpp\nclass Person {\nprotected:\n    string name;\n    int age;\n    string address;\n    string contactNo;\npublic:\n    Person() {}\n    Person(string n, int a, string addr, string c) \n        : name(n), age(a), address(addr), contactNo(c) {}\n    virtual void getdata() {\n        cout << \"Enter name: \"; cin >> name;\n        cout << \"Enter age: \"; cin >> age;\n        cout << \"Enter address: \"; cin >> address;\n    }\n    virtual void showdata() {\n        cout << \"Name: \" << name << \"\\nAge: \" << age << endl;\n    }\n};\n\nclass Teacher : public Person {\nprivate:\n    string teacherId;\n    string department;\n    string designation;\npublic:\n    void getdata() override {\n        Person::getdata();\n        cout << \"Enter Teacher ID: \"; cin >> teacherId;\n        cout << \"Enter Department: \"; cin >> department;\n    }\n    void showdata() override {\n        Person::showdata();\n        cout << \"Teacher ID: \" << teacherId << endl;\n    }\n};\n\nclass Student : public Person {\nprivate:\n    string rollNo;\n    string program;\n    int semester;\npublic:\n    void getdata() override {\n        Person::getdata();\n        cout << \"Enter Roll No: \"; cin >> rollNo;\n        cout << \"Enter Program: \"; cin >> program;\n    }\n    void showdata() override {\n        Person::showdata();\n        cout << \"Roll No: \" << rollNo << endl;\n    }\n};\n\nclass Course {\nprivate:\n    string courseCode;\n    string courseName;\n    int creditHours;\npublic:\n    void getdata() {\n        cout << \"Enter Course Code: \"; cin >> courseCode;\n        cout << \"Enter Course Name: \"; cin >> courseName;\n        cout << \"Enter Credit Hours: \"; cin >> creditHours;\n    }\n    void showdata() {\n        cout << \"Course: \" << courseCode << \" - \" << courseName << endl;\n    }\n};\n\nclass Registration {\nprivate:\n    Student student;\n    Course course;\n    string semester;\n    float grade;\npublic:\n    void getdata() {\n        student.getdata();\n        course.getdata();\n        cout << \"Enter Semester: \"; cin >> semester;\n        cout << \"Enter Grade: \"; cin >> grade;\n    }\n    void showdata() {\n        student.showdata();\n        course.showdata();\n        cout << \"Grade: \" << grade << endl;\n    }\n};\n```"
+        }
+      ]
+    },
+    {
+      "id": "2016-P1-Q5",
+      "year": 2016,
+      "paper": 1,
+      "section": "II",
+      "questionNumber": 5,
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 8,
+          "question": "Describe: Sibling Nodes, Degree of tree, Leaf Node, Height/Depth, Binary Tree, Full Binary Tree, Complete Binary Tree, Maximum nodes at level L.",
+          "answer": "**i. Sibling Nodes:** Nodes that share the same parent node. In a family tree analogy, siblings are brothers and sisters.\n\n**ii. Degree of a Tree:** Maximum number of children any node has. If max children = 3, degree = 3.\n\n**iii. Leaf Node:** A node with no children (degree 0). Also called terminal or external node.\n\n**iv. Height/Depth:** Height = longest path from root to deepest leaf. Depth of node = path length from root to that node.\n\n**v. Binary Tree:** Tree where each node has at most 2 children (left and right child).\n\n**vi. Full Binary Tree:** Every node has either 0 or 2 children. No node has only one child.\n\n**vii. Complete Binary Tree:** All levels completely filled except possibly the last level, which is filled from left to right.\n\n**viii. Maximum Nodes at Level L:** For binary tree, max nodes at level L = 2^L (where root is level 0).\n- Level 0: 1 node\n- Level 1: 2 nodes\n- Level 2: 4 nodes\n- Level L: 2^L nodes"
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Find time complexity of Binary Search using iterative substitution. T(1)=2, T(n)=4+T(n/2)",
+          "answer": "**Using Iterative Substitution:**\n\nT(n) = 4 + T(n/2)\nT(n) = 4 + 4 + T(n/4) = 8 + T(n/4)\nT(n) = 4 + 4 + 4 + T(n/8) = 12 + T(n/8)\n\n**General Pattern after k substitutions:**\nT(n) = 4k + T(n/2^k)\n\n**Base case when n/2^k = 1:**\n2^k = n\nk = log₂(n)\n\n**Substituting k:**\nT(n) = 4·log₂(n) + T(1)\nT(n) = 4·log₂(n) + 2\n\n**Time Complexity: O(log n)**\n\nBinary search has logarithmic time complexity because it halves the search space with each iteration."
+        },
+        {
+          "part": "c",
+          "marks": 6,
+          "question": "Build Max-Heap from A = {8, 14, 2, 26, 10, 12, 16, 28, 20, 7} and show Heap-sort execution.",
+          "answer": "**Initial Array:** [8, 14, 2, 26, 10, 12, 16, 28, 20, 7]\n\n**Build Max-Heap Process:**\n\nStarting from last non-leaf node (index 4), apply heapify:\n\n1. Heapify at index 4: [8, 14, 2, 26, 10, 12, 16, 28, 20, 7]\n2. Heapify at index 3: [8, 14, 2, 28, 10, 12, 16, 26, 20, 7]\n3. Heapify at index 2: [8, 14, 16, 28, 10, 12, 2, 26, 20, 7]\n4. Heapify at index 1: [8, 28, 16, 26, 10, 12, 2, 14, 20, 7]\n5. Heapify at index 0: [28, 26, 16, 20, 10, 12, 2, 14, 8, 7]\n\n**Max-Heap:** [28, 26, 16, 20, 10, 12, 2, 14, 8, 7]\n\n**Heap-Sort Iterations:**\n1. Swap 28↔7, heapify: [26, 20, 16, 14, 10, 12, 2, 7, 8 | 28]\n2. Swap 26↔8, heapify: [20, 14, 16, 8, 10, 12, 2, 7 | 26, 28]\n3. Continue until sorted...\n\n**Final Sorted Array:** [2, 7, 8, 10, 12, 14, 16, 20, 26, 28]"
+        }
+      ]
+    },
+    {
+      "id": "2016-P2-Q2",
+      "year": 2016,
+      "paper": 2,
+      "section": "A",
+      "questionNumber": 2,
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 6,
+          "question": "In a fully connected mesh topology with 5 devices, how many new cable lines are needed when adding 2 new devices? Compare with ring topology.",
+          "answer": "**Mesh Topology Formula:** For n devices, cables needed = n(n-1)/2\n\n**Original 5 devices:** 5(5-1)/2 = 10 cables\n\n**After adding 2 devices (7 total):** 7(7-1)/2 = 21 cables\n\n**New cables needed in Mesh:** 21 - 10 = **11 new cables**\n\n**Ring Topology:**\n- Original 5 devices: 5 cables (each device connects to 2 neighbors)\n- After adding 2 devices: 7 cables\n- **New cables needed in Ring:** 2 new cables\n\n**Comparison:**\n| Topology | New Cables |\n|----------|------------|\n| Mesh     | 11         |\n| Ring     | 2          |\n\n**Conclusion:** Ring topology is more economical for adding devices, but mesh provides better fault tolerance and redundancy."
+        },
+        {
+          "part": "b",
+          "marks": 7,
+          "question": "Discuss transmission impairments in detail.",
+          "answer": "**Transmission Impairments** are factors that degrade signal quality:\n\n**1. Attenuation:**\n- Signal loses energy as it travels through medium\n- Measured in decibels (dB)\n- Solution: Amplifiers/repeaters at intervals\n- dB = 10 log₁₀(P₂/P₁)\n\n**2. Distortion:**\n- Signal shape changes during transmission\n- Caused by different frequency components traveling at different speeds\n- Most common: delay distortion in guided media\n- Solution: Equalization techniques\n\n**3. Noise:**\n- **Thermal Noise:** Random motion of electrons, unavoidable\n- **Induced Noise:** From external sources (motors, appliances)\n- **Crosstalk:** Signal from one wire picked up by adjacent wire\n- **Impulse Noise:** Irregular pulses from lightning, power fluctuations\n\n**Signal-to-Noise Ratio (SNR):**\nSNR(dB) = 10 log₁₀(Signal Power/Noise Power)\n\nHigher SNR = Better quality transmission"
+        },
+        {
+          "part": "c",
+          "marks": 7,
+          "question": "Explain switching methods used in computer networks.",
+          "answer": "**1. Circuit Switching:**\n- Dedicated path established before communication\n- Path remains allocated for entire duration\n- Used in traditional telephone networks\n- **Advantages:** Guaranteed bandwidth, no delay variation\n- **Disadvantages:** Inefficient for bursty data, setup delay\n\n**2. Packet Switching:**\n- Data divided into packets\n- Each packet routed independently\n- Two approaches:\n  - **Datagram:** Each packet treated independently (IP)\n  - **Virtual Circuit:** Path established, all packets follow same route (ATM)\n- **Advantages:** Efficient bandwidth use, fault tolerant\n- **Disadvantages:** Variable delay, packet reordering\n\n**3. Message Switching:**\n- Entire message stored at each node before forwarding\n- Store-and-forward technique\n- **Advantages:** No dedicated path needed\n- **Disadvantages:** High latency, large storage needed\n\n**Comparison:**\n| Feature | Circuit | Packet | Message |\n|---------|---------|--------|----------|\n| Efficiency | Low | High | Medium |\n| Delay | Low | Medium | High |\n| Reliability | Medium | High | High |"
+        }
+      ]
+    },
+    {
+      "id": "2017-P1-Q2",
+      "year": 2017,
+      "paper": 1,
+      "section": "I",
+      "questionNumber": 2,
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 8,
+          "question": "The internet era has given rise to cybercrimes. What technical means would you suggest to curb this problem while maintaining privacy?",
+          "answer": "**Technical Solutions to Combat Cybercrime:**\n\n**1. Encryption Technologies:**\n- End-to-end encryption for communications\n- SSL/TLS for web transactions\n- AES-256 for data at rest\n- Public key infrastructure (PKI)\n\n**2. Authentication & Access Control:**\n- Multi-factor authentication (MFA)\n- Biometric verification\n- Zero-trust security model\n- Role-based access control (RBAC)\n\n**3. Network Security:**\n- Firewalls (hardware & software)\n- Intrusion Detection/Prevention Systems (IDS/IPS)\n- VPNs for secure remote access\n- Network segmentation\n\n**4. Monitoring & Detection:**\n- Security Information and Event Management (SIEM)\n- Behavioral analytics\n- AI-based threat detection\n- Log analysis and audit trails\n\n**5. Privacy-Preserving Technologies:**\n- Data anonymization\n- Differential privacy\n- Secure multi-party computation\n- Blockchain for transparent yet secure transactions\n\n**6. Legal & Policy Framework:**\n- Digital forensics capabilities\n- Cyber laws enforcement\n- International cooperation (Interpol, Europol)\n- Incident response teams (CERT)"
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Describe the difference between Harvard and Von-Neumann architectures.",
+          "answer": "**Von-Neumann Architecture:**\n- Single memory for both data and instructions\n- Single bus for data and instruction transfer\n- Sequential processing (fetch-decode-execute)\n- **Bottleneck:** CPU must wait for memory operations\n\n**Harvard Architecture:**\n- Separate memory for data and instructions\n- Separate buses for data and instructions\n- Parallel access to data and instructions\n- Used in DSPs and microcontrollers\n\n**Comparison Table:**\n\n| Feature | Von-Neumann | Harvard |\n|---------|-------------|----------|\n| Memory | Single unified | Separate |\n| Buses | Single | Dual |\n| Speed | Slower | Faster |\n| Complexity | Simpler | Complex |\n| Cost | Lower | Higher |\n| Self-modifying code | Possible | Difficult |\n| Example | Desktop PCs | ARM Cortex-M |\n\n**Modern Approach:** Modified Harvard architecture combines benefits - separate caches but unified main memory."
+        },
+        {
+          "part": "c",
+          "marks": 6,
+          "question": "Describe the functioning of virtual memory and comment on its management by OS.",
+          "answer": "**Virtual Memory:** Technique that uses secondary storage (disk) to extend available RAM, creating illusion of larger memory.\n\n**How It Works:**\n\n1. **Address Translation:**\n   - CPU generates virtual addresses\n   - MMU (Memory Management Unit) translates to physical addresses\n   - Page table maps virtual to physical pages\n\n2. **Paging:**\n   - Memory divided into fixed-size pages (typically 4KB)\n   - Only needed pages loaded in RAM\n   - Unused pages stored on disk (swap space)\n\n3. **Page Fault Handling:**\n   - When accessing page not in RAM\n   - OS loads required page from disk\n   - May swap out another page if RAM full\n\n**OS Management:**\n\n1. **Page Replacement Algorithms:**\n   - LRU (Least Recently Used)\n   - FIFO (First In First Out)\n   - Optimal (theoretical best)\n\n2. **Working Set Model:**\n   - Track pages process is actively using\n   - Keep working set in memory\n\n3. **Demand Paging:**\n   - Load pages only when needed\n   - Reduces initial load time\n\n**Benefits:** Run programs larger than physical RAM, memory isolation between processes, efficient memory sharing."
+        }
+      ]
+    },
+    {
+      "id": "2017-P1-Q5",
+      "year": 2017,
+      "paper": 1,
+      "section": "II",
+      "questionNumber": 5,
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 8,
+          "question": "Draw and build Red-black trees for (50,60,70,80,90) and (50,40,30,20,10). Would binary tree be suitable?",
+          "answer": "**Red-Black Tree Properties:**\n1. Every node is red or black\n2. Root is black\n3. Leaves (NIL) are black\n4. Red node's children are black\n5. Same number of black nodes on all paths\n\n**Building RB-Tree for (50,60,70,80,90):**\n\nInsert 50: Root (Black)\n```\n    50(B)\n```\n\nInsert 60: Right child (Red)\n```\n    50(B)\n      \\\n      60(R)\n```\n\nInsert 70: Recolor and rotate\n```\n    60(B)\n   /    \\\n 50(R)  70(R)\n```\n\nInsert 80, 90: Continue with rotations...\n\n**Final Tree:**\n```\n       60(B)\n      /    \\\n   50(B)   80(B)\n          /    \\\n        70(R)  90(R)\n```\n\n**For (50,40,30,20,10):** Mirror operations with left rotations.\n\n**Binary Search Tree Suitability:**\nNO - A regular BST would become a linked list (degenerate tree) with O(n) operations. The sorted input creates worst-case performance. Red-black trees maintain O(log n) through balancing."
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Describe the process of hashing with a suitable example.",
+          "answer": "**Hashing:** Technique to map data to fixed-size values (hash codes) for fast retrieval.\n\n**Components:**\n1. **Hash Function:** h(key) → index\n2. **Hash Table:** Array storing values\n3. **Collision Handling:** When multiple keys map to same index\n\n**Example: Storing student records by ID**\n\nHash function: h(ID) = ID % 10\n\n| Student ID | Hash Value | Position |\n|------------|------------|----------|\n| 123 | 3 | Table[3] |\n| 456 | 6 | Table[6] |\n| 789 | 9 | Table[9] |\n| 113 | 3 | Collision! |\n\n**Collision Resolution:**\n\n1. **Chaining:** Each slot contains linked list\n```\nTable[3] → 123 → 113 → NULL\n```\n\n2. **Open Addressing:** Find next empty slot\n   - Linear Probing: h(k,i) = (h(k) + i) % m\n   - Quadratic Probing: h(k,i) = (h(k) + i²) % m\n\n**Time Complexity:**\n- Average: O(1) for insert, search, delete\n- Worst: O(n) when many collisions\n\n**Load Factor:** α = n/m (items/slots), keep < 0.7 for efficiency"
+        },
+        {
+          "part": "c",
+          "marks": 6,
+          "question": "Describe Bubble Sort and show output after each pass for (3,8,2,6,1,10).",
+          "answer": "**Bubble Sort:** Repeatedly swaps adjacent elements if in wrong order. Largest element \"bubbles\" to end each pass.\n\n**Algorithm:**\n```\nfor i = 0 to n-1:\n    for j = 0 to n-i-2:\n        if arr[j] > arr[j+1]:\n            swap(arr[j], arr[j+1])\n```\n\n**Sorting (3, 8, 2, 6, 1, 10):**\n\n**Pass 1:**\n- [3,8,2,6,1,10] → 3<8, no swap\n- [3,8,2,6,1,10] → 8>2, swap → [3,2,8,6,1,10]\n- [3,2,8,6,1,10] → 8>6, swap → [3,2,6,8,1,10]\n- [3,2,6,8,1,10] → 8>1, swap → [3,2,6,1,8,10]\n- [3,2,6,1,8,10] → 8<10, no swap\n- **After Pass 1:** [3,2,6,1,8,10] ✓10 in place\n\n**Pass 2:**\n- **After Pass 2:** [2,3,1,6,8,10] ✓8 in place\n\n**Pass 3:**\n- **After Pass 3:** [2,1,3,6,8,10] ✓6 in place\n\n**Pass 4:**\n- **After Pass 4:** [1,2,3,6,8,10] ✓3 in place\n\n**Pass 5:**\n- **After Pass 5:** [1,2,3,6,8,10] ✓Sorted!\n\n**Complexity:** O(n²) average/worst, O(n) best (already sorted)"
+        }
+      ]
+    },
+    {
+      "id": "2017-P2-Q6",
+      "year": 2017,
+      "paper": 2,
+      "section": "B",
+      "questionNumber": 6,
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 8,
+          "question": "What is Normalization? Discuss 1NF, 2NF and 3NF with examples.",
+          "answer": "**Normalization:** Process of organizing database to reduce redundancy and improve data integrity.\n\n**1NF (First Normal Form):**\n- Atomic values (no repeating groups)\n- Single value per cell\n- Unique row identifier (primary key)\n\n**Example - Violates 1NF:**\n| StudentID | Name | Courses |\n|-----------|------|----------|\n| 1 | Ali | Math, Physics |\n\n**1NF Compliant:**\n| StudentID | Name | Course |\n|-----------|------|--------|\n| 1 | Ali | Math |\n| 1 | Ali | Physics |\n\n**2NF (Second Normal Form):**\n- Must be in 1NF\n- No partial dependencies (all non-key attributes depend on entire primary key)\n\n**Example - Violates 2NF:**\n| StudentID | CourseID | StudentName | CourseName |\n|-----------|----------|-------------|------------|\n\nStudentName depends only on StudentID (partial dependency)\n\n**2NF: Split into separate tables**\n\n**3NF (Third Normal Form):**\n- Must be in 2NF\n- No transitive dependencies (non-key depending on non-key)\n\n**Example - Violates 3NF:**\n| StudentID | DeptID | DeptName |\n\nDeptName depends on DeptID, not StudentID\n\n**3NF: Create Department table separately**"
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Write short notes on Data, Database, and Database Management System.",
+          "answer": "**1. Data:**\n- Raw facts and figures without context\n- Examples: numbers, text, images, sounds\n- Types: Structured (tables), Semi-structured (XML, JSON), Unstructured (text, video)\n- Must be processed to become information\n\n**2. Database:**\n- Organized collection of related data\n- Stored electronically for easy access\n- Provides data persistence and sharing\n- Examples: Student records, Inventory systems\n- Types: Relational (MySQL), NoSQL (MongoDB), Object-oriented\n\n**3. Database Management System (DBMS):**\n- Software to create, manage, and manipulate databases\n- Functions:\n  - Data definition (create structures)\n  - Data manipulation (CRUD operations)\n  - Data security (access control)\n  - Data integrity (constraints)\n  - Concurrency control\n  - Backup and recovery\n\n**Popular DBMS:**\n- Oracle, MySQL, PostgreSQL (Relational)\n- MongoDB, Cassandra (NoSQL)\n- Microsoft SQL Server"
+        },
+        {
+          "part": "c",
+          "marks": 6,
+          "question": "Differentiate between Centralized Database and Distributed Database.",
+          "answer": "**Centralized Database:**\n- Single location, single server\n- All data stored in one place\n- Single point of control\n\n**Distributed Database:**\n- Multiple locations, multiple servers\n- Data spread across network\n- Coordinated control\n\n**Comparison:**\n\n| Feature | Centralized | Distributed |\n|---------|-------------|-------------|\n| Location | Single site | Multiple sites |\n| Cost | Lower | Higher |\n| Reliability | Single point of failure | Fault tolerant |\n| Performance | Limited by server | Scalable |\n| Security | Easier to manage | Complex |\n| Complexity | Simple | Complex |\n| Data Access | Fast (local) | Variable latency |\n| Scalability | Limited | Highly scalable |\n\n**When to Use:**\n- **Centralized:** Small organizations, simple needs\n- **Distributed:** Large enterprises, global operations, high availability requirements\n\n**Challenges of Distributed:**\n- Data consistency (CAP theorem)\n- Network partitioning\n- Synchronization overhead"
+        }
+      ]
+    },
+    {
+      "id": "2018-P1-Q3",
+      "year": 2018,
+      "paper": 1,
+      "section": "I",
+      "questionNumber": 3,
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 8,
+          "question": "Explain function overloading and operator overloading in C++ with examples.",
+          "answer": "**Function Overloading:**\nMultiple functions with same name but different parameters.\n\n```cpp\nclass Calculator {\npublic:\n    // Overloaded add functions\n    int add(int a, int b) {\n        return a + b;\n    }\n    \n    double add(double a, double b) {\n        return a + b;\n    }\n    \n    int add(int a, int b, int c) {\n        return a + b + c;\n    }\n};\n\nint main() {\n    Calculator calc;\n    cout << calc.add(5, 3);        // Calls int version\n    cout << calc.add(5.5, 3.3);    // Calls double version\n    cout << calc.add(1, 2, 3);     // Calls 3-param version\n}\n```\n\n**Operator Overloading:**\nRedefining operators for user-defined types.\n\n```cpp\nclass Complex {\n    int real, imag;\npublic:\n    Complex(int r = 0, int i = 0) : real(r), imag(i) {}\n    \n    // Overload + operator\n    Complex operator + (const Complex& c) {\n        return Complex(real + c.real, imag + c.imag);\n    }\n    \n    // Overload << for output\n    friend ostream& operator << (ostream& out, const Complex& c) {\n        out << c.real << \" + \" << c.imag << \"i\";\n        return out;\n    }\n};\n\nint main() {\n    Complex c1(3, 4), c2(1, 2);\n    Complex c3 = c1 + c2;  // Uses overloaded +\n    cout << c3;            // Uses overloaded <<\n}\n```\n\n**Key Difference:** Function overloading works on functions; operator overloading redefines built-in operators."
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Explain polymorphism with compile-time and runtime examples.",
+          "answer": "**Polymorphism:** \"Many forms\" - same interface, different implementations.\n\n**1. Compile-time (Static) Polymorphism:**\nResolved during compilation.\n\n- **Method Overloading:**\n```cpp\nvoid print(int x) { cout << \"Integer: \" << x; }\nvoid print(string s) { cout << \"String: \" << s; }\n// Compiler decides which to call\n```\n\n- **Operator Overloading:**\n```cpp\nComplex c1 + c2; // Compiler uses overloaded +\n```\n\n**2. Runtime (Dynamic) Polymorphism:**\nResolved during execution using virtual functions.\n\n```cpp\nclass Animal {\npublic:\n    virtual void speak() {\n        cout << \"Animal speaks\";\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() override {\n        cout << \"Dog barks\";\n    }\n};\n\nclass Cat : public Animal {\npublic:\n    void speak() override {\n        cout << \"Cat meows\";\n    }\n};\n\nint main() {\n    Animal* animals[2];\n    animals[0] = new Dog();\n    animals[1] = new Cat();\n    \n    for(int i = 0; i < 2; i++) {\n        animals[i]->speak(); // Decided at runtime!\n    }\n}\n```\n\n**Output:**\n```\nDog barks\nCat meows\n```\n\n**Virtual Table (vtable)** enables runtime binding."
+        },
+        {
+          "part": "c",
+          "marks": 6,
+          "question": "Differentiate between constructor and destructor in C++.",
+          "answer": "**Constructor:**\n- Initializes object when created\n- Same name as class\n- No return type\n- Called automatically on object creation\n- Can be overloaded\n- Can have parameters\n\n**Destructor:**\n- Cleans up when object destroyed\n- Same name with ~ prefix\n- No return type\n- Called automatically when scope ends\n- Cannot be overloaded\n- No parameters\n\n```cpp\nclass Resource {\nprivate:\n    int* data;\npublic:\n    // Constructor\n    Resource(int size) {\n        cout << \"Constructor called\\n\";\n        data = new int[size];\n    }\n    \n    // Destructor\n    ~Resource() {\n        cout << \"Destructor called\\n\";\n        delete[] data;  // Free memory\n    }\n};\n\nint main() {\n    Resource r(100);  // Constructor called\n}  // Destructor called automatically\n```\n\n**Comparison Table:**\n\n| Feature | Constructor | Destructor |\n|---------|-------------|------------|\n| Purpose | Initialize | Cleanup |\n| Syntax | ClassName() | ~ClassName() |\n| Parameters | Yes | No |\n| Overloading | Yes | No |\n| Return type | None | None |\n| Invocation | Object creation | Object destruction |"
+        }
+      ]
+    },
+    {
+      "id": "2019-P1-Q4",
+      "year": 2019,
+      "paper": 1,
+      "section": "II",
+      "questionNumber": 4,
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 8,
+          "question": "Explain Dijkstra's shortest path algorithm with an example.",
+          "answer": "**Dijkstra's Algorithm:** Finds shortest path from source to all vertices in weighted graph with non-negative edges.\n\n**Algorithm:**\n1. Initialize distances: source = 0, others = ∞\n2. Mark all vertices unvisited\n3. Select unvisited vertex with smallest distance\n4. Update distances to neighbors\n5. Mark current vertex as visited\n6. Repeat until all visited\n\n**Example Graph:**\n```\n    A ---4--- B\n    |\\        |\n    2  \\1     3\n    |    \\    |\n    C --5-- D-2-E\n```\n\n**Finding shortest paths from A:**\n\n| Step | Current | A | B | C | D | E |\n|------|---------|---|---|---|---|---|\n| Init | - | 0 | ∞ | ∞ | ∞ | ∞ |\n| 1 | A | 0 | 4 | 2 | 1 | ∞ |\n| 2 | D | 0 | 4 | 2 | 1 | 3 |\n| 3 | C | 0 | 4 | 2 | 1 | 3 |\n| 4 | E | 0 | 4 | 2 | 1 | 3 |\n| 5 | B | 0 | 4 | 2 | 1 | 3 |\n\n**Shortest Paths from A:**\n- A→A: 0\n- A→B: 4\n- A→C: 2\n- A→D: 1 (via A→D)\n- A→E: 3 (via A→D→E)\n\n**Complexity:** O(V²) or O((V+E)log V) with priority queue"
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Write a program to implement stack using linked list.",
+          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nclass Node {\npublic:\n    int data;\n    Node* next;\n    Node(int val) : data(val), next(nullptr) {}\n};\n\nclass Stack {\nprivate:\n    Node* top;\n    \npublic:\n    Stack() : top(nullptr) {}\n    \n    // Push operation\n    void push(int val) {\n        Node* newNode = new Node(val);\n        newNode->next = top;\n        top = newNode;\n        cout << val << \" pushed to stack\\n\";\n    }\n    \n    // Pop operation\n    int pop() {\n        if (isEmpty()) {\n            cout << \"Stack Underflow\\n\";\n            return -1;\n        }\n        Node* temp = top;\n        int popped = top->data;\n        top = top->next;\n        delete temp;\n        return popped;\n    }\n    \n    // Peek operation\n    int peek() {\n        if (isEmpty()) {\n            cout << \"Stack is empty\\n\";\n            return -1;\n        }\n        return top->data;\n    }\n    \n    // Check if empty\n    bool isEmpty() {\n        return top == nullptr;\n    }\n    \n    // Display stack\n    void display() {\n        Node* current = top;\n        cout << \"Stack: \";\n        while (current) {\n            cout << current->data << \" \";\n            current = current->next;\n        }\n        cout << endl;\n    }\n};\n\nint main() {\n    Stack s;\n    s.push(10);\n    s.push(20);\n    s.push(30);\n    s.display();\n    cout << \"Popped: \" << s.pop() << endl;\n    s.display();\n    return 0;\n}\n```\n\n**Output:**\n```\n10 pushed to stack\n20 pushed to stack\n30 pushed to stack\nStack: 30 20 10\nPopped: 30\nStack: 20 10\n```"
+        },
+        {
+          "part": "c",
+          "marks": 6,
+          "question": "Explain the concept of recursion with Fibonacci example.",
+          "answer": "**Recursion:** Function calling itself to solve smaller subproblems.\n\n**Components:**\n1. **Base Case:** Terminating condition\n2. **Recursive Case:** Function calls itself\n\n**Fibonacci Sequence:** 0, 1, 1, 2, 3, 5, 8, 13...\n- F(0) = 0\n- F(1) = 1\n- F(n) = F(n-1) + F(n-2) for n > 1\n\n```cpp\n#include <iostream>\nusing namespace std;\n\n// Recursive Fibonacci\nint fibonacci(int n) {\n    // Base cases\n    if (n <= 0) return 0;\n    if (n == 1) return 1;\n    \n    // Recursive case\n    return fibonacci(n-1) + fibonacci(n-2);\n}\n\nint main() {\n    int n = 10;\n    cout << \"Fibonacci Series: \";\n    for (int i = 0; i < n; i++) {\n        cout << fibonacci(i) << \" \";\n    }\n    return 0;\n}\n```\n\n**Output:** `0 1 1 2 3 5 8 13 21 34`\n\n**Call Tree for fibonacci(5):**\n```\n         fib(5)\n        /      \\\n    fib(4)    fib(3)\n    /    \\     /    \\\n fib(3) fib(2) fib(2) fib(1)\n```\n\n**Complexity:** O(2ⁿ) - exponential\n\n**Optimization:** Use memoization (dynamic programming) to achieve O(n)"
+        }
+      ]
+    },
+    {
+      "id": "2020-P1-Q2",
+      "year": 2020,
+      "paper": 1,
+      "section": "I",
+      "questionNumber": 2,
+      "marks": 20,
+      "parts": [
+        {
+          "part": "a",
+          "marks": 8,
+          "question": "Explain cloud computing and its service models (IaaS, PaaS, SaaS).",
+          "answer": "**Cloud Computing:** Delivery of computing services (servers, storage, databases, networking, software) over the internet.\n\n**Characteristics:**\n- On-demand self-service\n- Broad network access\n- Resource pooling\n- Rapid elasticity\n- Measured service\n\n**Service Models:**\n\n**1. IaaS (Infrastructure as a Service):**\n- Provides: Virtual machines, storage, networks\n- User manages: OS, applications, data\n- Examples: AWS EC2, Azure VMs, Google Compute Engine\n- Use case: Companies needing flexible infrastructure\n\n**2. PaaS (Platform as a Service):**\n- Provides: Runtime environment, development tools, database\n- User manages: Applications, data\n- Examples: Heroku, Google App Engine, Azure App Service\n- Use case: Developers deploying applications\n\n**3. SaaS (Software as a Service):**\n- Provides: Complete applications\n- User manages: Data and settings\n- Examples: Gmail, Salesforce, Microsoft 365\n- Use case: End users accessing software\n\n**Responsibility Comparison:**\n\n| Layer | IaaS | PaaS | SaaS |\n|-------|------|------|------|\n| Applications | User | User | Provider |\n| Data | User | User | User |\n| Runtime | User | Provider | Provider |\n| Middleware | User | Provider | Provider |\n| OS | User | Provider | Provider |\n| Virtualization | Provider | Provider | Provider |\n| Hardware | Provider | Provider | Provider |"
+        },
+        {
+          "part": "b",
+          "marks": 6,
+          "question": "Discuss the differences between TCP and UDP protocols.",
+          "answer": "**TCP (Transmission Control Protocol):**\n- Connection-oriented\n- Reliable, guaranteed delivery\n- Error checking and correction\n- Flow control and congestion control\n- Ordered delivery\n- Higher overhead\n\n**UDP (User Datagram Protocol):**\n- Connectionless\n- Unreliable, no guarantee\n- Basic error checking (checksum)\n- No flow control\n- Unordered delivery\n- Lower overhead, faster\n\n**Comparison:**\n\n| Feature | TCP | UDP |\n|---------|-----|-----|\n| Connection | Yes | No |\n| Reliability | Guaranteed | Best effort |\n| Speed | Slower | Faster |\n| Header Size | 20-60 bytes | 8 bytes |\n| Ordering | Yes | No |\n| Retransmission | Yes | No |\n| Use Cases | HTTP, Email, FTP | DNS, Streaming, Gaming |\n\n**When to Use TCP:**\n- Web browsing\n- Email\n- File transfer\n- Any data requiring reliability\n\n**When to Use UDP:**\n- Live video/audio streaming\n- Online gaming\n- DNS queries\n- VoIP calls"
+        },
+        {
+          "part": "c",
+          "marks": 6,
+          "question": "Explain the OSI model layers with their functions.",
+          "answer": "**OSI Model (7 Layers):**\n\n**Layer 7 - Application:**\n- User interface to network\n- Protocols: HTTP, FTP, SMTP, DNS\n- Example: Web browser\n\n**Layer 6 - Presentation:**\n- Data formatting and encryption\n- Character encoding (ASCII, Unicode)\n- Data compression\n- Example: SSL/TLS encryption\n\n**Layer 5 - Session:**\n- Establish, manage, terminate sessions\n- Synchronization\n- Example: NetBIOS, RPC\n\n**Layer 4 - Transport:**\n- End-to-end communication\n- Segmentation and reassembly\n- Protocols: TCP, UDP\n- Port numbers\n\n**Layer 3 - Network:**\n- Logical addressing (IP)\n- Routing between networks\n- Devices: Routers\n- Protocols: IP, ICMP\n\n**Layer 2 - Data Link:**\n- Physical addressing (MAC)\n- Frame creation\n- Error detection\n- Devices: Switches, Bridges\n\n**Layer 1 - Physical:**\n- Bit transmission\n- Physical media (cables, signals)\n- Devices: Hubs, cables\n\n**Memory Aid:** \"Please Do Not Throw Sausage Pizza Away\"\n(Physical, Data Link, Network, Transport, Session, Presentation, Application)"
+        }
+      ]
+    },
     {
       "id": "2024-P1-Q2",
       "year": 2024,
       "paper": 1,
+      "section": "I",
       "questionNumber": 2,
-      "section": "A",
       "marks": 20,
       "parts": [
         {
           "part": "a",
-          "marks": 6,
-          "question": "Discuss the future of Information Technology (IT) in Pakistan and its huge impact on all our daily lives.",
-          "answer": "**Future of IT in Pakistan:**\n\n1. **Digital Transformation:**\n   - E-governance initiatives (NADRA, FBR online)\n   - Digital payments (JazzCash, Easypaisa, Raast)\n   - Smart cities development\n\n2. **IT Industry Growth:**\n   - $2.6B+ IT exports (2023)\n   - Growing freelance community (2nd largest)\n   - Software houses and startups\n\n3. **Impact on Daily Life:**\n   - **Education:** Online learning, virtual classrooms\n   - **Healthcare:** Telemedicine, digital health records\n   - **Banking:** Mobile banking, online transactions\n   - **Commerce:** E-commerce platforms (Daraz, foodpanda)\n   - **Communication:** Social media, video conferencing\n\n4. **Challenges:**\n   - Digital divide (urban vs rural)\n   - Cybersecurity concerns\n   - Infrastructure limitations\n   - Brain drain\n\n5. **Future Prospects:**\n   - AI and machine learning adoption\n   - Cloud computing growth\n   - 5G implementation\n   - Tech parks and incubators"
+          "marks": 8,
+          "question": "What is the future of IT industry in Pakistan? Discuss the opportunities and challenges.",
+          "answer": "**Future of IT in Pakistan - Promising but Challenging:**\n\n**Opportunities:**\n\n1. **Freelancing Growth:**\n   - Pakistan ranks 4th globally in freelancing\n   - $500M+ annual earnings\n   - Platforms: Upwork, Fiverr, Freelancer\n\n2. **IT Exports:**\n   - Growing at 40%+ annually\n   - $2.5B+ exports (potential for $5B+)\n   - Software development, BPO services\n\n3. **Youth Demographics:**\n   - 60% population under 30\n   - Large pool of potential developers\n   - Growing CS/IT graduates\n\n4. **Government Initiatives:**\n   - Special Technology Zones\n   - DigiSkills program\n   - IT parks development\n\n5. **Emerging Technologies:**\n   - AI/ML development\n   - Blockchain solutions\n   - Fintech growth\n\n**Challenges:**\n\n1. **Infrastructure:**\n   - Unreliable electricity\n   - Limited internet penetration\n   - Poor connectivity in rural areas\n\n2. **Education Gap:**\n   - Outdated curriculum\n   - Limited practical training\n   - Brain drain to abroad\n\n3. **Policy Issues:**\n   - Complex tax regulations\n   - Difficult business registration\n   - Banking restrictions\n\n4. **Economic Instability:**\n   - Currency fluctuation\n   - Political uncertainty\n   - Limited venture capital\n\n**Recommendations:**\n- Improve digital infrastructure\n- Update educational curriculum\n- Simplify business regulations\n- Establish more tech incubators"
         },
         {
           "part": "b",
           "marks": 6,
-          "question": "Discuss the difference between a computer virus, a trojan and a worm?",
-          "answer": "**Comparison of Malware Types:**\n\n| Feature | Virus | Trojan | Worm |\n|---------|-------|--------|------|\n| **Self-replication** | Yes, needs host file | No | Yes, standalone |\n| **Spreads via** | Infected files | Deception (disguised) | Network automatically |\n| **Host required** | Yes | No | No |\n| **User action needed** | Yes | Yes (to install) | No |\n| **Primary purpose** | Damage/disrupt | Steal data, backdoor | Spread, consume resources |\n\n**Virus:**\n- Attaches to legitimate programs\n- Activates when host program runs\n- Examples: ILOVEYOU, Melissa\n\n**Trojan:**\n- Disguised as legitimate software\n- Doesn't replicate itself\n- Creates backdoors for attackers\n- Examples: Zeus, Emotet\n\n**Worm:**\n- Self-contained, no host needed\n- Spreads through network vulnerabilities\n- Can spread very rapidly\n- Examples: WannaCry, SQL Slammer"
+          "question": "Differentiate between virus, Trojan horse, and worm with examples.",
+          "answer": "**Computer Malware Comparison:**\n\n**Virus:**\n- Attaches to legitimate programs\n- Requires host file to spread\n- Needs user action to activate\n- Replicates when infected file executes\n- Example: ILOVEYOU, Melissa, CIH\n\n**Trojan Horse:**\n- Disguises as legitimate software\n- Does NOT self-replicate\n- Needs user to install/run\n- Creates backdoor for attackers\n- Example: Zeus, Emotet, RATs\n\n**Worm:**\n- Self-replicating, standalone program\n- Spreads automatically via network\n- No user action needed\n- Exploits vulnerabilities\n- Example: WannaCry, Conficker, Slammer\n\n**Comparison Table:**\n\n| Feature | Virus | Trojan | Worm |\n|---------|-------|--------|------|\n| Self-replicates | Yes | No | Yes |\n| Needs host | Yes | No | No |\n| User action | Required | Required | Not needed |\n| Spread method | Infected files | Deception | Network |\n| Main purpose | Damage | Backdoor | Propagation |\n\n**Prevention:**\n- Antivirus software\n- Regular updates/patches\n- Firewall protection\n- User awareness training\n- Email attachment caution"
         },
         {
           "part": "c",
-          "marks": 8,
-          "question": "Discuss the pros and cons of LaTeX in comparison to other document processors.",
-          "answer": "**LaTeX vs Other Document Processors (Word, Google Docs):**\n\n**Advantages of LaTeX:**\n\n1. **Typographical Quality:**\n   - Professional typesetting\n   - Superior mathematical equations\n   - Consistent formatting\n\n2. **Academic Use:**\n   - Standard for scientific papers\n   - Built-in bibliography management (BibTeX)\n   - Cross-references handled automatically\n\n3. **Portability:**\n   - Plain text source files\n   - Works across all platforms\n   - Version control friendly (Git)\n\n4. **Separation of Content and Style:**\n   - Focus on writing, not formatting\n   - Easy style changes via templates\n\n5. **Free and Open Source**\n\n**Disadvantages of LaTeX:**\n\n1. **Learning Curve:**\n   - Steep initial learning curve\n   - Syntax can be complex\n   - Error messages often cryptic\n\n2. **Collaboration:**\n   - Harder to collaborate than Google Docs\n   - Requires LaTeX knowledge from all collaborators\n\n3. **Real-time Preview:**\n   - No WYSIWYG editing\n   - Compile to see output\n\n4. **Simple Documents:**\n   - Overkill for simple documents\n   - Word processors faster for quick tasks\n\n5. **Tables and Images:**\n   - Positioning can be frustrating\n   - Complex table syntax"
+          "marks": 6,
+          "question": "What are the advantages and disadvantages of using LaTeX for document preparation?",
+          "answer": "**LaTeX:** Document preparation system for high-quality typesetting.\n\n**Advantages:**\n\n1. **Professional Typography:**\n   - Superior mathematical formulas\n   - Consistent formatting\n   - Beautiful output quality\n\n2. **Structural Approach:**\n   - Focus on content, not formatting\n   - Automatic numbering (sections, figures)\n   - Easy cross-referencing\n\n3. **Academic Standard:**\n   - Required by many journals\n   - Perfect for theses/dissertations\n   - Citation management (BibTeX)\n\n4. **Version Control:**\n   - Plain text files\n   - Works with Git\n   - Easy collaboration\n\n5. **Free & Portable:**\n   - Open source\n   - Cross-platform\n   - Stable format over time\n\n**Disadvantages:**\n\n1. **Steep Learning Curve:**\n   - Must learn markup syntax\n   - Not intuitive for beginners\n   - Error messages can be cryptic\n\n2. **Not WYSIWYG:**\n   - Can't see output while typing\n   - Requires compilation\n   - Slower for simple documents\n\n3. **Complex Customization:**\n   - Custom layouts are difficult\n   - Package conflicts\n   - Limited visual design flexibility\n\n4. **Collaboration Issues:**\n   - Others may not know LaTeX\n   - No real-time collaboration (unlike Google Docs)\n\n**Best For:** Academic papers, books, technical documents\n**Not Ideal For:** Simple letters, quick documents, visual design"
         }
       ]
     },
     {
-      "id": "2024-P1-Q3",
-      "year": 2024,
+      "id": "2025-P1-Q3",
+      "year": 2025,
       "paper": 1,
+      "section": "I",
       "questionNumber": 3,
-      "section": "A",
-      "marks": 20,
-      "parts": [
-        {
-          "part": "a",
-          "marks": 6,
-          "question": "Write a program that prompts the user to enter a letter grade A, B, C, D, or F and displays its corresponding numeric value 4, 3, 2, 1, or 0.",
-          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    char grade;\n    \n    cout << \"Enter a letter grade (A, B, C, D, or F): \";\n    cin >> grade;\n    \n    // Convert to uppercase\n    grade = toupper(grade);\n    \n    int numericValue;\n    \n    switch(grade) {\n        case 'A':\n            numericValue = 4;\n            break;\n        case 'B':\n            numericValue = 3;\n            break;\n        case 'C':\n            numericValue = 2;\n            break;\n        case 'D':\n            numericValue = 1;\n            break;\n        case 'F':\n            numericValue = 0;\n            break;\n        default:\n            cout << \"Invalid grade entered!\" << endl;\n            return 1;\n    }\n    \n    cout << \"The numeric value for grade \" << grade \n         << \" is: \" << numericValue << endl;\n    \n    return 0;\n}\n```\n\n**Output Example:**\n```\nEnter a letter grade (A, B, C, D, or F): B\nThe numeric value for grade B is: 3\n```"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Write pseudocode OR C-language script for a mathematical expression calculation.",
-          "answer": "**Pseudocode for Expression Evaluation:**\n\n```\nALGORITHM EvaluateExpression(expression)\n    operandStack = empty stack\n    operatorStack = empty stack\n    \n    FOR each token in expression:\n        IF token is a number:\n            PUSH token to operandStack\n        ELSE IF token is '(':\n            PUSH token to operatorStack\n        ELSE IF token is ')':\n            WHILE top of operatorStack is not '(':\n                operator = POP operatorStack\n                operand2 = POP operandStack\n                operand1 = POP operandStack\n                result = APPLY operator to operand1, operand2\n                PUSH result to operandStack\n            POP '(' from operatorStack\n        ELSE IF token is an operator:\n            WHILE operatorStack not empty AND \n                  precedence(top) >= precedence(token):\n                operator = POP operatorStack\n                operand2 = POP operandStack\n                operand1 = POP operandStack\n                result = APPLY operator to operand1, operand2\n                PUSH result to operandStack\n            PUSH token to operatorStack\n    \n    WHILE operatorStack not empty:\n        operator = POP operatorStack\n        operand2 = POP operandStack\n        operand1 = POP operandStack\n        result = APPLY operator to operand1, operand2\n        PUSH result to operandStack\n    \n    RETURN top of operandStack\nEND ALGORITHM\n```"
-        },
-        {
-          "part": "c",
-          "marks": 8,
-          "question": "Write a version of Breadth First Search (BFS) that finds the distances from the start node to each of the others, rather than the actual paths.",
-          "answer": "```cpp\n#include <iostream>\n#include <vector>\n#include <queue>\n#include <climits>\nusing namespace std;\n\nvector<int> bfsDistances(vector<vector<int>>& graph, int start) {\n    int n = graph.size();\n    vector<int> distance(n, INT_MAX);  // Initialize all distances as infinity\n    vector<bool> visited(n, false);\n    queue<int> q;\n    \n    // Start node has distance 0\n    distance[start] = 0;\n    visited[start] = true;\n    q.push(start);\n    \n    while (!q.empty()) {\n        int current = q.front();\n        q.pop();\n        \n        // Visit all neighbors\n        for (int neighbor : graph[current]) {\n            if (!visited[neighbor]) {\n                visited[neighbor] = true;\n                distance[neighbor] = distance[current] + 1;\n                q.push(neighbor);\n            }\n        }\n    }\n    \n    return distance;\n}\n\nint main() {\n    // Example: Graph with 6 vertices (0 to 5)\n    // Adjacency list representation\n    vector<vector<int>> graph = {\n        {1, 2},     // 0 connects to 1, 2\n        {0, 3, 4},  // 1 connects to 0, 3, 4\n        {0, 4},     // 2 connects to 0, 4\n        {1, 5},     // 3 connects to 1, 5\n        {1, 2, 5},  // 4 connects to 1, 2, 5\n        {3, 4}      // 5 connects to 3, 4\n    };\n    \n    int startNode = 0;\n    vector<int> distances = bfsDistances(graph, startNode);\n    \n    cout << \"Distances from node \" << startNode << \":\" << endl;\n    for (int i = 0; i < distances.size(); i++) {\n        if (distances[i] == INT_MAX)\n            cout << \"Node \" << i << \": Unreachable\" << endl;\n        else\n            cout << \"Node \" << i << \": \" << distances[i] << endl;\n    }\n    \n    return 0;\n}\n```\n\n**Output:**\n```\nDistances from node 0:\nNode 0: 0\nNode 1: 1\nNode 2: 1\nNode 3: 2\nNode 4: 2\nNode 5: 3\n```\n\n**Time Complexity:** O(V + E)\n**Space Complexity:** O(V)"
-        }
-      ]
-    },
-    {
-      "id": "2024-P1-Q4",
-      "year": 2024,
-      "paper": 1,
-      "questionNumber": 4,
-      "section": "A",
-      "marks": 20,
-      "parts": [
-        {
-          "part": "a",
-          "marks": 6,
-          "question": "Write a program that displays the area and perimeter of a rectangle with the width of 4.5 and height of 7.9 using the formula: area = width * height.",
-          "answer": "```cpp\n#include <iostream>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    // Define dimensions\n    double width = 4.5;\n    double height = 7.9;\n    \n    // Calculate area\n    double area = width * height;\n    \n    // Calculate perimeter\n    double perimeter = 2 * (width + height);\n    \n    // Display results with 2 decimal places\n    cout << fixed << setprecision(2);\n    cout << \"Rectangle Dimensions:\" << endl;\n    cout << \"Width: \" << width << endl;\n    cout << \"Height: \" << height << endl;\n    cout << \"\\nCalculations:\" << endl;\n    cout << \"Area = \" << width << \" × \" << height \n         << \" = \" << area << \" square units\" << endl;\n    cout << \"Perimeter = 2 × (\" << width << \" + \" << height \n         << \") = \" << perimeter << \" units\" << endl;\n    \n    return 0;\n}\n```\n\n**Output:**\n```\nRectangle Dimensions:\nWidth: 4.50\nHeight: 7.90\n\nCalculations:\nArea = 4.50 × 7.90 = 35.55 square units\nPerimeter = 2 × (4.50 + 7.90) = 24.80 units\n```"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Write a program that reads a Celsius degree from the console, then converts it to Fahrenheit and displays the result. Formula: Fahrenheit = (9/5) * Celsius + 32.",
-          "answer": "```cpp\n#include <iostream>\n#include <iomanip>\nusing namespace std;\n\nint main() {\n    double celsius, fahrenheit;\n    \n    // Prompt user for input\n    cout << \"Enter temperature in Celsius: \";\n    cin >> celsius;\n    \n    // Convert to Fahrenheit\n    // Note: Use 9.0/5.0 to avoid integer division\n    fahrenheit = (9.0 / 5.0) * celsius + 32;\n    \n    // Display result\n    cout << fixed << setprecision(2);\n    cout << celsius << \"°C = \" << fahrenheit << \"°F\" << endl;\n    \n    return 0;\n}\n```\n\n**Example Outputs:**\n```\nEnter temperature in Celsius: 0\n0.00°C = 32.00°F\n\nEnter temperature in Celsius: 100\n100.00°C = 212.00°F\n\nEnter temperature in Celsius: 37\n37.00°C = 98.60°F\n```"
-        },
-        {
-          "part": "c",
-          "marks": 8,
-          "question": "Write a program that prompts the user to enter the month and year and displays the number of days in the month.",
-          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nbool isLeapYear(int year) {\n    return (year % 4 == 0 && year % 100 != 0) || (year % 400 == 0);\n}\n\nint getDaysInMonth(int month, int year) {\n    switch(month) {\n        case 1: case 3: case 5: case 7: \n        case 8: case 10: case 12:\n            return 31;\n        case 4: case 6: case 9: case 11:\n            return 30;\n        case 2:\n            return isLeapYear(year) ? 29 : 28;\n        default:\n            return -1;\n    }\n}\n\nstring getMonthName(int month) {\n    string months[] = {\"\", \"January\", \"February\", \"March\", \n                       \"April\", \"May\", \"June\", \"July\", \n                       \"August\", \"September\", \"October\", \n                       \"November\", \"December\"};\n    return months[month];\n}\n\nint main() {\n    int month, year;\n    \n    cout << \"Enter month (1-12): \";\n    cin >> month;\n    \n    cout << \"Enter year: \";\n    cin >> year;\n    \n    // Validate input\n    if (month < 1 || month > 12) {\n        cout << \"Invalid month!\" << endl;\n        return 1;\n    }\n    \n    if (year < 1) {\n        cout << \"Invalid year!\" << endl;\n        return 1;\n    }\n    \n    int days = getDaysInMonth(month, year);\n    \n    cout << getMonthName(month) << \" \" << year \n         << \" has \" << days << \" days.\" << endl;\n    \n    return 0;\n}\n```\n\n**Example Outputs:**\n```\nEnter month (1-12): 2\nEnter year: 2024\nFebruary 2024 has 29 days.\n\nEnter month (1-12): 3\nEnter year: 2015\nMarch 2015 has 31 days.\n```"
-        }
-      ]
-    },
-    {
-      "id": "2024-P1-Q5",
-      "year": 2024,
-      "paper": 1,
-      "questionNumber": 5,
-      "section": "B",
-      "marks": 20,
-      "parts": [
-        {
-          "part": "a",
-          "marks": 6,
-          "question": "Show the output of the following Java code:\npublic class Test {\n  public static void main(String[] args) {\n    Double x = 3.5;\n    System.out.println(x.intValue());\n    System.out.println(x.compareTo(4.5));\n  }\n}",
-          "answer": "**Output:**\n```\n3\n-1\n```\n\n**Explanation:**\n\n1. **x.intValue()** returns `3`\n   - `intValue()` converts the Double to an int\n   - 3.5 truncated to integer is 3 (decimal part discarded)\n\n2. **x.compareTo(4.5)** returns `-1`\n   - `compareTo()` compares two Double values\n   - Returns negative if this < argument\n   - Returns 0 if equal\n   - Returns positive if this > argument\n   - Since 3.5 < 4.5, it returns -1\n\n**Note:** `Double` is the wrapper class for primitive `double`. It provides utility methods like `intValue()`, `compareTo()`, `parseDouble()`, etc."
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Illustrate the difference between overriding and overloading by the piece of pseudocode or program.",
-          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\n// ==================== OVERLOADING ====================\n// Same method name, different parameters (compile-time polymorphism)\n\nclass Calculator {\npublic:\n    // Overloaded methods - same name, different signatures\n    int add(int a, int b) {\n        return a + b;\n    }\n    \n    double add(double a, double b) {\n        return a + b;\n    }\n    \n    int add(int a, int b, int c) {\n        return a + b + c;\n    }\n};\n\n// ==================== OVERRIDING ====================\n// Same method signature in derived class (runtime polymorphism)\n\nclass Animal {\npublic:\n    virtual void speak() {\n        cout << \"Animal makes a sound\" << endl;\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() override {  // Overriding parent method\n        cout << \"Dog barks: Woof!\" << endl;\n    }\n};\n\nclass Cat : public Animal {\npublic:\n    void speak() override {  // Overriding parent method\n        cout << \"Cat meows: Meow!\" << endl;\n    }\n};\n\nint main() {\n    // Demonstrating Overloading\n    Calculator calc;\n    cout << \"=== OVERLOADING ===\"<< endl;\n    cout << \"add(2, 3) = \" << calc.add(2, 3) << endl;\n    cout << \"add(2.5, 3.5) = \" << calc.add(2.5, 3.5) << endl;\n    cout << \"add(1, 2, 3) = \" << calc.add(1, 2, 3) << endl;\n    \n    // Demonstrating Overriding\n    cout << \"\\n=== OVERRIDING ===\" << endl;\n    Animal* animal1 = new Dog();\n    Animal* animal2 = new Cat();\n    \n    animal1->speak();  // Calls Dog::speak()\n    animal2->speak();  // Calls Cat::speak()\n    \n    return 0;\n}\n```\n\n**Key Differences:**\n\n| Feature | Overloading | Overriding |\n|---------|-------------|------------|\n| **Definition** | Same name, different parameters | Same name and parameters in derived class |\n| **Binding** | Compile-time (static) | Runtime (dynamic) |\n| **Inheritance** | Not required | Required |\n| **Return type** | Can differ | Must be same or covariant |\n| **virtual keyword** | Not needed | Needed in base class |"
-        },
-        {
-          "part": "c",
-          "marks": 8,
-          "question": "How do you prevent a class from being extended? How do you prevent a method from being overridden? Exemplify with simple piece of code.",
-          "answer": "```cpp\n// In C++:\n\n// ==================== PREVENTING CLASS EXTENSION ====================\n// Use 'final' keyword on class\n\nclass FinalClass final {  // Cannot be inherited\npublic:\n    void display() {\n        cout << \"This class cannot be extended\" << endl;\n    }\n};\n\n// This would cause compilation error:\n// class Child : public FinalClass { };  // ERROR!\n\n// ==================== PREVENTING METHOD OVERRIDE ====================\n// Use 'final' keyword on method\n\nclass Base {\npublic:\n    virtual void canOverride() {\n        cout << \"This can be overridden\" << endl;\n    }\n    \n    virtual void cannotOverride() final {  // Cannot be overridden\n        cout << \"This cannot be overridden\" << endl;\n    }\n};\n\nclass Derived : public Base {\npublic:\n    void canOverride() override {  // OK - allowed\n        cout << \"Overridden in Derived\" << endl;\n    }\n    \n    // This would cause compilation error:\n    // void cannotOverride() override { }  // ERROR!\n};\n\nint main() {\n    FinalClass f;\n    f.display();\n    \n    Derived d;\n    d.canOverride();      // \"Overridden in Derived\"\n    d.cannotOverride();   // \"This cannot be overridden\"\n    \n    return 0;\n}\n```\n\n**In Java:**\n```java\n// Prevent class extension\nfinal class FinalClass {\n    void display() {\n        System.out.println(\"Cannot extend this class\");\n    }\n}\n\n// Prevent method override\nclass Parent {\n    final void cannotOverride() {\n        System.out.println(\"Cannot override this method\");\n    }\n}\n```\n\n**Summary:**\n- **Prevent class extension:** Use `final` keyword on class\n- **Prevent method override:** Use `final` keyword on method"
-        }
-      ]
-    },
-    {
-      "id": "2024-P1-Q6",
-      "year": 2024,
-      "paper": 1,
-      "questionNumber": 6,
-      "section": "B",
       "marks": 20,
       "parts": [
         {
           "part": "a",
           "marks": 8,
-          "question": "For the following data sets, which sorting algorithms would work well, and which would not?",
-          "answer": "| Dataset | Best Algorithm(s) | Avoid | Reason |\n|---------|------------------|-------|--------|\n| **a. 10 floating-point values** | Insertion Sort | Quick Sort | Small n, O(n²) is fine, low overhead |\n| **b. 1,000 integers** | Quick Sort, Merge Sort | Bubble Sort | O(n log n) efficient for medium size |\n| **c. 1,000 names** | Merge Sort | Quick Sort | Stable sort preserves order for equal names |\n| **d. 100,000 integers (0-1,000)** | Counting Sort, Radix Sort | Comparison sorts | O(n+k), k=1000 is small |\n| **e. 100,000 integers (0-1 billion)** | Quick Sort, Merge Sort | Counting Sort | k too large for counting sort |\n| **f. 100,000 names** | Merge Sort | Counting Sort | Strings need comparison-based sort |\n| **g. 1 million floating-point** | Quick Sort, Merge Sort | Insertion Sort | O(n log n) required, O(n²) too slow |\n| **h. 1 million names** | External Merge Sort | In-memory sorts | May need disk-based sorting |\n| **i. 1 million integers (uniform)** | Quick Sort | Merge Sort | Uniform distribution = balanced pivots |\n| **j. 1 million integers (non-uniform)** | Merge Sort | Quick Sort | Worst case for Quick Sort with skewed data |"
+          "question": "Write a C++ program that converts student marks to grades using the following criteria.",
+          "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nclass Student {\nprivate:\n    string name;\n    int marks;\n    char grade;\n    \npublic:\n    void input() {\n        cout << \"Enter student name: \";\n        getline(cin, name);\n        cout << \"Enter marks (0-100): \";\n        cin >> marks;\n    }\n    \n    void calculateGrade() {\n        if (marks >= 90) grade = 'A';\n        else if (marks >= 80) grade = 'B';\n        else if (marks >= 70) grade = 'C';\n        else if (marks >= 60) grade = 'D';\n        else if (marks >= 50) grade = 'E';\n        else grade = 'F';\n    }\n    \n    void display() {\n        cout << \"\\n--- Student Report ---\" << endl;\n        cout << \"Name: \" << name << endl;\n        cout << \"Marks: \" << marks << endl;\n        cout << \"Grade: \" << grade << endl;\n        \n        cout << \"Status: \";\n        if (grade != 'F') \n            cout << \"PASSED\" << endl;\n        else \n            cout << \"FAILED\" << endl;\n    }\n};\n\nint main() {\n    Student s;\n    s.input();\n    s.calculateGrade();\n    s.display();\n    return 0;\n}\n```\n\n**Sample Output:**\n```\nEnter student name: Ahmad Ali\nEnter marks (0-100): 85\n\n--- Student Report ---\nName: Ahmad Ali\nMarks: 85\nGrade: B\nStatus: PASSED\n```\n\n**Grading Criteria:**\n- 90-100: A (Excellent)\n- 80-89: B (Very Good)\n- 70-79: C (Good)\n- 60-69: D (Satisfactory)\n- 50-59: E (Pass)\n- Below 50: F (Fail)"
         },
         {
           "part": "b",
           "marks": 6,
-          "question": "Write an algorithm that implements binary search recursively. Does this version have any advantages or disadvantages compared to the non-recursive version?",
-          "answer": "```cpp\nint binarySearchRecursive(int arr[], int left, int right, int target) {\n    // Base case: element not found\n    if (left > right) {\n        return -1;\n    }\n    \n    int mid = left + (right - left) / 2;  // Avoid overflow\n    \n    // Found the element\n    if (arr[mid] == target) {\n        return mid;\n    }\n    \n    // Search left half\n    if (target < arr[mid]) {\n        return binarySearchRecursive(arr, left, mid - 1, target);\n    }\n    \n    // Search right half\n    return binarySearchRecursive(arr, mid + 1, right, target);\n}\n```\n\n**Advantages of Recursive Version:**\n- Cleaner, more readable code\n- Follows mathematical definition directly\n- Easier to prove correctness\n\n**Disadvantages of Recursive Version:**\n- Function call overhead (stack frames)\n- Risk of stack overflow for very large arrays\n- Slightly slower due to function calls\n- Uses O(log n) stack space vs O(1) for iterative\n\n**When to Use Which:**\n- **Recursive:** Teaching, readability is priority\n- **Iterative:** Performance-critical code, large datasets"
+          "question": "Implement BFS (Breadth-First Search) traversal of a graph.",
+          "answer": "```cpp\n#include <iostream>\n#include <queue>\n#include <vector>\nusing namespace std;\n\nclass Graph {\n    int V;  // Number of vertices\n    vector<int>* adj;  // Adjacency list\n    \npublic:\n    Graph(int v) {\n        V = v;\n        adj = new vector<int>[v];\n    }\n    \n    void addEdge(int u, int v) {\n        adj[u].push_back(v);\n        adj[v].push_back(u);  // For undirected graph\n    }\n    \n    void BFS(int start) {\n        // Mark all vertices as not visited\n        vector<bool> visited(V, false);\n        \n        // Create queue for BFS\n        queue<int> q;\n        \n        // Mark starting vertex and enqueue\n        visited[start] = true;\n        q.push(start);\n        \n        cout << \"BFS Traversal: \";\n        \n        while (!q.empty()) {\n            // Dequeue and print\n            int current = q.front();\n            q.pop();\n            cout << current << \" \";\n            \n            // Get all adjacent vertices\n            for (int neighbor : adj[current]) {\n                if (!visited[neighbor]) {\n                    visited[neighbor] = true;\n                    q.push(neighbor);\n                }\n            }\n        }\n        cout << endl;\n    }\n};\n\nint main() {\n    Graph g(6);\n    g.addEdge(0, 1);\n    g.addEdge(0, 2);\n    g.addEdge(1, 3);\n    g.addEdge(1, 4);\n    g.addEdge(2, 4);\n    g.addEdge(3, 5);\n    g.addEdge(4, 5);\n    \n    g.BFS(0);  // Start from vertex 0\n    return 0;\n}\n```\n\n**Output:** `BFS Traversal: 0 1 2 3 4 5`\n\n**Time Complexity:** O(V + E)\n**Space Complexity:** O(V)"
         },
         {
           "part": "c",
           "marks": 6,
-          "question": "Write an algorithm that deletes a specified cell from a doubly linked list. Draw a picture that shows the process graphically.",
-          "answer": "```cpp\nstruct Node {\n    int data;\n    Node* prev;\n    Node* next;\n};\n\nvoid deleteNode(Node*& head, Node* nodeToDelete) {\n    if (head == nullptr || nodeToDelete == nullptr) {\n        return;  // Nothing to delete\n    }\n    \n    // Case 1: Deleting head node\n    if (head == nodeToDelete) {\n        head = nodeToDelete->next;\n    }\n    \n    // Case 2: Node has a next node\n    if (nodeToDelete->next != nullptr) {\n        nodeToDelete->next->prev = nodeToDelete->prev;\n    }\n    \n    // Case 3: Node has a previous node\n    if (nodeToDelete->prev != nullptr) {\n        nodeToDelete->prev->next = nodeToDelete->next;\n    }\n    \n    // Free memory\n    delete nodeToDelete;\n}\n```\n\n**Graphical Representation:**\n\n```\nBEFORE DELETION (deleting node B):\n                \n   ┌─────┐     ┌─────┐     ┌─────┐\n   │  A  │ ←→  │  B  │ ←→  │  C  │\n   └─────┘     └─────┘     └─────┘\n      ↑           ↑\n      │    nodeToDelete\n     head\n\nSTEP 1: Update C's prev pointer\n   ┌─────┐     ┌─────┐     ┌─────┐\n   │  A  │ ←→  │  B  │  ←  │  C  │\n   └─────┘     └─────┘     └──┬──┘\n                  ↓           │\n              (being deleted) │\n                              ↓\n   ┌─────────────────────────────┐\n   └─────────── A ←──────────────┘\n\nSTEP 2: Update A's next pointer\n   ┌─────┐     ┌─────┐     ┌─────┐\n   │  A  │  →  │  B  │     │  C  │\n   └──┬──┘     └─────┘     └─────┘\n      │                       ↑\n      └───────────────────────┘\n\nAFTER DELETION:\n   ┌─────┐     ┌─────┐\n   │  A  │ ←→  │  C  │\n   └─────┘     └─────┘\n```"
-        }
-      ]
-    },
-    {
-      "id": "2024-P1-Q8",
-      "year": 2024,
-      "paper": 1,
-      "questionNumber": 8,
-      "section": "B",
-      "marks": 20,
-      "parts": [
-        {
-          "part": "I",
-          "marks": 5,
-          "question": "Write Regular Expression for date Format (e.g., 10.03.2024 | 12/30/2023 | 01/01/2022)",
-          "answer": "```regex\n^(0[1-9]|[12][0-9]|3[01])[.\\/](0[1-9]|1[0-2])[.\\/](19|20)\\d{2}$\n```\n\n**Explanation:**\n- `^` - Start of string\n- `(0[1-9]|[12][0-9]|3[01])` - Day (01-31)\n- `[.\\/]` - Separator (. or /)\n- `(0[1-9]|1[0-2])` - Month (01-12)\n- `[.\\/]` - Separator\n- `(19|20)\\d{2}` - Year (1900-2099)\n- `$` - End of string\n\n**Matches:** 10.03.2024, 12/30/2023, 01/01/2022"
-        },
-        {
-          "part": "II",
-          "marks": 5,
-          "question": "Write a Regular Expression that will match URL (e.g., http://example.edu.pk)",
-          "answer": "```regex\n^https?:\\/\\/([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,}(\\/[a-zA-Z0-9._~:/?#[\\]@!$&'()*+,;=-]*)?$\n```\n\n**Simplified version:**\n```regex\n^https?:\\/\\/[a-zA-Z0-9][a-zA-Z0-9.-]*\\.[a-zA-Z]{2,}(\\/.*)?$\n```\n\n**Explanation:**\n- `^https?:\\/\\/` - Matches http:// or https://\n- `[a-zA-Z0-9][a-zA-Z0-9.-]*` - Domain name\n- `\\.[a-zA-Z]{2,}` - TLD (.com, .pk, .edu.pk)\n- `(\\/.*)?$` - Optional path\n\n**Matches:** http://example.edu.pk, https://www.google.com/search"
-        },
-        {
-          "part": "III",
-          "marks": 5,
-          "question": "Write a Regular Expression that will match an IP address (e.g., 192.168.0.1)",
-          "answer": "```regex\n^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$\n```\n\n**Explanation:**\n- `25[0-5]` - Matches 250-255\n- `2[0-4][0-9]` - Matches 200-249\n- `[01]?[0-9][0-9]?` - Matches 0-199\n- `\\.` - Literal dot\n- `{3}` - First three octets with dots\n- Last part is the fourth octet\n\n**Matches:** 192.168.0.1, 255.255.255.0, 10.0.0.1\n**Rejects:** 256.1.1.1, 192.168.1 (incomplete)"
-        },
-        {
-          "part": "IV",
-          "marks": 5,
-          "question": "Write a Regular Expression that will match an email address (e.g., abc@example.com)",
-          "answer": "```regex\n^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\n```\n\n**Explanation:**\n- `^` - Start of string\n- `[a-zA-Z0-9._%+-]+` - Local part (before @)\n  - Letters, numbers, dots, underscores, percent, plus, hyphen\n- `@` - Literal @ symbol\n- `[a-zA-Z0-9.-]+` - Domain name\n- `\\.` - Literal dot\n- `[a-zA-Z]{2,}` - TLD (minimum 2 characters)\n- `$` - End of string\n\n**Matches:** abc@example.com, user.name@domain.co.uk\n**Rejects:** @example.com, abc@.com"
+          "question": "Write regular expressions for: valid date (DD/MM/YYYY), URL, IP address, and email.",
+          "answer": "**1. Valid Date (DD/MM/YYYY):**\n```regex\n^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\\d{4}$\n```\n- Day: 01-31\n- Month: 01-12\n- Year: 4 digits\n\n**2. URL (HTTP/HTTPS):**\n```regex\n^https?://([\\w-]+\\.)+[\\w-]+(/[\\w-./?%&=]*)?$\n```\n- Protocol: http or https\n- Domain: letters, numbers, hyphens\n- Path: optional\n\n**3. IP Address (IPv4):**\n```regex\n^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$\n```\n- Four octets: 0-255\n- Separated by dots\n\n**4. Email Address:**\n```regex\n^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$\n```\n- Local part: letters, numbers, special chars\n- @ symbol\n- Domain with TLD (2+ letters)\n\n**Test Examples:**\n\n| Pattern | Valid | Invalid |\n|---------|-------|----------|\n| Date | 25/12/2024 | 32/13/2024 |\n| URL | https://google.com | htp://bad |\n| IP | 192.168.1.1 | 256.1.1.1 |\n| Email | user@domain.com | user@.com |\n\n**Note:** These are basic patterns. Production use may need more comprehensive validation."
         }
       ]
     }

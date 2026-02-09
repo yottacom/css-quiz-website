@@ -19,7 +19,7 @@ export default function SubjectivePage() {
         <div className="mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-2">Subjective Questions - Solved</h1>
           <p className="text-gray-600">
-            Complete solutions to CSS Computer Science past paper subjective questions
+            Complete solutions to CSS Computer Science past paper subjective questions ({subjectiveData.metadata.totalQuestions} questions)
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export default function SubjectivePage() {
             <select
               value={selectedYear}
               onChange={(e) => setSelectedYear(e.target.value === 'all' ? 'all' : parseInt(e.target.value))}
-              className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+              className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-black"
             >
               <option value="all">All Years</option>
               {years.map(year => (
@@ -44,16 +44,16 @@ export default function SubjectivePage() {
         </div>
 
         {/* Questions */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           {filteredQuestions.map((question) => (
             <div key={question.id} className="bg-white rounded-xl shadow-md overflow-hidden">
               <div
-                className="p-6 cursor-pointer hover:bg-gray-50"
+                className="p-5 cursor-pointer hover:bg-gray-50"
                 onClick={() => setExpandedQuestion(expandedQuestion === question.id ? null : question.id)}
               >
                 <div className="flex items-start justify-between">
-                  <div>
-                    <div className="flex items-center gap-3 mb-2">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2 flex-wrap">
                       <span className="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">
                         {question.year}
                       </span>
@@ -61,18 +61,16 @@ export default function SubjectivePage() {
                         Paper {question.paper}
                       </span>
                       <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">
-                        Q.{question.questionNumber} - Topic: {question.topic}
+                        Q.{question.questionNumber}
                       </span>
                       <span className="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">
                         {question.marks} marks
                       </span>
                     </div>
-                    <h3 className="text-lg font-semibold text-gray-900">
-                      Question {question.questionNumber} ({question.parts.length} parts)
-                    </h3>
+                    <p className="text-gray-800 text-sm">{question.question}</p>
                   </div>
                   <svg
-                    className={`w-6 h-6 text-gray-500 transform transition-transform ${expandedQuestion === question.id ? 'rotate-180' : ''}`}
+                    className={`w-6 h-6 text-gray-500 transform transition-transform ml-4 flex-shrink-0 ${expandedQuestion === question.id ? 'rotate-180' : ''}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -83,44 +81,23 @@ export default function SubjectivePage() {
               </div>
 
               {expandedQuestion === question.id && (
-                <div className="border-t border-gray-200">
-                  {question.parts.map((part, idx) => (
-                    <div key={idx} className="p-6 border-b border-gray-100 last:border-b-0">
-                      <div className="flex items-center gap-2 mb-3">
-                        <span className="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center font-bold text-sm">
-                          {part.part}
-                        </span>
-                        <span className="text-sm text-gray-500">({part.marks} marks)</span>
-                      </div>
-                      
-                      <div className="mb-4">
-                        <h4 className="font-semibold text-gray-900 mb-2">Question:</h4>
-                        <p className="text-gray-700 bg-gray-50 p-4 rounded-lg whitespace-pre-wrap">
-                          {part.question}
-                        </p>
-                      </div>
-                      
-                      <div>
-                        <h4 className="font-semibold text-gray-900 mb-2 flex items-center gap-2">
-                          <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                          Solution:
-                        </h4>
-                        <div className="bg-green-50 p-4 rounded-lg">
-                          <div 
-                            className="prose prose-sm max-w-none text-gray-700"
-                            dangerouslySetInnerHTML={{ 
-                              __html: part.answer
-                                .replace(/```(\w+)?\n([\s\S]*?)```/g, '<pre class="bg-gray-800 text-gray-100 p-4 rounded-lg overflow-x-auto my-2"><code>$2</code></pre>')
-                                .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
-                                .replace(/\n/g, '<br/>')
-                            }}
-                          />
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+                <div className="border-t border-gray-200 p-5 bg-green-50">
+                  <h4 className="font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                    <svg className="w-5 h-5 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    Solution:
+                  </h4>
+                  <div 
+                    className="prose prose-sm max-w-none text-black"
+                    dangerouslySetInnerHTML={{ 
+                      __html: question.answer
+                        .replace(/```(\w+)?\n?([\s\S]*?)```/g, '<pre class="bg-gray-800 text-gray-100 p-4 rounded-lg overflow-x-auto my-2 text-xs"><code>$2</code></pre>')
+                        .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                        .replace(/\|([^\n]+)\|/g, '<div class="overflow-x-auto"><table class="border-collapse border border-gray-300 my-2 text-sm"><tr>$1</tr></table></div>')
+                        .replace(/\n/g, '<br/>')
+                    }}
+                  />
                 </div>
               )}
             </div>

@@ -1,8 +1,9 @@
 {
   "metadata": {
-    "title": "CSS Computer Science Subjective Questions - Complete Solutions",
-    "description": "All subjective questions from CSS Computer Science papers (2016-2025) with detailed solutions",
+    "title": "CSS Computer Science - Complete Subjective Questions Bank",
+    "description": "ALL subjective questions from CSS Computer Science papers (2016-2025) with detailed solutions",
     "totalQuestions": 140,
+    "questionsPerPaper": 7,
     "years": [2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024, 2025],
     "papersPerYear": 2
   },
@@ -15,24 +16,9 @@
       "questionNumber": 2,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 6,
-          "question": "Write a program for temperature conversion (Fahrenheit to Celsius or vice versa) based on user choice.",
-          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int choice;\n    float temp, result;\n    \n    cout << \"1. Fahrenheit to Celsius\\n\";\n    cout << \"2. Celsius to Fahrenheit\\n\";\n    cout << \"Enter choice: \";\n    cin >> choice;\n    \n    if (choice == 1) {\n        cout << \"Enter Fahrenheit: \";\n        cin >> temp;\n        result = (temp - 32) * 5.0/9.0;\n        cout << \"Celsius: \" << result;\n    } else {\n        cout << \"Enter Celsius: \";\n        cin >> temp;\n        result = temp * 9.0/5.0 + 32;\n        cout << \"Fahrenheit: \" << result;\n    }\n    return 0;\n}\n```"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Which computer type suits an individual? Justify your answer.",
-          "answer": "**Microcomputers** are most suitable for individuals because:\n\n1. **Affordable**: $500-$2000 vs millions for mainframes\n2. **Compact**: Fits on desk, portable options available\n3. **Easy to use**: User-friendly OS (Windows, macOS)\n4. **Sufficient power**: Handles personal tasks, programming, entertainment\n5. **Low maintenance**: Easy to upgrade and repair\n\nExamples: Desktop PCs, Laptops, Tablets"
-        },
-        {
-          "part": "c",
-          "marks": 8,
-          "question": "Design OOP classes for Student Registration System with Person, Teacher, Student, Course, Registration classes.",
-          "answer": "```cpp\nclass Person {\nprotected:\n    string name, address;\n    int age;\npublic:\n    virtual void getdata();\n    virtual void showdata();\n};\n\nclass Student : public Person {\n    string rollNo, program;\n    int semester;\npublic:\n    void getdata() override;\n    void showdata() override;\n};\n\nclass Teacher : public Person {\n    string teacherId, department;\npublic:\n    void getdata() override;\n    void showdata() override;\n};\n\nclass Course {\n    string code, name;\n    int credits;\npublic:\n    void getdata();\n    void showdata();\n};\n\nclass Registration {\n    Student student;\n    Course course;\n    string semester;\n    float grade;\npublic:\n    void getdata();\n    void showdata();\n};\n```"
-        }
+        {"part": "a", "marks": 6, "question": "Write a program for temperature conversion (F↔C) based on user choice.", "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    int choice;\n    float temp, result;\n    \n    cout << \"1. Fahrenheit to Celsius\\n2. Celsius to Fahrenheit\\n\";\n    cout << \"Enter choice: \"; cin >> choice;\n    \n    if (choice == 1) {\n        cout << \"Enter Fahrenheit: \"; cin >> temp;\n        result = (temp - 32) * 5.0/9.0;\n        cout << \"Celsius: \" << result;\n    } else {\n        cout << \"Enter Celsius: \"; cin >> temp;\n        result = temp * 9.0/5.0 + 32;\n        cout << \"Fahrenheit: \" << result;\n    }\n    return 0;\n}\n```\n\n**Formulas:** C = (F-32)×5/9, F = C×9/5+32"},
+        {"part": "b", "marks": 6, "question": "Which computer type suits an individual? Justify.", "answer": "**Microcomputers** are ideal because:\n\n1. **Affordable:** $500-$2000 vs millions for mainframes\n2. **Compact:** Fits on desk, portable options\n3. **User-friendly:** Windows, macOS easy to use\n4. **Sufficient power:** Handles personal computing needs\n5. **Low maintenance:** Easy upgrades and repairs\n\n**Examples:** Desktop PCs, Laptops, Tablets"},
+        {"part": "c", "marks": 8, "question": "Design OOP classes for Student Registration System.", "answer": "```cpp\nclass Person {\nprotected:\n    string name, address;\n    int age;\npublic:\n    virtual void getdata();\n    virtual void showdata();\n};\n\nclass Student : public Person {\n    string rollNo, program;\n    int semester;\n};\n\nclass Teacher : public Person {\n    string teacherId, dept;\n};\n\nclass Course {\n    string code, name;\n    int credits;\n};\n\nclass Registration {\n    Student student;\n    Course course;\n    float grade;\n};\n```\n\n**Key concepts:** Inheritance, encapsulation, polymorphism"}
       ]
     },
     {
@@ -43,24 +29,22 @@
       "questionNumber": 3,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 6,
-          "question": "Define a function monthly_profit that calculates monthly profit given percent rate and investment amount.",
-          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\n// Function prototype\nfloat monthly_profit(float rate, float investment);\n\n// Function definition\nfloat monthly_profit(float rate, float investment) {\n    return (rate / 100) * investment;\n}\n\nint main() {\n    float rate, investment;\n    cout << \"Enter percent profit rate: \";\n    cin >> rate;\n    cout << \"Enter investment amount: \";\n    cin >> investment;\n    \n    float profit = monthly_profit(rate, investment);\n    cout << \"Monthly profit: \" << profit << endl;\n    return 0;\n}\n```\n\nFor rate=8, investment=50000: profit = (8/100)*50000 = 4000"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Explain volatile vs non-volatile memory with examples.",
-          "answer": "**Volatile Memory:**\n- Loses data when power off\n- Faster access speed\n- Used for temporary storage\n- Examples: RAM, Cache, Registers\n\n**Non-Volatile Memory:**\n- Retains data without power\n- Slower but persistent\n- Used for permanent storage\n- Examples: HDD, SSD, ROM, Flash drives\n\n| Feature | Volatile | Non-Volatile |\n|---------|----------|---------------|\n| Power dependency | Yes | No |\n| Speed | Faster | Slower |\n| Cost/GB | Higher | Lower |\n| Use case | Active processing | Storage |"
-        },
-        {
-          "part": "c",
-          "marks": 8,
-          "question": "Design classes for Library Information System to track books issued/returned and calculate fines.",
-          "answer": "```cpp\nclass Book {\n    string ISBN, title, author;\n    bool isAvailable;\npublic:\n    void getdata();\n    void showdata();\n    bool checkAvailability();\n};\n\nclass Member {\nprotected:\n    string memberId, name;\n    int maxBooks;\npublic:\n    virtual void getdata();\n    virtual void showdata();\n};\n\nclass Student : public Member {\n    string rollNo;\npublic:\n    Student() { maxBooks = 3; }\n};\n\nclass Teacher : public Member {\n    string dept;\npublic:\n    Teacher() { maxBooks = 10; }\n};\n\nclass IssueBook {\n    Book book;\n    Member* member;\n    Date issueDate, dueDate, returnDate;\n    float fine;\npublic:\n    void issueBook();\n    void returnBook();\n    float calculateFine() {\n        int daysLate = returnDate - dueDate;\n        return (daysLate > 0) ? daysLate * 5.0 : 0;\n    }\n};\n```"
-        }
+        {"part": "a", "marks": 6, "question": "Define monthly_profit function (rate, investment).", "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nfloat monthly_profit(float rate, float investment) {\n    return (rate / 100) * investment;\n}\n\nint main() {\n    float rate, investment;\n    cout << \"Enter rate: \"; cin >> rate;\n    cout << \"Enter investment: \"; cin >> investment;\n    cout << \"Monthly profit: \" << monthly_profit(rate, investment);\n    return 0;\n}\n```\n\n**Example:** rate=8, investment=50000 → profit=4000"},
+        {"part": "b", "marks": 6, "question": "Volatile vs Non-volatile memory with examples.", "answer": "| Feature | Volatile | Non-Volatile |\n|---------|----------|---------------|\n| Power | Loses data when off | Retains data |\n| Speed | Faster | Slower |\n| Cost | Higher/GB | Lower/GB |\n| Examples | RAM, Cache | HDD, SSD, ROM |\n| Use | Active processing | Storage |"},
+        {"part": "c", "marks": 8, "question": "Design Library System classes for book tracking and fines.", "answer": "```cpp\nclass Book {\n    string ISBN, title;\n    bool available;\n};\n\nclass Member {\nprotected:\n    string id, name;\n    int maxBooks;\n};\n\nclass Student : public Member {\n    Student() { maxBooks = 3; }\n};\n\nclass Teacher : public Member {\n    Teacher() { maxBooks = 10; }\n};\n\nclass IssueRecord {\n    Book book;\n    Member* member;\n    Date issueDate, dueDate;\n    float calculateFine() {\n        int late = today - dueDate;\n        return (late > 0) ? late * 5.0 : 0;\n    }\n};\n```"}
+      ]
+    },
+    {
+      "id": "2016-P1-Q4",
+      "year": 2016,
+      "paper": 1,
+      "section": "I",
+      "questionNumber": 4,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 6, "question": "Structure for Person (name, age, address) with age categorization.", "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nstruct Person {\n    char name[50];\n    int age;\n    char address[100];\n};\n\nint main() {\n    Person p;\n    cout << \"Enter Name: \"; cin >> p.name;\n    cout << \"Enter Age: \"; cin >> p.age;\n    cout << \"Enter Address: \"; cin >> p.address;\n    \n    if (p.age < 20)\n        cout << \"Person is YOUNG\";\n    else if (p.age > 50)\n        cout << \"Person is OLD\";\n    else\n        cout << \"Person is MIDDLE\";\n    return 0;\n}\n```"},
+        {"part": "b", "marks": 6, "question": "Convert binary to Decimal, Octal, Hex: 100, 10100, 100101", "answer": "**100₂:**\n- Decimal: 4\n- Octal: 4\n- Hex: 4\n\n**10100₂:**\n- Decimal: 20\n- Octal: 24\n- Hex: 14\n\n**100101₂:**\n- Decimal: 37\n- Octal: 45\n- Hex: 25\n\n**Method:** Binary→Decimal: sum of (bit × 2^position)"},
+        {"part": "c", "marks": 8, "question": "Design Medical Store software classes with inheritance.", "answer": "```cpp\nclass Person {\nprotected:\n    string name, contact;\n};\n\nclass Customer : public Person {\n    string customerId;\n    vector<Purchase> history;\n};\n\nclass Salesman : public Person {\n    string empId;\n    float commission;\n};\n\nclass Medicine {\n    string name, batch;\n    float price;\n    Date expiry;\n};\n\nclass Purchase {\n    Customer customer;\n    Salesman salesman;\n    vector<Medicine> items;\n    float total;\n    Date purchaseDate;\n};\n```"}
       ]
     },
     {
@@ -71,24 +55,9 @@
       "questionNumber": 5,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "Define tree terminology: Sibling, Degree, Leaf, Height, Binary Tree, Full Binary Tree, Complete Binary Tree, Max nodes at level L.",
-          "answer": "**i. Sibling Nodes:** Nodes sharing same parent\n\n**ii. Degree of Tree:** Maximum children any node has\n\n**iii. Leaf Node:** Node with no children (terminal node)\n\n**iv. Height/Depth:** Longest path from root to deepest leaf\n\n**v. Binary Tree:** Each node has at most 2 children\n\n**vi. Full Binary Tree:** Every node has 0 or 2 children\n\n**vii. Complete Binary Tree:** All levels filled except last, filled left-to-right\n\n**viii. Max Nodes at Level L:** 2^L nodes (root at L=0)"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Find time complexity of Binary Search: T(1)=2, T(n)=4+T(n/2)",
-          "answer": "**Iterative Substitution:**\n\nT(n) = 4 + T(n/2)\nT(n) = 4 + 4 + T(n/4) = 8 + T(n/4)\nT(n) = 4k + T(n/2^k)\n\n**Base case:** n/2^k = 1 → k = log₂n\n\nT(n) = 4·log₂n + T(1)\nT(n) = 4·log₂n + 2\n\n**Time Complexity: O(log n)**"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Build Max-Heap from A={8,14,2,26,10,12,16,28,20,7} and show Heap-sort.",
-          "answer": "**Build Max-Heap:**\nStart from last non-leaf, heapify upward:\n\nInitial: [8,14,2,26,10,12,16,28,20,7]\nAfter Build-Heap: [28,26,16,20,10,12,2,14,8,7]\n\n**Heap-Sort Steps:**\n1. Swap root(28)↔last, heapify: [26,20,16,14,10,12,2,7,8|28]\n2. Continue until sorted...\n\n**Sorted: [2,7,8,10,12,14,16,20,26,28]**"
-        }
+        {"part": "a", "marks": 8, "question": "Define tree terms: Sibling, Degree, Leaf, Height, Binary Tree, Full/Complete Binary Tree, Max nodes at level L.", "answer": "**Sibling:** Nodes with same parent\n**Degree:** Max children any node has\n**Leaf:** Node with no children\n**Height:** Longest root-to-leaf path\n**Binary Tree:** Max 2 children per node\n**Full Binary:** Every node has 0 or 2 children\n**Complete Binary:** All levels filled except last (left-filled)\n**Max at Level L:** 2^L nodes (root = level 0)"},
+        {"part": "b", "marks": 6, "question": "Binary Search complexity: T(1)=2, T(n)=4+T(n/2)", "answer": "**Iterative Substitution:**\nT(n) = 4 + T(n/2)\n     = 4 + 4 + T(n/4)\n     = 4k + T(n/2^k)\n\n**Base:** n/2^k = 1 → k = log₂n\n\nT(n) = 4·log₂n + 2\n\n**Complexity: O(log n)**"},
+        {"part": "c", "marks": 6, "question": "Build Max-Heap from {8,14,2,26,10,12,16,28,20,7}, show Heap-sort.", "answer": "**Build Max-Heap:**\nInitial: [8,14,2,26,10,12,16,28,20,7]\nAfter heapify: [28,26,16,20,10,12,2,14,8,7]\n\n**Heap-Sort:**\n1. Swap 28↔7, heapify\n2. Swap 26↔8, heapify\n... continue\n\n**Sorted:** [2,7,8,10,12,14,16,20,26,28]"}
       ]
     },
     {
@@ -99,24 +68,37 @@
       "questionNumber": 6,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "Write ADT for Stack and Queue with Add, Delete, IsEmpty, IsFull operations.",
-          "answer": "**Stack ADT:**\n```\nADT Stack:\n  Data: Collection of elements, top pointer\n  \n  Operations:\n    Push(element):\n      Pre: Stack not full\n      Post: Element added at top\n    \n    Pop() → element:\n      Pre: Stack not empty\n      Post: Top element removed and returned\n    \n    IsEmpty() → boolean:\n      Post: Returns true if stack empty\n    \n    IsFull() → boolean:\n      Post: Returns true if stack full\n    \n    Peek() → element:\n      Pre: Stack not empty\n      Post: Returns top without removing\n```\n\n**Queue ADT:**\n```\nADT Queue:\n  Data: Collection of elements, front, rear\n  \n  Operations:\n    Enqueue(element):\n      Pre: Queue not full\n      Post: Element added at rear\n    \n    Dequeue() → element:\n      Pre: Queue not empty\n      Post: Front element removed and returned\n    \n    IsEmpty() → boolean\n    IsFull() → boolean\n    Front() → element\n```"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Find breakeven point for n²+10 and 2^n/4.",
-          "answer": "Find n where 2^n/4 > n²+10\n\n| n | n²+10 | 2^n/4 |\n|---|-------|-------|\n| 1 | 11 | 0.5 |\n| 2 | 14 | 1 |\n| 3 | 19 | 2 |\n| 4 | 26 | 4 |\n| 5 | 35 | 8 |\n| 6 | 46 | 16 |\n| 7 | 59 | 32 |\n| 8 | 74 | 64 |\n| 9 | 91 | 128 ✓ |\n\n**Breakeven point: n = 9**\nAt n=9: 2^9/4 = 128 > 91 = 9²+10"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Construct AVL tree from A={8,14,2,26,10,12,16,28,20,7}",
-          "answer": "**AVL Tree Construction:**\n\nInsert 8: Root\nInsert 14: Right child\nInsert 2: Left child (balanced)\nInsert 26: Right-right\nInsert 10: Causes imbalance at 14, rotate\nInsert 12: Causes imbalance, double rotation\n...\n\n**Final AVL Tree:**\n```\n           14\n         /    \\\n        8      20\n       / \\    /  \\\n      2  10  16   26\n       \\  \\      /  \\\n        7  12   28   -\n```\n\nBalance factor at each node: -1, 0, or +1"
-        }
+        {"part": "a", "marks": 8, "question": "Write ADT for Stack and Queue.", "answer": "**Stack ADT:**\n```\nPush(e): Add to top\nPop(): Remove from top\nPeek(): View top\nIsEmpty(): Check empty\nIsFull(): Check full\n```\n\n**Queue ADT:**\n```\nEnqueue(e): Add to rear\nDequeue(): Remove from front\nFront(): View front\nIsEmpty(), IsFull()\n```\n\nStack: LIFO, Queue: FIFO"},
+        {"part": "b", "marks": 6, "question": "Breakeven point for n²+10 vs 2^n/4", "answer": "Find n where 2^n/4 > n²+10:\n\n| n | n²+10 | 2^n/4 |\n|---|-------|-------|\n| 7 | 59 | 32 |\n| 8 | 74 | 64 |\n| 9 | 91 | 128 ✓ |\n\n**Breakeven: n = 9**"},
+        {"part": "c", "marks": 6, "question": "Construct AVL tree from {8,14,2,26,10,12,16,28,20,7}", "answer": "**AVL Property:** Balance factor ∈ {-1, 0, +1}\n\nInsert with rotations:\n- Single rotations (LL, RR)\n- Double rotations (LR, RL)\n\n**Final balanced tree maintains O(log n) operations**"}
+      ]
+    },
+    {
+      "id": "2016-P1-Q7",
+      "year": 2016,
+      "paper": 1,
+      "section": "II",
+      "questionNumber": 7,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 5, "question": "Diagram of C++ compilation process.", "answer": "```\nSource (.cpp)\n    ↓ Preprocessor\nExpanded Source\n    ↓ Compiler\nAssembly (.s)\n    ↓ Assembler\nObject (.o)\n    ↓ Linker\nExecutable (.exe)\n```\n\n**Phases:** Preprocessing → Compilation → Assembly → Linking"},
+        {"part": "b", "marks": 5, "question": "Compare Compiler, Interpreter, Assembler.", "answer": "| Feature | Compiler | Interpreter | Assembler |\n|---------|----------|-------------|------------|\n| Input | High-level | High-level | Assembly |\n| Output | Executable | Direct execution | Object code |\n| Speed | Fast (after compile) | Slower | Fast |\n| Error | All at once | Line by line | All at once |"},
+        {"part": "c", "marks": 5, "question": "Describe SDLC with Waterfall phases.", "answer": "**Waterfall Phases:**\n1. Requirements\n2. Design\n3. Implementation\n4. Testing\n5. Deployment\n6. Maintenance\n\n**Characteristics:** Sequential, document-driven, no backtracking"},
+        {"part": "d", "marks": 5, "question": "SRS vs Design Document differences.", "answer": "**SRS (Software Requirements):**\n- WHAT the system should do\n- Functional/non-functional requirements\n- User perspective\n\n**Design Document:**\n- HOW to build it\n- Architecture, modules, interfaces\n- Developer perspective"}
+      ]
+    },
+    {
+      "id": "2016-P1-Q8",
+      "year": 2016,
+      "paper": 1,
+      "section": "II",
+      "questionNumber": 8,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 5, "question": "Purpose of DFD and ER diagrams with examples.", "answer": "**DFD (Data Flow Diagram):**\n- Shows data movement in system\n- Processes, data stores, external entities\n- Used in structured analysis\n\n**ER Diagram:**\n- Shows database structure\n- Entities, relationships, attributes\n- Used in database design"},
+        {"part": "b", "marks": 5, "question": "Five properties of language (English and MiniJava).", "answer": "**Language Properties:**\n1. **Alphabet:** Set of symbols (letters, keywords)\n2. **Syntax:** Grammar rules\n3. **Semantics:** Meaning of constructs\n4. **Pragmatics:** Context of use\n5. **Phonology:** Sound patterns\n\nMiniJava has defined alphabet (keywords), syntax (grammar), semantics (execution meaning)"},
+        {"part": "c", "marks": 5, "question": "Regex r1=(A|...|Z)*(0|...|9)* to FA, remove ε-moves.", "answer": "**Language:** Zero or more uppercase letters followed by zero or more digits\n\n**FA States:**\n- q0: Start (accept)\n- q1: After letters (accept)\n- q2: After digits (accept)\n\n**Transitions:** Letters stay in q0/q1, digits go to q2"},
+        {"part": "d", "marks": 5, "question": "Define Context Free Grammar with examples.", "answer": "**CFG:** G = (V, Σ, R, S)\n- V: Variables\n- Σ: Terminals\n- R: Production rules\n- S: Start symbol\n\n**Example:** Balanced parentheses\nS → (S) | SS | ε"}
       ]
     },
     {
@@ -127,24 +109,9 @@
       "questionNumber": 2,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 6,
-          "question": "In mesh topology with 5 devices, how many cables needed when adding 2? Compare with ring.",
-          "answer": "**Mesh Formula:** n(n-1)/2\n\n- 5 devices: 5×4/2 = 10 cables\n- 7 devices: 7×6/2 = 21 cables\n- **New cables in Mesh: 11**\n\n**Ring:** n cables for n devices\n- 5 devices: 5 cables\n- 7 devices: 7 cables  \n- **New cables in Ring: 2**\n\nRing more economical, Mesh more fault-tolerant."
-        },
-        {
-          "part": "b",
-          "marks": 7,
-          "question": "Discuss transmission impairments in detail.",
-          "answer": "**1. Attenuation:**\n- Signal energy loss over distance\n- Measured in decibels (dB)\n- Solution: Repeaters/amplifiers\n\n**2. Distortion:**\n- Signal shape changes\n- Different frequencies travel at different speeds\n- Solution: Equalization\n\n**3. Noise Types:**\n- Thermal: Random electron motion\n- Induced: External interference\n- Crosstalk: Adjacent wire pickup\n- Impulse: Lightning, power surges\n\n**SNR = 10 log₁₀(Signal/Noise)** - Higher is better"
-        },
-        {
-          "part": "c",
-          "marks": 7,
-          "question": "Explain switching methods in networks.",
-          "answer": "**1. Circuit Switching:**\n- Dedicated path before communication\n- Used in telephone networks\n- Guaranteed bandwidth, setup delay\n\n**2. Packet Switching:**\n- Data divided into packets\n- Each routed independently\n- Datagram (IP) or Virtual Circuit (ATM)\n- Efficient, variable delay\n\n**3. Message Switching:**\n- Store-and-forward at each node\n- High latency, large storage needed"
-        }
+        {"part": "a", "marks": 6, "question": "Mesh vs Ring: cables needed when adding 2 devices to 5.", "answer": "**Mesh:** n(n-1)/2\n- 5 devices: 10 cables\n- 7 devices: 21 cables\n- **New: 11 cables**\n\n**Ring:** n cables\n- 5 devices: 5 cables\n- 7 devices: 7 cables\n- **New: 2 cables**"},
+        {"part": "b", "marks": 7, "question": "Transmission impairments in detail.", "answer": "**1. Attenuation:** Signal weakening over distance\n**2. Distortion:** Signal shape changes\n**3. Noise:**\n- Thermal: Random electron motion\n- Induced: External interference\n- Crosstalk: Adjacent wire pickup\n- Impulse: Power surges\n\n**SNR = 10 log₁₀(Signal/Noise)**"},
+        {"part": "c", "marks": 7, "question": "Switching methods in networks.", "answer": "**Circuit Switching:**\n- Dedicated path, guaranteed bandwidth\n- Example: Telephone\n\n**Packet Switching:**\n- Data in packets, independent routing\n- Datagram or Virtual Circuit\n\n**Message Switching:**\n- Store-and-forward\n- High latency"}
       ]
     },
     {
@@ -155,24 +122,22 @@
       "questionNumber": 3,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "Explain RAID levels with diagrams.",
-          "answer": "**RAID 0 (Striping):**\n- Data split across disks\n- Best performance, no redundancy\n\n**RAID 1 (Mirroring):**\n- Data duplicated on two disks\n- 50% capacity, full redundancy\n\n**RAID 5 (Striping with Parity):**\n- Data + parity across 3+ disks\n- Can survive 1 disk failure\n- Good balance of performance/redundancy\n\n**RAID 6:**\n- Double parity, survives 2 failures\n\n**RAID 10 (1+0):**\n- Mirrored stripes\n- High performance + redundancy"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Explain instruction cycle with diagrams.",
-          "answer": "**Instruction Cycle Phases:**\n\n1. **Fetch:** Get instruction from memory at PC address\n2. **Decode:** Interpret opcode and operands\n3. **Execute:** Perform the operation\n4. **Store:** Write results to register/memory\n\n```\n┌─────────┐\n│  FETCH  │ ← PC points to instruction\n└────┬────┘\n     ↓\n┌─────────┐\n│ DECODE  │ ← Decode opcode\n└────┬────┘\n     ↓\n┌─────────┐\n│ EXECUTE │ ← ALU operation\n└────┬────┘\n     ↓\n┌─────────┐\n│  STORE  │ ← Write back\n└────┬────┘\n     ↓\n   PC++\n```"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Differentiate RISC and CISC architectures.",
-          "answer": "| Feature | RISC | CISC |\n|---------|------|------|\n| Instructions | Simple, few | Complex, many |\n| Cycles/instr | 1 (pipelined) | Multiple |\n| Addressing modes | Few | Many |\n| Registers | Many | Few |\n| Memory access | Load/Store | Direct |\n| Code size | Larger | Smaller |\n| Examples | ARM, MIPS | x86, Intel |\n| Power usage | Lower | Higher |"
-        }
+        {"part": "a", "marks": 8, "question": "RAID levels with diagrams.", "answer": "**RAID 0:** Striping (no redundancy)\n**RAID 1:** Mirroring (full copy)\n**RAID 5:** Striping + distributed parity\n**RAID 6:** Double parity\n**RAID 10:** Mirror + stripe"},
+        {"part": "b", "marks": 6, "question": "Instruction cycle diagram.", "answer": "**Cycle:** Fetch → Decode → Execute → Store\n\n1. PC → MAR → Memory → MDR → IR\n2. Decode opcode\n3. Execute in ALU\n4. Write back results\n5. PC++"},
+        {"part": "c", "marks": 6, "question": "RISC vs CISC comparison.", "answer": "| RISC | CISC |\n|------|------|\n| Simple instructions | Complex instructions |\n| 1 cycle/instruction | Multiple cycles |\n| More registers | Fewer registers |\n| Load/Store memory | Direct memory ops |\n| ARM, MIPS | x86, Intel |"}
+      ]
+    },
+    {
+      "id": "2016-P2-Q4",
+      "year": 2016,
+      "paper": 2,
+      "section": "A",
+      "questionNumber": 4,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 8, "question": "Banker's Algorithm for deadlock avoidance.", "answer": "**Steps:**\n1. Check if request ≤ need\n2. Check if request ≤ available\n3. Pretend allocate, check safe state\n4. If safe, allocate; else wait\n\n**Safe State:** Can complete all processes"},
+        {"part": "b", "marks": 6, "question": "Multilevel Queue vs Feedback Queue scheduling.", "answer": "**Multilevel Queue:**\n- Separate queues by priority\n- No movement between queues\n\n**Multilevel Feedback:**\n- Processes can move between queues\n- Aging prevents starvation\n- More flexible"},
+        {"part": "c", "marks": 6, "question": "Process Control Block components.", "answer": "**PCB Contents:**\n- Process ID, State\n- Program Counter\n- CPU Registers\n- Memory limits\n- Open files\n- Scheduling info\n- I/O status"}
       ]
     },
     {
@@ -183,24 +148,22 @@
       "questionNumber": 5,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "Differentiate subquery operators IN, ANY, ALL in SQL.",
-          "answer": "**IN Operator:**\n- Checks if value matches any in subquery result\n```sql\nSELECT * FROM Students \nWHERE dept_id IN (SELECT id FROM Depts WHERE name='CS');\n```\n\n**ANY Operator:**\n- True if condition satisfied by any subquery value\n```sql\nSELECT * FROM Products \nWHERE price > ANY (SELECT price FROM Discounted);\n```\n\n**ALL Operator:**\n- True if condition satisfied by ALL subquery values\n```sql\nSELECT * FROM Products \nWHERE price > ALL (SELECT price FROM Competitors);\n```"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Explain LIKE/NOT LIKE pattern matching in SQL.",
-          "answer": "**LIKE Operator:**\nPattern matching with wildcards:\n- `%` matches any sequence of characters\n- `_` matches any single character\n\n**Examples:**\n```sql\n-- Names starting with 'A'\nSELECT * FROM Students WHERE name LIKE 'A%';\n\n-- Names ending with 'son'\nSELECT * FROM Students WHERE name LIKE '%son';\n\n-- Second character is 'a'\nSELECT * FROM Students WHERE name LIKE '_a%';\n\n-- NOT LIKE - excluding pattern\nSELECT * FROM Students WHERE name NOT LIKE 'Admin%';\n```"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Differentiate DDL and DML in SQL.",
-          "answer": "**DDL (Data Definition Language):**\n- Defines database structure\n- Commands: CREATE, ALTER, DROP, TRUNCATE\n- Auto-commits changes\n```sql\nCREATE TABLE Students (id INT, name VARCHAR(50));\nALTER TABLE Students ADD email VARCHAR(100);\nDROP TABLE Students;\n```\n\n**DML (Data Manipulation Language):**\n- Manipulates data within tables\n- Commands: SELECT, INSERT, UPDATE, DELETE\n- Can be rolled back\n```sql\nINSERT INTO Students VALUES (1, 'Ali');\nUPDATE Students SET name='Ahmad' WHERE id=1;\nDELETE FROM Students WHERE id=1;\n```"
-        }
+        {"part": "a", "marks": 8, "question": "SQL subquery operators: IN, ANY, ALL.", "answer": "**IN:** Value in subquery result\n```sql\nWHERE id IN (SELECT id FROM...)\n```\n\n**ANY:** Condition true for any value\n```sql\nWHERE price > ANY (SELECT...)\n```\n\n**ALL:** Condition true for all values\n```sql\nWHERE price > ALL (SELECT...)\n```"},
+        {"part": "b", "marks": 6, "question": "LIKE/NOT LIKE pattern matching.", "answer": "**Wildcards:**\n- `%` any sequence\n- `_` single character\n\n```sql\nWHERE name LIKE 'A%'     -- starts with A\nWHERE name LIKE '%son'   -- ends with son\nWHERE name LIKE '_a%'    -- 2nd char is a\n```"},
+        {"part": "c", "marks": 6, "question": "DDL vs DML in SQL.", "answer": "**DDL:** CREATE, ALTER, DROP, TRUNCATE\n- Defines structure\n- Auto-commits\n\n**DML:** SELECT, INSERT, UPDATE, DELETE\n- Manipulates data\n- Can rollback"}
+      ]
+    },
+    {
+      "id": "2016-P2-Q6",
+      "year": 2016,
+      "paper": 2,
+      "section": "B",
+      "questionNumber": 6,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 8, "question": "ACID properties of transactions.", "answer": "**Atomicity:** All or nothing\n**Consistency:** Valid state to valid state\n**Isolation:** Concurrent transactions independent\n**Durability:** Committed changes permanent"},
+        {"part": "b", "marks": 6, "question": "Functional, Full Functional, Transitive dependency.", "answer": "**Functional:** A → B (A determines B)\n**Full Functional:** B depends on entire key\n**Transitive:** A → B → C (A indirectly determines C)"},
+        {"part": "c", "marks": 6, "question": "Database triggers: forms and definition.", "answer": "**Trigger Types:**\n- BEFORE/AFTER\n- INSERT/UPDATE/DELETE\n- FOR EACH ROW/STATEMENT\n\n```sql\nCREATE TRIGGER audit_update\nAFTER UPDATE ON employees\nFOR EACH ROW\nBEGIN\n  INSERT INTO audit_log VALUES(...);\nEND;\n```"}
       ]
     },
     {
@@ -211,24 +174,9 @@
       "questionNumber": 2,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "What technical means would you suggest to curb cybercrime while maintaining privacy?",
-          "answer": "**Technical Solutions:**\n\n1. **Encryption:** End-to-end, SSL/TLS, AES-256\n\n2. **Authentication:** Multi-factor (MFA), biometrics, zero-trust\n\n3. **Network Security:** Firewalls, IDS/IPS, VPNs, segmentation\n\n4. **Monitoring:** SIEM, behavioral analytics, AI threat detection\n\n5. **Privacy-Preserving:** Data anonymization, differential privacy\n\n6. **Legal Framework:** Digital forensics, CERT teams, international cooperation"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Differentiate Harvard and Von-Neumann architectures.",
-          "answer": "| Feature | Von-Neumann | Harvard |\n|---------|-------------|----------|\n| Memory | Single unified | Separate data/instruction |\n| Buses | Single | Dual |\n| Speed | Slower (bottleneck) | Faster (parallel) |\n| Complexity | Simpler | More complex |\n| Self-modifying code | Easy | Difficult |\n| Examples | Desktop PCs | DSPs, Microcontrollers |"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Describe virtual memory functioning and OS management.",
-          "answer": "**Virtual Memory:**\n- Uses disk to extend RAM\n- Creates illusion of larger memory\n\n**How it works:**\n1. MMU translates virtual → physical addresses\n2. Memory divided into pages (4KB typical)\n3. Only needed pages in RAM\n4. Page faults load from disk\n\n**OS Management:**\n- Page replacement: LRU, FIFO\n- Working set tracking\n- Demand paging\n- Swap space management"
-        }
+        {"part": "a", "marks": 8, "question": "Technical means to curb cybercrime while maintaining privacy.", "answer": "**Solutions:**\n1. **Encryption:** E2E, SSL/TLS, AES\n2. **Authentication:** MFA, biometrics, zero-trust\n3. **Network Security:** Firewalls, IDS/IPS, VPN\n4. **Monitoring:** SIEM, behavioral analytics\n5. **Privacy Tech:** Anonymization, differential privacy"},
+        {"part": "b", "marks": 6, "question": "Harvard vs Von-Neumann architecture.", "answer": "| Von-Neumann | Harvard |\n|-------------|----------|\n| Single memory | Separate data/instruction |\n| Single bus | Dual buses |\n| Bottleneck | Parallel access |\n| Simpler | Complex |\n| Desktop PCs | DSPs, MCUs |"},
+        {"part": "c", "marks": 6, "question": "Virtual memory functioning and OS management.", "answer": "**Virtual Memory:**\n- Disk extends RAM\n- MMU translates addresses\n- Paging (4KB pages)\n\n**OS Management:**\n- Page replacement (LRU, FIFO)\n- Working set tracking\n- Demand paging"}
       ]
     },
     {
@@ -239,24 +187,22 @@
       "questionNumber": 3,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "Explain Machine, Low Level, and High Level languages with conversion processes.",
-          "answer": "**Machine Language:**\n- Binary (0s and 1s)\n- Directly executable by CPU\n- Hardware-specific\n\n**Low Level (Assembly):**\n- Mnemonics (MOV, ADD, JMP)\n- Converted by ASSEMBLER to machine code\n- 1:1 mapping to machine instructions\n\n**High Level:**\n- Human-readable (C++, Python, Java)\n- Converted by COMPILER or INTERPRETER\n\n**Conversion Process:**\n```\nHigh Level → Compiler → Assembly → Assembler → Machine Code\n                  or\nHigh Level → Interpreter → Execute line by line\n```"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Write function to solve quadratic equation ax²+bx+c=0.",
-          "answer": "```cpp\n#include <iostream>\n#include <cmath>\nusing namespace std;\n\nvoid solveQuadratic(float a, float b, float c) {\n    float discriminant = b*b - 4*a*c;\n    \n    if (discriminant > 0) {\n        float x1 = (-b + sqrt(discriminant)) / (2*a);\n        float x2 = (-b - sqrt(discriminant)) / (2*a);\n        cout << \"x = \" << x1 << \", \" << x2;\n    } else if (discriminant == 0) {\n        float x = -b / (2*a);\n        cout << \"x = \" << x;\n    } else {\n        cout << \"No real roots\";\n    }\n}\n\nint main() {\n    float a, b, c;\n    cout << \"Enter a, b, c: \";\n    cin >> a >> b >> c;\n    solveQuadratic(a, b, c);\n    return 0;\n}\n```"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Create supermarket checkout program with product database.",
-          "answer": "```cpp\n#include <iostream>\n#include <string>\nusing namespace std;\n\nstruct Product {\n    int code;\n    string name;\n    float price;\n};\n\nint main() {\n    Product db[] = {\n        {1, \"Milk\", 150},\n        {2, \"Bread\", 80},\n        {3, \"Eggs\", 200}\n    };\n    int n = 3;\n    float total = 0;\n    char more;\n    \n    do {\n        int code, qty;\n        cout << \"Enter product code: \";\n        cin >> code;\n        cout << \"Enter quantity: \";\n        cin >> qty;\n        \n        for(int i = 0; i < n; i++) {\n            if(db[i].code == code) {\n                total += db[i].price * qty;\n                break;\n            }\n        }\n        \n        cout << \"More products? (Y/N): \";\n        cin >> more;\n    } while(more == 'Y' || more == 'y');\n    \n    cout << \"Total: \" << total;\n    return 0;\n}\n```"
-        }
+        {"part": "a", "marks": 8, "question": "Machine, Low-level, High-level languages with conversion.", "answer": "**Machine:** Binary, direct CPU execution\n**Assembly:** Mnemonics, uses Assembler\n**High-level:** Human-readable, uses Compiler/Interpreter\n\n**Conversion:**\nHigh → Compiler → Assembly → Assembler → Machine"},
+        {"part": "b", "marks": 6, "question": "Quadratic equation solver function.", "answer": "```cpp\n#include <cmath>\nvoid solve(float a, float b, float c) {\n    float d = b*b - 4*a*c;\n    if (d > 0) {\n        float x1 = (-b + sqrt(d)) / (2*a);\n        float x2 = (-b - sqrt(d)) / (2*a);\n        cout << x1 << \", \" << x2;\n    } else if (d == 0) {\n        cout << -b / (2*a);\n    } else {\n        cout << \"No real roots\";\n    }\n}\n```"},
+        {"part": "c", "marks": 6, "question": "Supermarket checkout with product database.", "answer": "```cpp\nstruct Product {\n    int code;\n    string name;\n    float price;\n};\n\nProduct db[] = {{1,\"Milk\",150}, {2,\"Bread\",80}};\nfloat total = 0;\nchar more;\ndo {\n    int code, qty;\n    cin >> code >> qty;\n    for(auto& p : db)\n        if(p.code == code)\n            total += p.price * qty;\n    cin >> more;\n} while(more == 'Y');\ncout << \"Total: \" << total;\n```"}
+      ]
+    },
+    {
+      "id": "2017-P1-Q4",
+      "year": 2017,
+      "paper": 1,
+      "section": "I",
+      "questionNumber": 4,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 8, "question": "Evolutionary vs Incremental models; RAD, JAD, Agile.", "answer": "**Evolutionary:** Develop working prototypes iteratively\n**Incremental:** Build in pieces, each fully working\n\n**RAD:** Rapid Application Development - quick prototypes\n**JAD:** Joint Application Development - stakeholder workshops\n**Agile:** Iterative, flexible, customer collaboration"},
+        {"part": "b", "marks": 6, "question": "Validation vs Verification; empirical evaluation.", "answer": "**Verification:** Are we building it right? (process)\n**Validation:** Are we building the right thing? (product)\n\n**Empirical Techniques:**\n- Testing (unit, integration)\n- Code reviews\n- Metrics analysis"},
+        {"part": "c", "marks": 6, "question": "Requirements Engineering importance and Sign-off.", "answer": "**Importance:**\n- Foundation of project\n- Reduces costly changes\n- Stakeholder alignment\n\n**Sign-off Process:**\n1. Requirements review\n2. Stakeholder approval\n3. Formal acceptance\n4. Baseline document"}
       ]
     },
     {
@@ -267,24 +213,48 @@
       "questionNumber": 5,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "Build Red-Black trees for (50,60,70,80,90) and (50,40,30,20,10). Would BST be suitable?",
-          "answer": "**Red-Black Properties:**\n1. Every node is red or black\n2. Root is black\n3. Leaves (NIL) are black\n4. Red nodes have black children\n5. Equal black nodes on all paths\n\n**For (50,60,70,80,90):**\n```\n     60(B)\n    /    \\\n  50(B)  80(B)\n        /    \\\n      70(R)  90(R)\n```\n\n**For (50,40,30,20,10):** Mirror with left rotations\n\n**BST Suitability:** NO - becomes linked list (O(n) operations). RB-tree maintains O(log n)."
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Describe hashing process with example.",
-          "answer": "**Hashing:** Map data to fixed-size values for O(1) access\n\n**Components:**\n- Hash function: h(key) → index\n- Hash table: Array for storage\n- Collision handling\n\n**Example:** h(ID) = ID % 10\n- 123 → Table[3]\n- 456 → Table[6]\n- 113 → Collision at Table[3]!\n\n**Collision Resolution:**\n- Chaining: Linked lists at each slot\n- Open Addressing: Find next empty (linear/quadratic probing)"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Describe Bubble Sort with passes for (3,8,2,6,1,10).",
-          "answer": "**Bubble Sort:** Swap adjacent elements if wrong order\n\n**Sorting (3,8,2,6,1,10):**\n\nPass 1: [3,2,6,1,8,10] - 10 bubbles up\nPass 2: [2,3,1,6,8,10] - 8 in place\nPass 3: [2,1,3,6,8,10] - 6 in place\nPass 4: [1,2,3,6,8,10] - Sorted!\n\n**Complexity:** O(n²)"
-        }
+        {"part": "a", "marks": 8, "question": "Red-Black trees for (50,60,70,80,90) and (50,40,30,20,10). BST suitable?", "answer": "**RB-Tree Properties:**\n1. Nodes are red or black\n2. Root is black\n3. Red nodes have black children\n4. Equal black nodes on paths\n\n**BST unsuitable** - sorted input creates linked list O(n).\nRB-tree maintains O(log n) via rotations."},
+        {"part": "b", "marks": 6, "question": "Hashing process with example.", "answer": "**Hash Function:** h(key) → index\n**Example:** h(ID) = ID % 10\n- 123 → slot 3\n- 456 → slot 6\n- 113 → collision at 3!\n\n**Collision Handling:**\n- Chaining: linked lists\n- Open Addressing: probe next"},
+        {"part": "c", "marks": 6, "question": "Bubble Sort passes for (3,8,2,6,1,10).", "answer": "**Pass 1:** [3,2,6,1,8,10]\n**Pass 2:** [2,3,1,6,8,10]\n**Pass 3:** [2,1,3,6,8,10]\n**Pass 4:** [1,2,3,6,8,10] ✓\n\n**Complexity:** O(n²)"}
+      ]
+    },
+    {
+      "id": "2017-P2-Q2",
+      "year": 2017,
+      "paper": 2,
+      "section": "A",
+      "questionNumber": 2,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 8, "question": "Storage methods: Direct Access, Random Access.", "answer": "**Direct Access:**\n- Access blocks by address\n- Skip to any block\n- Example: HDD (seek to track)\n\n**Random Access:**\n- Any location in equal time\n- No sequential dependency\n- Example: RAM, SSD"},
+        {"part": "b", "marks": 6, "question": "Two methods to increase performance beyond clock speed.", "answer": "**1. Parallelism:**\n- Multiple cores\n- SIMD instructions\n- Pipelining\n\n**2. Caching:**\n- L1, L2, L3 caches\n- Faster memory hierarchy"},
+        {"part": "c", "marks": 6, "question": "Instruction execution state diagram with interrupt.", "answer": "```\nFetch → Decode → Execute → Store\n            ↓ (interrupt)\n      Save Context\n            ↓\n      Handle ISR\n            ↓\n      Restore Context\n            ↓\n        Resume\n```"}
+      ]
+    },
+    {
+      "id": "2017-P2-Q3",
+      "year": 2017,
+      "paper": 2,
+      "section": "A",
+      "questionNumber": 3,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 8, "question": "Network protocols: HTTP/SIP, TCP/UDP.", "answer": "**HTTP:** Web pages (port 80)\n**SIP:** VoIP session initiation\n\n**TCP:** Reliable, connection-oriented\n**UDP:** Unreliable, fast, connectionless"},
+        {"part": "b", "marks": 6, "question": "Transmission time: 1MB packet, 200Kbps.", "answer": "**Calculation:**\nSize = 1,000,000 bytes = 8,000,000 bits\nBandwidth = 200,000 bps\n\nTime = 8,000,000 / 200,000 = **40 seconds**"},
+        {"part": "c", "marks": 6, "question": "IP 10.5.118.3, mask 255.255.240.0: assignable IPs and broadcast.", "answer": "**Subnet:** /20 (4096 addresses)\n**Network:** 10.5.112.0\n**Broadcast:** 10.5.127.255\n**Assignable:** 10.5.112.1 - 10.5.127.254\n(4094 hosts)"}
+      ]
+    },
+    {
+      "id": "2017-P2-Q4",
+      "year": 2017,
+      "paper": 2,
+      "section": "A",
+      "questionNumber": 4,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 8, "question": "Optimal vs LRU page replacement.", "answer": "**Optimal:**\n- Replace page used farthest in future\n- Theoretical best, not implementable\n\n**LRU (Least Recently Used):**\n- Replace page unused longest\n- Practical approximation of optimal"},
+        {"part": "b", "marks": 6, "question": "Four deadlock conditions and how to prevent two.", "answer": "**Conditions:**\n1. Mutual Exclusion\n2. Hold and Wait\n3. No Preemption\n4. Circular Wait\n\n**Prevention:**\n- Hold & Wait: Request all at once\n- Circular Wait: Order resources"},
+        {"part": "c", "marks": 6, "question": "Round-Robin scheduling (TQ=4) for P1(24), P2(7), P3(10).", "answer": "**Execution:**\nP1(4)→P2(4)→P3(4)→P1(4)→P2(3)→P3(4)→P1(4)→P3(2)→P1(8)\n\n**Turnaround:** P1=41, P2=23, P3=33\n**Waiting:** P1=17, P2=16, P3=23\n**Avg Wait:** 18.67"}
       ]
     },
     {
@@ -295,24 +265,9 @@
       "questionNumber": 6,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "What is Normalization? Explain 1NF, 2NF, 3NF with examples.",
-          "answer": "**Normalization:** Organize database to reduce redundancy\n\n**1NF:** Atomic values, no repeating groups\n- Before: Student | Courses: Math,Physics\n- After: Separate rows for each course\n\n**2NF:** No partial dependencies\n- All non-key attributes depend on ENTIRE primary key\n- Split tables if partial dependency exists\n\n**3NF:** No transitive dependencies\n- Non-key shouldn't depend on non-key\n- Example: StudentID → DeptID → DeptName (violates 3NF)"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Short notes on Data, Database, DBMS.",
-          "answer": "**Data:** Raw facts without context (numbers, text, images)\n\n**Database:** Organized collection of related data for easy access\n\n**DBMS:** Software to create and manage databases\n- Functions: Definition, manipulation, security, integrity\n- Examples: MySQL, PostgreSQL, Oracle, MongoDB"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Differentiate Centralized vs Distributed Database.",
-          "answer": "| Feature | Centralized | Distributed |\n|---------|-------------|-------------|\n| Location | Single site | Multiple sites |\n| Cost | Lower | Higher |\n| Reliability | Single point failure | Fault tolerant |\n| Scalability | Limited | High |\n| Complexity | Simple | Complex |\n| Latency | Low (local) | Variable |"
-        }
+        {"part": "a", "marks": 8, "question": "Normalization: 1NF, 2NF, 3NF with examples.", "answer": "**1NF:** Atomic values, no repeating groups\n**2NF:** No partial dependencies on composite key\n**3NF:** No transitive dependencies\n\n**Example violation:** StudentID → DeptID → DeptName"},
+        {"part": "b", "marks": 6, "question": "Data, Database, DBMS definitions.", "answer": "**Data:** Raw facts (numbers, text)\n**Database:** Organized data collection\n**DBMS:** Software to manage databases (MySQL, Oracle)"},
+        {"part": "c", "marks": 6, "question": "Centralized vs Distributed Database.", "answer": "| Centralized | Distributed |\n|-------------|-------------|\n| Single location | Multiple sites |\n| Single failure point | Fault tolerant |\n| Simpler | Complex |\n| Lower cost | Higher cost |"}
       ]
     },
     {
@@ -323,100 +278,40 @@
       "questionNumber": 2,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 4,
-          "question": "How many layers in TCP/IP? What are their names?",
-          "answer": "**4 Layers in TCP/IP:**\n\n1. **Application Layer** - HTTP, FTP, SMTP, DNS\n2. **Transport Layer** - TCP, UDP\n3. **Internet Layer** - IP, ICMP, ARP\n4. **Network Access Layer** - Ethernet, Wi-Fi\n\nCompared to OSI's 7 layers, TCP/IP combines some layers."
-        },
-        {
-          "part": "b",
-          "marks": 4,
-          "question": "How can digital evidence be preserved from a crime scene?",
-          "answer": "**Digital Evidence Preservation:**\n\n1. **Document scene:** Photograph devices, connections\n2. **Secure devices:** Prevent tampering, use Faraday bags\n3. **Create forensic images:** Bit-by-bit copy of storage\n4. **Maintain chain of custody:** Log all handling\n5. **Use write-blockers:** Prevent modification\n6. **Hash verification:** MD5/SHA to prove integrity\n7. **Preserve volatile data:** RAM, running processes\n8. **Isolate network devices:** Prevent remote wiping"
-        },
-        {
-          "part": "c",
-          "marks": 3,
-          "question": "What are responsibilities of OS kernel?",
-          "answer": "**Kernel Responsibilities:**\n\n1. **Process Management:** Scheduling, creation, termination\n2. **Memory Management:** Allocation, virtual memory, paging\n3. **Device Management:** Driver communication, I/O\n4. **File System:** File operations, permissions\n5. **System Calls:** Interface between user programs and hardware\n6. **Security:** Access control, protection"
-        },
-        {
-          "part": "d",
-          "marks": 3,
-          "question": "List four best practices for coding standards.",
-          "answer": "**Coding Best Practices:**\n\n1. **Meaningful names:** Variables and functions should be descriptive\n2. **Consistent indentation:** Use tabs or spaces consistently\n3. **Comments:** Document complex logic and functions\n4. **DRY principle:** Don't Repeat Yourself - reuse code\n5. **Error handling:** Handle exceptions properly\n6. **Version control:** Use Git for code management"
-        },
-        {
-          "part": "e",
-          "marks": 2,
-          "question": "Why do modern processors use more power when clock frequency increases?",
-          "answer": "**Power ∝ Frequency × Voltage²**\n\nHigher frequency requires:\n- Higher voltage for stable operation\n- More switching activity (more transistor toggles/second)\n- More heat generation\n\nThis is why overclocking increases power consumption significantly."
-        },
-        {
-          "part": "f",
-          "marks": 2,
-          "question": "Ali says MSB=1 means 2's complement negative. True or False? Why?",
-          "answer": "**TRUE** - In 2's complement representation:\n- MSB (Most Significant Bit) = 1 indicates negative number\n- MSB = 0 indicates positive number or zero\n- This is the sign bit convention in 2's complement"
-        },
-        {
-          "part": "g",
-          "marks": 2,
-          "question": "If time slice=50ms and context switch=1μs, how many processes per second?",
-          "answer": "**Calculation:**\n\nTotal time per process = 50ms + 0.001ms ≈ 50.001ms\n\nProcesses per second = 1000ms / 50.001ms ≈ **19.99 ≈ 20 processes**\n\n(Context switch overhead is negligible here)"
-        }
+        {"part": "a", "marks": 4, "question": "TCP/IP layers and names.", "answer": "**4 Layers:**\n1. Application (HTTP, FTP, DNS)\n2. Transport (TCP, UDP)\n3. Internet (IP, ICMP)\n4. Network Access (Ethernet)"},
+        {"part": "b", "marks": 4, "question": "Digital evidence preservation from crime scene.", "answer": "**Steps:**\n1. Document/photograph scene\n2. Secure devices (Faraday bags)\n3. Create forensic images\n4. Maintain chain of custody\n5. Use write-blockers\n6. Hash verification (MD5, SHA)"},
+        {"part": "c", "marks": 3, "question": "OS kernel responsibilities.", "answer": "1. Process management\n2. Memory management\n3. Device/I/O management\n4. File system\n5. System calls\n6. Security/access control"},
+        {"part": "d", "marks": 3, "question": "Four coding best practices.", "answer": "1. Meaningful variable names\n2. Consistent indentation\n3. Comments for complex logic\n4. DRY principle\n5. Error handling\n6. Version control"},
+        {"part": "e", "marks": 2, "question": "Why higher frequency = more power?", "answer": "**Power ∝ Frequency × Voltage²**\n\nHigher frequency needs:\n- Higher voltage\n- More switching\n- More heat"},
+        {"part": "f", "marks": 2, "question": "MSB=1 means 2's complement negative?", "answer": "**TRUE** - In 2's complement:\n- MSB=1 → negative\n- MSB=0 → positive/zero"}
       ]
     },
     {
-      "id": "2018-P1-Q3",
+      "id": "2018-P1-Q5",
       "year": 2018,
       "paper": 1,
-      "section": "I",
-      "questionNumber": 3,
+      "section": "II",
+      "questionNumber": 5,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 5,
-          "question": "Write grade average calculator for 5 subjects with appropriate messages.",
-          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    float marks[5], total = 0;\n    \n    for(int i = 0; i < 5; i++) {\n        cout << \"Enter marks for subject \" << i+1 << \": \";\n        cin >> marks[i];\n        total += marks[i];\n    }\n    \n    float avg = total / 5;\n    cout << \"Average: \" << avg << endl;\n    \n    if(avg >= 80)\n        cout << \"Well Done! Excellent performance!\";\n    else if(avg >= 60)\n        cout << \"Keep it up! Good work!\";\n    else if(avg >= 40)\n        cout << \"Satisfactory. Room for improvement.\";\n    else\n        cout << \"Better luck next time!\";\n        \n    return 0;\n}\n```"
-        },
-        {
-          "part": "b",
-          "marks": 2,
-          "question": "Write condition for: i is 2×j, OR j<k<n, OR m is negative",
-          "answer": "```cpp\nif ((i == 2*j) || (j < k && k < n) || (m < 0))\n    cout << \"hello\";\n```"
-        },
-        {
-          "part": "c",
-          "marks": 2,
-          "question": "Write condition for: i does NOT lie in interval 6-9",
-          "answer": "```cpp\nif (i < 6 || i > 9)\n    cout << \"hello\";\n\n// Alternative:\nif (!(i >= 6 && i <= 9))\n    cout << \"hello\";\n```"
-        },
-        {
-          "part": "d",
-          "marks": 1,
-          "question": "Rewrite w+=2*z+4 without += operator",
-          "answer": "```cpp\nw = w + 2*z + 4;\n```"
-        },
-        {
-          "part": "e",
-          "marks": 2,
-          "question": "Predict values of a and b after: a=5, b=6, a=(b++)+3, b=--a",
-          "answer": "```\nInitial: a=5, b=6\n\na = (b++) + 3\n  = 6 + 3 = 9 (b becomes 7 after)\n  a = 9, b = 7\n\nb = --a\n  = 8 (a decremented first)\n  a = 8, b = 8\n\nFinal: a = 8, b = 8\n```"
-        },
-        {
-          "part": "f",
-          "marks": 5,
-          "question": "Print number triangle pattern (n=4: 1234, 123, 12, 1)",
-          "answer": "```cpp\nvoid main() {\n    int n;\n    cin >> n;\n    \n    for(int i = n; i >= 1; i--) {\n        for(int j = 1; j <= i; j++) {\n            cout << j << \" \";\n        }\n        cout << endl;\n    }\n}\n```\n\n**Output for n=4:**\n```\n1 2 3 4\n1 2 3\n1 2\n1\n```"
-        },
-        {
-          "part": "g",
-          "marks": 5,
-          "question": "Replace character at position pos in string st with ch.",
-          "answer": "```cpp\nvoid main() {\n    char st[15];\n    int pos;\n    char ch;\n    int size = 0;\n    \n    cin >> st;\n    cin >> pos >> ch;\n    \n    while(st[size] != '\\0') {\n        size++;\n    }\n    \n    // Replace character at position pos\n    if(pos >= 0 && pos < size) {\n        st[pos] = ch;\n    }\n    \n    cout << st;\n}\n```"
-        }
+        {"part": "a", "marks": 3, "question": "What is a dangling pointer?", "answer": "**Dangling Pointer:** Points to memory that has been freed/deallocated.\n\n```cpp\nint* p = new int(5);\ndelete p;  // p is now dangling\n*p = 10;   // Undefined behavior!\n```\n\n**Prevention:** Set to nullptr after delete"},
+        {"part": "b", "marks": 5, "question": "Data structure for text editor and why.", "answer": "**Gap Buffer** or **Rope** data structure\n\n**Gap Buffer:**\n- Array with gap at cursor\n- Fast insert/delete at cursor\n- Move gap on cursor movement\n\n**Alternative: Piece Table**\n- Original text + additions\n- Used by VS Code"},
+        {"part": "c", "marks": 7, "question": "Random BST insertion tree shapes.", "answer": "**Possible Shapes:**\n1. **Balanced:** Random distribution → O(log n)\n2. **Skewed:** Sorted/reverse input → O(n)\n3. **Most likely:** Roughly balanced with some imbalance\n\n**Expected height:** O(log n) for random insertion"},
+        {"part": "d", "marks": 5, "question": "Modify queue for O(1) first/last access.", "answer": "**Solution:** Maintain both head and tail pointers\n\n```cpp\nclass Queue {\n    Node* front;  // For dequeue O(1)\n    Node* rear;   // For enqueue O(1)\n};\n```\n\nBoth operations become O(1)"}
+      ]
+    },
+    {
+      "id": "2018-P1-Q6",
+      "year": 2018,
+      "paper": 1,
+      "section": "II",
+      "questionNumber": 6,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 4, "question": "Balanced tree definition (AVL and BST).", "answer": "**BST Balanced:** Height difference between subtrees minimized\n\n**AVL Balanced:** For every node:\n|height(left) - height(right)| ≤ 1\n\nBalance factor ∈ {-1, 0, +1}"},
+        {"part": "b", "marks": 6, "question": "Informed/Heuristic search and algorithms.", "answer": "**Heuristic Search:** Uses domain knowledge to guide search\n\n**Algorithms:**\n- A* (optimal with admissible heuristic)\n- Greedy Best-First\n- Hill Climbing\n\n**Heuristic function:** h(n) estimates cost to goal"},
+        {"part": "c", "marks": 5, "question": "Graph vs Tree differences.", "answer": "**Tree is special case of Graph:**\n- Tree: Connected, acyclic, n-1 edges for n nodes\n- Graph: May have cycles, multiple paths\n\n| Tree | Graph |\n|------|-------|\n| No cycles | May have cycles |\n| Single path | Multiple paths |\n| Root concept | No root |"},
+        {"part": "d", "marks": 5, "question": "Problems solved by Genetic Algorithms.", "answer": "**GA Applications:**\n1. Optimization (scheduling, routing)\n2. Machine learning\n3. Design problems\n4. Game playing\n5. Neural network training\n\n**Suitable when:** Large search space, no gradient, multiple solutions"}
       ]
     },
     {
@@ -427,24 +322,9 @@
       "questionNumber": 2,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "Write C++ function pattern(int n) to produce asterisk pattern with proper spacing.",
-          "answer": "```cpp\nvoid pattern(int n) {\n    // Upper half\n    for(int i = 1; i <= n; i++) {\n        // Leading spaces\n        for(int j = 0; j < n-i; j++)\n            cout << \" \";\n        // Stars\n        for(int j = 0; j < i; j++)\n            cout << \"* \";\n        cout << endl;\n    }\n    // Lower half\n    for(int i = n-1; i >= 1; i--) {\n        for(int j = 0; j < n-i; j++)\n            cout << \" \";\n        for(int j = 0; j < i; j++)\n            cout << \"* \";\n        cout << endl;\n    }\n}\n```\n\nReturn type: void"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Differences between CS, SE, IT, IS, CE, Bioinformatics.",
-          "answer": "**Computer Science:** Theory, algorithms, computation\n**Software Engineering:** Building reliable software systems\n**Information Technology:** Managing IT infrastructure\n**Information Systems:** Business + technology integration\n**Computer Engineering:** Hardware + software design\n**Bioinformatics:** Computing for biological data analysis"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Output of pointer code: int ary[4]={1,2,3,4}; int *p1=ary+3...",
-          "answer": "```cpp\nint ary[4] = {1,2,3,4};\nint *p1 = ary + 3;        // p1 points to ary[3] (value 4)\ncout << p1[-2] << endl;    // ary[3-2] = ary[1] = 2\nint *p2 = &p1[-2];        // p2 points to ary[1]\n*p2 = 10;                 // ary[1] = 10\ncout << ary[1] << endl;   // 10\n```\n\n**Output:**\n```\n2\n10\n```"
-        }
+        {"part": "a", "marks": 8, "question": "C++ pattern(int n) function for asterisk pattern.", "answer": "```cpp\nvoid pattern(int n) {\n    for(int i = 1; i <= n; i++) {\n        for(int s = 0; s < n-i; s++)\n            cout << \" \";\n        for(int j = 0; j < i; j++)\n            cout << \"* \";\n        cout << endl;\n    }\n    for(int i = n-1; i >= 1; i--) {\n        for(int s = 0; s < n-i; s++)\n            cout << \" \";\n        for(int j = 0; j < i; j++)\n            cout << \"* \";\n        cout << endl;\n    }\n}\n```"},
+        {"part": "b", "marks": 6, "question": "Differences: CS, SE, IT, IS, CE, Bioinformatics.", "answer": "**CS:** Theory, algorithms, computation\n**SE:** Building software systems\n**IT:** Managing IT infrastructure\n**IS:** Business + technology\n**CE:** Hardware + software\n**Bioinformatics:** Computing for biology"},
+        {"part": "c", "marks": 6, "question": "Pointer code output.", "answer": "```cpp\nint ary[4] = {1,2,3,4};\nint *p1 = ary + 3;      // points to 4\ncout << p1[-2];         // ary[1] = 2\nint *p2 = &p1[-2];      // points to ary[1]\n*p2 = 10;               // ary[1] = 10\ncout << ary[1];         // 10\n```\n**Output:** 2, 10"}
       ]
     },
     {
@@ -455,18 +335,21 @@
       "questionNumber": 5,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 10,
-          "question": "Define Circle class with 5 different constructor options.",
-          "answer": "```cpp\nclass Circle {\n    double radius;\n    double centerX, centerY;\n    \npublic:\n    // 1. Default: radius=1, center=(0,0)\n    Circle() : radius(1), centerX(0), centerY(0) {}\n    \n    // 2. Given radius, center=(0,0)\n    Circle(double r) : radius(r), centerX(0), centerY(0) {}\n    \n    // 3. Given center, radius=1\n    Circle(double x, double y) : radius(1), centerX(x), centerY(y) {}\n    \n    // 4. Given radius and center\n    Circle(double r, double x, double y) \n        : radius(r), centerX(x), centerY(y) {}\n    \n    // 5. Copy constructor\n    Circle(const Circle& c) \n        : radius(c.radius), centerX(c.centerX), centerY(c.centerY) {}\n};\n\nint main() {\n    Circle c1;              // Default\n    Circle c2(5);           // Radius only\n    Circle c3(2, 3);        // Center only\n    Circle c4(5, 2, 3);     // All params\n    Circle c5(c4);          // Copy\n    return 0;\n}\n```"
-        },
-        {
-          "part": "b",
-          "marks": 10,
-          "question": "Explain virtual functions in C++ with example.",
-          "answer": "**Virtual Function:** Function declared with `virtual` keyword enabling runtime polymorphism.\n\n```cpp\nclass Animal {\npublic:\n    virtual void speak() {\n        cout << \"Animal speaks\";\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() override {\n        cout << \"Dog barks\";\n    }\n};\n\nint main() {\n    Animal* a = new Dog();\n    a->speak();  // \"Dog barks\" - runtime binding\n    return 0;\n}\n```\n\n**Mechanism:** Virtual table (vtable) stores function pointers, resolved at runtime."
-        }
+        {"part": "a", "marks": 10, "question": "Circle class with 5 constructor types.", "answer": "```cpp\nclass Circle {\n    double r, x, y;\npublic:\n    Circle() : r(1), x(0), y(0) {}\n    Circle(double r) : r(r), x(0), y(0) {}\n    Circle(double x, double y) : r(1), x(x), y(y) {}\n    Circle(double r, double x, double y)\n        : r(r), x(x), y(y) {}\n    Circle(const Circle& c)\n        : r(c.r), x(c.x), y(c.y) {}\n};\n```"},
+        {"part": "b", "marks": 10, "question": "Virtual functions in C++ with example.", "answer": "```cpp\nclass Animal {\npublic:\n    virtual void speak() {\n        cout << \"Animal\";\n    }\n};\n\nclass Dog : public Animal {\npublic:\n    void speak() override {\n        cout << \"Bark\";\n    }\n};\n\nAnimal* a = new Dog();\na->speak();  // \"Bark\" (runtime binding)\n```\n\n**Mechanism:** Virtual table (vtable)"}
+      ]
+    },
+    {
+      "id": "2022-P1-Q6",
+      "year": 2022,
+      "paper": 1,
+      "section": "B",
+      "questionNumber": 6,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 8, "question": "Recursive power function k^n.", "answer": "```cpp\nint power(int k, int n) {\n    if (n == 0) return 1;\n    if (n == 1) return k;\n    return k * power(k, n-1);\n}\n\n// Optimized O(log n):\nint power(int k, int n) {\n    if (n == 0) return 1;\n    int half = power(k, n/2);\n    if (n % 2 == 0)\n        return half * half;\n    return k * half * half;\n}\n```"},
+        {"part": "b", "marks": 8, "question": "Compare DES, AES, RSA encryption.", "answer": "| Feature | DES | AES | RSA |\n|---------|-----|-----|-----|\n| Type | Symmetric | Symmetric | Asymmetric |\n| Key Size | 56-bit | 128/192/256 | 1024-4096 |\n| Security | Weak | Strong | Strong |\n| Speed | Fast | Faster | Slow |\n| Use | Legacy | Data encryption | Key exchange |"},
+        {"part": "c", "marks": 4, "question": "Time complexity of isPrime function.", "answer": "```cpp\nfor(int i=2; (i*i)<n; i++)\n    if(n%i==0) return 0;\nreturn 1;\n```\n\n**Loop runs:** √n times\n**Complexity:** O(√n)"}
       ]
     },
     {
@@ -477,24 +360,22 @@
       "questionNumber": 2,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "Discuss future of IT in Pakistan with opportunities and challenges.",
-          "answer": "**Opportunities:**\n- Freelancing: Pakistan ranks 4th globally, $500M+ earnings\n- IT exports growing 40%+ annually\n- Youth demographics: 60% under 30\n- Government initiatives: DigiSkills, IT parks\n- AI/ML, Blockchain, Fintech growth\n\n**Challenges:**\n- Infrastructure: Electricity, internet issues\n- Education gap: Outdated curriculum\n- Brain drain\n- Policy complexity\n- Economic instability"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Differentiate virus, Trojan horse, and worm.",
-          "answer": "| Feature | Virus | Trojan | Worm |\n|---------|-------|--------|------|\n| Self-replicates | Yes | No | Yes |\n| Needs host | Yes | No | No |\n| User action | Required | Required | Not needed |\n| Spread | Infected files | Deception | Network |\n| Purpose | Damage | Backdoor | Propagation |"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Advantages and disadvantages of LaTeX.",
-          "answer": "**Advantages:**\n- Professional typography, math formulas\n- Automatic numbering, cross-referencing\n- Academic standard, version control friendly\n- Free and portable\n\n**Disadvantages:**\n- Steep learning curve\n- Not WYSIWYG\n- Complex customization\n- Collaboration issues"
-        }
+        {"part": "a", "marks": 8, "question": "Future of IT in Pakistan: opportunities and challenges.", "answer": "**Opportunities:**\n- Freelancing (4th globally)\n- IT exports ($2.5B+)\n- Youth demographics (60% under 30)\n- Government initiatives\n- AI/Fintech growth\n\n**Challenges:**\n- Infrastructure issues\n- Education gap\n- Brain drain\n- Economic instability"},
+        {"part": "b", "marks": 6, "question": "Virus vs Trojan vs Worm.", "answer": "| Feature | Virus | Trojan | Worm |\n|---------|-------|--------|------|\n| Self-replicates | Yes | No | Yes |\n| Needs host | Yes | No | No |\n| User action | Yes | Yes | No |\n| Purpose | Damage | Backdoor | Spread |"},
+        {"part": "c", "marks": 6, "question": "LaTeX advantages and disadvantages.", "answer": "**Advantages:**\n- Professional math formulas\n- Automatic numbering\n- Academic standard\n- Version control friendly\n\n**Disadvantages:**\n- Steep learning curve\n- Not WYSIWYG\n- Complex customization"}
+      ]
+    },
+    {
+      "id": "2025-P1-Q2",
+      "year": 2025,
+      "paper": 1,
+      "section": "I",
+      "questionNumber": 2,
+      "marks": 20,
+      "parts": [
+        {"part": "a", "marks": 8, "question": "Overloading vs Overriding in OOP.", "answer": "**Overloading:** Same name, different parameters\n```cpp\nint add(int a, int b);\nfloat add(float a, float b);\n```\n\n**Overriding:** Redefine parent method in child\n```cpp\nclass Parent { virtual void show(); };\nclass Child : Parent {\n    void show() override;\n};\n```"},
+        {"part": "b", "marks": 6, "question": "Preventing class from being inherited.", "answer": "**C++ (final keyword):**\n```cpp\nclass Final final {\n    // Cannot be inherited\n};\n```\n\n**Java:**\n```java\nfinal class NoInherit { }\n```\n\n**Alternative:** Private constructor with static factory"},
+        {"part": "c", "marks": 6, "question": "Bubble Sort vs Selection Sort analysis.", "answer": "| Feature | Bubble | Selection |\n|---------|--------|------------|\n| Comparisons | O(n²) | O(n²) |\n| Swaps | O(n²) | O(n) |\n| Stable | Yes | No |\n| Best case | O(n) | O(n²) |\n\nSelection sort makes fewer swaps"}
       ]
     },
     {
@@ -505,24 +386,9 @@
       "questionNumber": 3,
       "marks": 20,
       "parts": [
-        {
-          "part": "a",
-          "marks": 8,
-          "question": "Write C++ program to convert marks to grades.",
-          "answer": "```cpp\n#include <iostream>\nusing namespace std;\n\nint main() {\n    string name;\n    int marks;\n    char grade;\n    \n    cout << \"Enter name: \";\n    getline(cin, name);\n    cout << \"Enter marks: \";\n    cin >> marks;\n    \n    if(marks >= 90) grade = 'A';\n    else if(marks >= 80) grade = 'B';\n    else if(marks >= 70) grade = 'C';\n    else if(marks >= 60) grade = 'D';\n    else if(marks >= 50) grade = 'E';\n    else grade = 'F';\n    \n    cout << \"Grade: \" << grade << endl;\n    cout << \"Status: \" << (grade != 'F' ? \"PASS\" : \"FAIL\");\n    return 0;\n}\n```"
-        },
-        {
-          "part": "b",
-          "marks": 6,
-          "question": "Implement BFS traversal of a graph.",
-          "answer": "```cpp\nvoid BFS(int start) {\n    vector<bool> visited(V, false);\n    queue<int> q;\n    \n    visited[start] = true;\n    q.push(start);\n    \n    while(!q.empty()) {\n        int curr = q.front();\n        q.pop();\n        cout << curr << \" \";\n        \n        for(int neighbor : adj[curr]) {\n            if(!visited[neighbor]) {\n                visited[neighbor] = true;\n                q.push(neighbor);\n            }\n        }\n    }\n}\n```\n\n**Complexity:** O(V+E)"
-        },
-        {
-          "part": "c",
-          "marks": 6,
-          "question": "Write regex for: date (DD/MM/YYYY), URL, IP address, email.",
-          "answer": "**Date:** `^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\\d{4}$`\n\n**URL:** `^https?://([\\w-]+\\.)+[\\w-]+(/[\\w-./?%&=]*)?$`\n\n**IP:** `^((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)$`\n\n**Email:** `^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$`"
-        }
+        {"part": "a", "marks": 8, "question": "Marks to grades conversion program.", "answer": "```cpp\nint main() {\n    int marks;\n    cin >> marks;\n    char grade;\n    \n    if(marks >= 90) grade = 'A';\n    else if(marks >= 80) grade = 'B';\n    else if(marks >= 70) grade = 'C';\n    else if(marks >= 60) grade = 'D';\n    else if(marks >= 50) grade = 'E';\n    else grade = 'F';\n    \n    cout << \"Grade: \" << grade;\n    cout << (grade!='F' ? \"PASS\" : \"FAIL\");\n}\n```"},
+        {"part": "b", "marks": 6, "question": "BFS traversal implementation.", "answer": "```cpp\nvoid BFS(int start) {\n    vector<bool> visited(V, false);\n    queue<int> q;\n    visited[start] = true;\n    q.push(start);\n    \n    while(!q.empty()) {\n        int curr = q.front();\n        q.pop();\n        cout << curr << \" \";\n        for(int n : adj[curr])\n            if(!visited[n]) {\n                visited[n] = true;\n                q.push(n);\n            }\n    }\n}\n```"},
+        {"part": "c", "marks": 6, "question": "Regular expressions for date, URL, IP, email.", "answer": "**Date:** `^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\\d{4}$`\n\n**URL:** `^https?://[\\w.-]+(/[\\w-./?%&=]*)?$`\n\n**IP:** `^((25[0-5]|2[0-4]\\d|[01]?\\d\\d?)\\.){3}(25[0-5]|2[0-4]\\d|[01]?\\d\\d?)$`\n\n**Email:** `^[\\w.+-]+@[\\w.-]+\\.[a-zA-Z]{2,}$`"}
       ]
     }
   ]
